@@ -50,7 +50,8 @@ check(
 )
 
 // The honeypot must answer as though it succeeded: a 422 naming the field would
-// tell a bot exactly what caught it.
+// tell a bot exactly what caught it. It is rate limited like any other request,
+// so it gets its own address.
 const honeypot = await post({ ...valid(), website: 'http://spam.example' }, ip(4))
 check('honeypot answers 200', honeypot.status, 200)
 check('honeypot leaks nothing', JSON.stringify(honeypot.json), JSON.stringify({ ok: true }))

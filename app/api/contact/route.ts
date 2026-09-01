@@ -26,13 +26,8 @@ export async function POST(request: Request) {
   }
   const input = parsed.data
 
-  // Honeypot: the field is hidden from people, so any value is a bot. Answer 200
-  // so the bot cannot tell it was caught.
-  if (input.website) {
-    console.warn('[contact] honeypot triggered', { ip })
-    return NextResponse.json({ ok: true })
-  }
-
+  // Throttle first, so honeypot traffic is limited too and a caught bot learns
+  // only that it is rate limited.
   const limit = await rateLimit(ip)
   if (!limit.success) {
     return NextResponse.json(
@@ -42,6 +37,14 @@ export async function POST(request: Request) {
       },
       { status: 429, headers: { 'Retry-After': String(limit.resetSeconds) } }
     )
+  }
+
+  // Honeypot: the field is hidden from people, so any value is a bot. Answer 200
+  // so it cannot tell it was caught. Validation deliberately accepts the field —
+  // a 422 naming it would give the trap away.
+  if (input.website) {
+    console.warn('[contact] honeypot triggered', { ip })
+    return NextResponse.json({ ok: true })
   }
 
   if (!(await verifyTurnstile(input.turnstileToken, ip))) {

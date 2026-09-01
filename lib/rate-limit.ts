@@ -47,27 +47,31 @@ async function upstashLimit(key: string, url: string, token: string): Promise<Re
   if (!incr.ok) throw new Error(`Upstash INCR failed: ${incr.status}`)
   const count = Number(((await incr.json()) as { result: number }).result)
 
-  // Only the first request in a window sets the expiry, so the window is fixed
-  // rather than sliding forward with every hit.
-  if (count === 1) {
+  // Read the TTL back rather than setting it only on the first hit. If that one
+  // EXPIRE ever failed, the counter would live forever and lock the address out
+  // permanently; checking every time repairs a key that lost its expiry.
+  const ttlResponse = await fetch(`${url}/ttl/${encodeURIComponent(redisKey)}`, {
+    headers,
+    cache: 'no-store',
+  })
+  let ttl = ttlResponse.ok
+    ? Number(((await ttlResponse.json()) as { result: number }).result)
+    : WINDOW_SECONDS
+
+  if (ttl < 0) {
+    // -1 is a key with no expiry, -2 is a key that vanished between the two
+    // calls. Either way, give it the full window.
     await fetch(`${url}/expire/${encodeURIComponent(redisKey)}/${WINDOW_SECONDS}`, {
       headers,
       cache: 'no-store',
     })
+    ttl = WINDOW_SECONDS
   }
-
-  const ttl = await fetch(`${url}/ttl/${encodeURIComponent(redisKey)}`, {
-    headers,
-    cache: 'no-store',
-  })
-  const resetSeconds = ttl.ok
-    ? Number(((await ttl.json()) as { result: number }).result)
-    : WINDOW_SECONDS
 
   return {
     success: count <= LIMIT,
     remaining: Math.max(0, LIMIT - count),
-    resetSeconds: resetSeconds > 0 ? resetSeconds : WINDOW_SECONDS,
+    resetSeconds: ttl,
   }
 }
 

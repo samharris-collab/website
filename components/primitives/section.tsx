@@ -14,12 +14,11 @@ export function Section({
   tone = 'paper',
   className,
   children,
-  bleed = false,
   ...props
-}: React.HTMLAttributes<HTMLElement> & { tone?: Tone; bleed?: boolean }) {
+}: React.HTMLAttributes<HTMLElement> & { tone?: Tone }) {
   return (
     <section className={cn('py-16 md:py-24', toneClass[tone], className)} {...props}>
-      {bleed ? children : <div className="container-editorial">{children}</div>}
+      <div className="container-editorial">{children}</div>
     </section>
   )
 }
