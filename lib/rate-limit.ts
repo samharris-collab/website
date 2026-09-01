@@ -91,9 +91,19 @@ export async function rateLimit(key: string): Promise<Result> {
   return memoryLimit(key, Date.now())
 }
 
-/** Best-effort client IP from the proxy headers Vercel sets. */
+/**
+ * Client IP for rate limiting.
+ *
+ * Order matters. `x-forwarded-for` can carry values a caller supplied, so
+ * spoofing it would hand an attacker a fresh bucket per request. Vercel sets
+ * `x-vercel-forwarded-for` and `x-real-ip` itself, so those are preferred and
+ * x-forwarded-for is only a last resort — and then only its first entry, which
+ * is the closest thing to the origin.
+ */
 export function clientIp(headers: Headers): string {
+  const trusted = headers.get('x-vercel-forwarded-for') ?? headers.get('x-real-ip')
+  if (trusted) return trusted.split(',')[0]?.trim() || 'unknown'
+
   const forwarded = headers.get('x-forwarded-for')
-  if (forwarded) return forwarded.split(',')[0]?.trim() || 'unknown'
-  return headers.get('x-real-ip') ?? 'unknown'
+  return forwarded?.split(',')[0]?.trim() || 'unknown'
 }

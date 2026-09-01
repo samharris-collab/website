@@ -102,6 +102,11 @@ Sentry's browser SDK and PostHog are both imported lazily and only when their ke
 is present, so an unconfigured deploy pays nothing for either — that is what
 keeps first-load JS inside budget.
 
+## Before launch
+
+`LAUNCH.md` tracks the launch checklist: what is verified, what needs an API
+key, and what needs your attorney.
+
 ## Deploying
 
 Vercel builds on push. `next.config.ts` carries the security headers, the
