@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
       - run: npm audit --omit=dev --audit-level=high
       - name: Copy rules (no invented figures, prices, or filler)
-        run: node scripts/check-content.mjs
+        run: node --no-warnings scripts/check-content.mjs
       - name: Spelling
         run: npx cspell --no-progress "lib/**/*.ts" "components/**/*.tsx" "app/**/*.tsx" "*.md"
 

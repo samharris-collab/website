@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "analyze": "ANALYZE=true next build",
     "spell": "cspell --no-progress \"lib/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.tsx\" \"*.md\"",
-    "check": "npm run typecheck && npm run lint && npm run spell && node scripts/check-content.mjs"
+    "check": "npm run typecheck && npm run lint && npm run spell && node --no-warnings scripts/check-content.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",

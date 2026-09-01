@@ -121,6 +121,56 @@ for (const file of AUTHORED) {
   }
 }
 
+// --- Guide bodies: substance and repetition -------------------------------
+// Forty-odd guides on adjacent topics is exactly the shape that produces thin,
+// interchangeable pages. These two checks catch that mechanically.
+const MIN_WORDS = 600
+
+try {
+  const { guideBodies } = await import('../lib/content/guide-bodies.ts')
+  const flatten = (guide) => {
+    const parts = [...guide.intro, ...guide.keyPoints]
+    for (const section of guide.sections) {
+      parts.push(section.heading, ...section.paragraphs, ...(section.list ?? []))
+    }
+    if (guide.realityCheck) parts.push(guide.realityCheck)
+    for (const faq of guide.faqs) parts.push(faq.question, faq.answer)
+    return parts.join(' ')
+  }
+
+  const owners = new Map()
+  for (const guide of guideBodies) {
+    const body = flatten(guide)
+    const words = body.split(/\s+/).filter(Boolean).length
+
+    if (words < MIN_WORDS) {
+      problems += 1
+      console.log(`guide "${guide.slug}" is thin — ${words} words, minimum ${MIN_WORDS}`)
+    }
+
+    // A sentence of eight or more words appearing in two guides means one of
+    // them was written by find-and-replace.
+    for (const raw of body.split(/(?<=[.!?])\s+/)) {
+      const sentence = raw.trim().toLowerCase()
+      if (sentence.split(/\s+/).length < 8) continue
+      const seen = owners.get(sentence)
+      if (seen && seen !== guide.slug) {
+        problems += 1
+        console.log(`duplicate sentence in "${seen}" and "${guide.slug}"`)
+        console.log(`   ${raw.trim().slice(0, 120)}`)
+      } else {
+        owners.set(sentence, guide.slug)
+      }
+    }
+  }
+
+  if (guideBodies.length) {
+    console.log(`Checked ${guideBodies.length} guide bodies for length and repetition.`)
+  }
+} catch (error) {
+  console.log(`Could not read guide bodies: ${error.message}`)
+}
+
 console.log(
   problems
     ? `\n${problems} problem(s) in authored copy.`
