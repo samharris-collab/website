@@ -30,7 +30,7 @@ function row(label: string, value?: string) {
 function notificationHtml(input: ContactInput) {
   return `<!doctype html><html><body style="margin:0;background:#FAF9F6;font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
   <div style="max-width:640px;margin:0 auto;padding:32px 24px">
-    <div style="background:#B4FB44;color:#0A0A0A;padding:16px 24px;font-size:13px;letter-spacing:.08em;text-transform:uppercase">New enquiry</div>
+    <div style="background:#B4FB44;color:#0A0A0A;padding:16px 24px;font-size:13px;letter-spacing:.08em;text-transform:uppercase">New inquiry</div>
     <div style="background:#fff;border:1px solid #E8E8E8;border-top:0;padding:24px">
       <table style="width:100%;border-collapse:collapse">
         ${row('Name', input.name)}
@@ -82,7 +82,7 @@ export async function sendContactEmails(input: ContactInput) {
     from: FROM,
     to: site.email,
     replyTo: input.email,
-    subject: `New enquiry — ${input.name}${input.budget ? ` (${input.budget})` : ''}`,
+    subject: `New inquiry — ${input.name}${input.budget ? ` (${input.budget})` : ''}`,
     html: notificationHtml(input),
     text: plain(input),
   })
@@ -115,7 +115,7 @@ export async function notifySlack(input: ContactInput) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        text: `*New enquiry* — ${input.name} <${input.email}>${
+        text: `*New inquiry* — ${input.name} <${input.email}>${
           input.budget ? ` · ${input.budget}` : ''
         }\n${input.outlets ? `Outlets: ${input.outlets}\n` : ''}${input.message}`,
       }),

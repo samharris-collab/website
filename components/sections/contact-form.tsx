@@ -50,7 +50,7 @@ export function ContactForm() {
         reset(contactDefaults)
         setStatus({ kind: 'sent' })
         // The one conversion that matters. No message body is sent — only the
-        // shape of the enquiry.
+        // shape of the inquiry.
         void track('contact_form_submitted', {
           budget: values.budget || 'unspecified',
           has_outlets: Boolean(values.outlets),
@@ -60,7 +60,7 @@ export function ContactForm() {
       }
 
       if (body.error === 'EMAIL_NOT_CONFIGURED') {
-        const subject = encodeURIComponent(`Enquiry from ${values.name}`)
+        const subject = encodeURIComponent(`Inquiry from ${values.name}`)
         const lines = [
           values.company ? `Company / role: ${values.company}` : null,
           values.outlets ? `Outlets: ${values.outlets}` : null,

@@ -4,14 +4,14 @@
 
 /* ==========================================================================
    DNA PR — Design Tokens
-   Single source of truth. Never hardcode a colour, size, or spacing value in
+   Single source of truth. Never hardcode a color, size, or spacing value in
    a component: reference a token (directly, or via the Tailwind scale in
    tailwind.config.ts, which is generated from these variables).
    ========================================================================== */
 
 @layer base {
   :root {
-    /* --- Colour: raw palette (hex, for documentation + direct CSS use) --- */
+    /* --- Color: raw palette (hex, for documentation + direct CSS use) --- */
     --color-bg-primary: #ffffff;
     --color-bg-secondary: #faf9f6;
     --color-bg-dark: #0a0a0a;
@@ -29,7 +29,7 @@
     --color-warning: #f59e0b;
     --color-error: #ef4444;
 
-    /* --- Colour: semantic channels (RGB triplets → Tailwind alpha support) --- */
+    /* --- Color: semantic channels (RGB triplets → Tailwind alpha support) --- */
     --bg-primary: 255 255 255;
     --bg-secondary: 250 249 246;
     --bg-dark: 10 10 10;
@@ -45,7 +45,7 @@
 
     --accent: 180 251 68;
     --accent-hover: 163 234 51;
-    --accent-ink: 10 10 10; /* text colour that sits on --accent */
+    --accent-ink: 10 10 10; /* text color that sits on --accent */
 
     --border-subtle: 232 232 232;
     --border-strong: 26 26 26;
@@ -194,7 +194,7 @@
 
 @layer components {
   /* Native <details> disclosure. Browsers without ::details-content open
-     instantly, which is correct behaviour rather than a broken control. */
+     instantly, which is correct behavior rather than a broken control. */
   details::details-content {
     block-size: 0;
     overflow: hidden;

@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
  * This replaced a Radix accordion, which cost ~19kB of JavaScript and left the
  * FAQ inoperable if that JavaScript failed. The native element gives correct
  * disclosure semantics for free, opens without JS, and `name` on <details>
- * provides the single-open behaviour that previously needed a controlled
+ * provides the single-open behavior that previously needed a controlled
  * component.
  *
  * Height animates via ::details-content where the browser supports

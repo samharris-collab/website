@@ -21,7 +21,7 @@ const post = async (body, headers = {}) => {
 const valid = (n = 1) => ({
   name: `Test Person ${n}`,
   email: `test${n}@example.com`,
-  message: `A perfectly ordinary enquiry, number ${n}, long enough to pass validation.`,
+  message: `A perfectly ordinary inquiry, number ${n}, long enough to pass validation.`,
 })
 
 const emailConfigured = Boolean(process.env.RESEND_API_KEY)
@@ -34,7 +34,7 @@ const check = (label, actual, expected) => {
   console.log(`${pass ? 'ok  ' : 'FAIL'} ${label} — got ${actual}, expected ${expected}`)
 }
 
-// A fresh IP per group keeps the rate limiter from colouring other assertions.
+// A fresh IP per group keeps the rate limiter from coloring other assertions.
 const ip = (tag) => ({ 'x-forwarded-for': `203.0.113.${tag}` })
 
 check('malformed JSON is rejected', (await post('not json', ip(1))).status, 400)

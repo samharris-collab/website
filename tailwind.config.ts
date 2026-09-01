@@ -14,7 +14,7 @@ const config: Config = {
     './lib/**/*.{ts,tsx}',
   ],
   theme: {
-    // Replaces Tailwind's default colour palette outright — no stray `slate-500`.
+    // Replaces Tailwind's default color palette outright — no stray `slate-500`.
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -30,7 +30,7 @@ const config: Config = {
         secondary: 'rgb(var(--text-secondary) / <alpha-value>)',
         muted: 'rgb(var(--text-muted) / <alpha-value>)',
         inverse: 'rgb(var(--text-inverse) / <alpha-value>)',
-        /** For surfaces that stay dark in both colour schemes. */
+        /** For surfaces that stay dark in both color schemes. */
         'on-dark': 'rgb(var(--text-on-dark) / <alpha-value>)',
       },
       accent: {

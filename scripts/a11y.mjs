@@ -1,5 +1,5 @@
 /**
- * Accessibility audit. Runs axe-core against a list of routes in both colour
+ * Accessibility audit. Runs axe-core against a list of routes in both color
  * schemes and both viewports, and reports every violation.
  *
  *   node scripts/a11y.mjs [route ...]

@@ -66,7 +66,7 @@ locked copy from the previous site and what was written for the rebuild.
 
 ### The design system
 
-`app/globals.css` is the single source of truth: colour, type scale, line height
+`app/globals.css` is the single source of truth: color, type scale, line height
 by role, letter spacing, the 8px spacing scale, radius, shadow and layout, in
 both light and dark. `tailwind.config.ts` only exposes those variables to
 Tailwind — and it *replaces* Tailwind's default palette, so a stray `slate-500`

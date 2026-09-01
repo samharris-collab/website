@@ -61,7 +61,7 @@ export const compareOptions: CompareOption[] = [
     control: 'Little',
     risk: 'Directory pages, link farms, and articles that get pulled or deindexed.',
     honestTake:
-      'If a guarantee sounds too easy, ask exactly which URL the piece will live on and whether it is editorial or paid. A placement that a journalist would not recognise as journalism does nothing for you in a due-diligence search.',
+      'If a guarantee sounds too easy, ask exactly which URL the piece will live on and whether it is editorial or paid. A placement that a journalist would not recognize as journalism does nothing for you in a due-diligence search.',
   },
   {
     id: 'retainer-agency',

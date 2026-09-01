@@ -56,7 +56,7 @@ export const topPublications: Publication[] = [
     name: 'USA Today',
     featured: true,
     blurb:
-      'National general-interest reach, strong search authority, and a contributor-content programme that runs founder and expert profiles.',
+      'National general-interest reach, strong search authority, and a contributor-content program that runs founder and expert profiles.',
   },
   {
     slug: 'msn',

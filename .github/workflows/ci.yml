@@ -22,6 +22,8 @@ jobs:
       - run: npm audit --omit=dev --audit-level=high
       - name: Copy rules (no invented figures, prices, or filler)
         run: node scripts/check-content.mjs
+      - name: Spelling
+        run: npx cspell --no-progress "lib/**/*.ts" "components/**/*.tsx" "app/**/*.tsx" "*.md"
 
       # The audits below drive a real browser against the production build.
       - run: npx playwright install --with-deps chromium
@@ -38,7 +40,7 @@ jobs:
         run: node scripts/a11y.mjs
       - name: Internal links, images and anchors
         run: node scripts/check-links.mjs
-      - name: Contact API behaviour
+      - name: Contact API behavior
         run: node scripts/check-contact-api.mjs
       - name: Bundle size and Core Web Vitals
         run: node scripts/perf.mjs

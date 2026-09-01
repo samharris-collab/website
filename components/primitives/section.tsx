@@ -6,7 +6,7 @@ type Tone = 'paper' | 'cream' | 'dark'
 const toneClass: Record<Tone, string> = {
   paper: 'bg-bg text-ink',
   cream: 'bg-bg-secondary text-ink',
-  // The dark tone pins its own tokens so it stays dark in both colour schemes.
+  // The dark tone pins its own tokens so it stays dark in both color schemes.
   dark: 'bg-bg-dark text-ink-inverse dark:bg-bg-secondary dark:text-ink',
 }
 

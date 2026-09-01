@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build",
+    "spell": "cspell --no-progress \"lib/**/*.ts\" \"components/**/*.tsx\" \"app/**/*.tsx\" \"*.md\"",
+    "check": "npm run typecheck && npm run lint && npm run spell && node scripts/check-content.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -34,6 +36,7 @@
     "@types/react-dom": "^19.1.9",
     "autoprefixer": "^10.4.21",
     "axe-core": "^4.13.0",
+    "cspell": "^10.2.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.4",
     "playwright": "^1.62.1",

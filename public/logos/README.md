@@ -15,7 +15,7 @@ and `PublicationMark` switches from the typographic lockup to the image with no
 code change.
 
 Guidance for the assets themselves:
-- Single colour, transparent background, trimmed to the mark's bounding box.
+- Single color, transparent background, trimmed to the mark's bounding box.
 - Roughly 160×40 at 4:1 or wider; the component renders them at 24–28px tall.
 - Use each publication's official press-kit asset, and check that its usage
   terms permit showing it as a credit.

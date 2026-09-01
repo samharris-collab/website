@@ -49,14 +49,14 @@ export const privacyPolicy: LegalDocument = {
     {
       heading: 'Why we use it',
       paragraphs: [
-        'We use the information you give us to reply to your enquiry, to prepare a quote, and — if you engage us — to research, write and place your story. We use analytics to understand which pages are useful and to keep the site fast and working.',
+        'We use the information you give us to reply to your inquiry, to prepare a quote, and — if you engage us — to research, write and place your story. We use analytics to understand which pages are useful and to keep the site fast and working.',
         'We do not sell your personal information, and we do not share it with advertisers.',
       ],
     },
     {
       heading: 'Legal bases',
       paragraphs: [
-        'Where the UK GDPR or EU GDPR applies to you, we rely on: your consent, where you have given it; the performance of a contract, where we are delivering work you have engaged us for; and our legitimate interests in responding to enquiries and maintaining a secure, functional website.',
+        'Where the UK GDPR or EU GDPR applies to you, we rely on: your consent, where you have given it; the performance of a contract, where we are delivering work you have engaged us for; and our legitimate interests in responding to inquiries and maintaining a secure, functional website.',
       ],
     },
     {
@@ -81,7 +81,7 @@ export const privacyPolicy: LegalDocument = {
     {
       heading: 'How long we keep it',
       paragraphs: [
-        'Enquiries are kept for as long as we may reasonably need them to follow up, and client records for as long as required for our contractual and accounting obligations. Rate-limiting records expire within the hour. You can ask us to delete your information at any time.',
+        'Inquiries are kept for as long as we may reasonably need them to follow up, and client records for as long as required for our contractual and accounting obligations. Rate-limiting records expire within the hour. You can ask us to delete your information at any time.',
       ],
     },
     {
@@ -94,7 +94,7 @@ export const privacyPolicy: LegalDocument = {
     {
       heading: 'Security',
       paragraphs: [
-        'The site is served over HTTPS with a strict content security policy, and form submissions are validated and rate limited. No system is perfectly secure, but we take reasonable technical and organisational measures to protect what we hold.',
+        'The site is served over HTTPS with a strict content security policy, and form submissions are validated and rate limited. No system is perfectly secure, but we take reasonable technical and organizational measures to protect what we hold.',
       ],
     },
     {

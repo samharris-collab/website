@@ -1,5 +1,5 @@
 /**
- * Applies the stored (or system) colour scheme before first paint, so a dark
+ * Applies the stored (or system) color scheme before first paint, so a dark
  * reader never sees a white flash. Runs blocking in <head> — it is a handful of
  * bytes and must not be deferred.
  */
