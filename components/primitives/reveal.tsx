@@ -15,6 +15,7 @@ export function Reveal({
   distance = tokens.riseDistance,
   duration = tokens.duration.base,
   className,
+  id,
   as = 'div',
 }: {
   children: ReactNode
@@ -22,6 +23,7 @@ export function Reveal({
   distance?: number
   duration?: number
   className?: string
+  id?: string
   as?: 'div' | 'section' | 'li' | 'article' | 'header'
 }) {
   const reduced = useReducedMotion()
@@ -38,6 +40,7 @@ export function Reveal({
 
   return (
     <MotionTag
+      id={id}
       className={className}
       initial="hidden"
       whileInView="visible"

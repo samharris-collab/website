@@ -46,9 +46,14 @@ export type Industry = {
   description: string
   /** Who this page is for, in one line. */
   audience: string
+  /** Opening paragraphs, one entry per paragraph. */
+  intro: string[]
   whyItWorks: string[]
+  /** Publications where work for this audience tends to land. */
   outlets: string[]
   angles: { title: string; body: string }[]
+  /** The strongest reason this audience thinks PR will not work for them. */
+  objection: string
 }
 
 export type Guide = {
