@@ -32,6 +32,11 @@ node scripts/perf.mjs         # bytes over the wire, LCP, CLS
 node scripts/check-contact-api.mjs   # validation, honeypot, rate limiting
 ```
 
+`node scripts/check-content.mjs` needs no server. It enforces the copy rules
+over the files in `lib/content/` that were written for the rebuild — no invented
+figures, no prices, no placement guarantees, no marketing filler — and leaves
+locked copy alone.
+
 All three run in CI on every pull request. `a11y.mjs` must report zero
 violations; treat a regression there as a build failure, not a warning.
 

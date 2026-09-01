@@ -20,6 +20,8 @@ jobs:
       - run: npm run lint
       - run: npm run build
       - run: npm audit --omit=dev --audit-level=high
+      - name: Copy rules (no invented figures, prices, or filler)
+        run: node scripts/check-content.mjs
 
       # The audits below drive a real browser against the production build.
       - run: npx playwright install --with-deps chromium
