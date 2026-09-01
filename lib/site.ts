@@ -1,0 +1,35 @@
+export const site = {
+  name: 'Digital Networking Agency',
+  shortName: 'DNA PR',
+  legalName: 'Digital Networking Agency LLC',
+  tagline: "It's in our DNA",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.digitalnetworkingagency.com',
+  email: 'sam@digitalnetworkingagency.com',
+  phone: '+1 (330) 227-6337',
+  phoneE164: '+13302276337',
+  whatsapp: 'https://wa.me/13302276337',
+  instagram: 'https://www.instagram.com/dnateams',
+  instagramHandle: '@dnateams',
+  trustpilot: 'https://www.trustpilot.com/review/digitalnetworkingagency.com',
+  address: {
+    street: '6545 Market Ave N, Suite 100',
+    locality: 'Canton',
+    region: 'OH',
+    postalCode: '44721',
+    country: 'US',
+    full: '6545 Market Ave N, Suite 100, Canton, OH 44721, USA',
+  },
+  hours: 'Mon–Fri, 9am–6pm EST',
+  replyPromise: 'We reply within 24 hours.',
+  founded: '2021',
+} as const
+
+export const nav = [
+  { label: 'Services', href: '/services' },
+  { label: 'Get Featured', href: '/get-featured-in' },
+  { label: 'Case Studies', href: '/case-studies' },
+  { label: 'Industries', href: '/pr-for' },
+  { label: 'Guides', href: '/guides' },
+  { label: 'Reviews', href: '/reviews' },
+  { label: 'Contact', href: '/contact' },
+] as const
