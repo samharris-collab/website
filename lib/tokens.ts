@@ -85,9 +85,12 @@ export const breakpoints = {
   '2xl': 1536,
 } as const
 
-/** Shared motion vocabulary. Durations in seconds (Framer Motion units). */
+/**
+ * Shared motion vocabulary, mirroring the values in globals.css. Durations are
+ * in milliseconds to match the stylesheet.
+ */
 export const motion = {
-  duration: { fast: 0.2, base: 0.4, slow: 0.6 },
-  ease: [0.16, 1, 0.3, 1] as const,
-  riseDistance: 40,
+  duration: { fast: 200, base: 400, slow: 600 },
+  ease: 'cubic-bezier(0.16, 1, 0.3, 1)',
+  riseDistance: '40px',
 } as const

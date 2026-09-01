@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { Clock, Mail, MessageCircle, Plus, Star, type LucideIcon } from 'lucide-react'
 import { site } from '@/lib/site'
 import { cn } from '@/lib/utils'
@@ -26,7 +25,6 @@ const actions: QuickAction[] = [
 export function FloatingCta() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
-  const reduced = useReducedMotion()
 
   // On /contact every one of these actions is already on the page.
   if (pathname === '/contact') return null
@@ -71,44 +69,40 @@ export function FloatingCta() {
         aria-label="Quick contact"
         className="fixed bottom-8 right-8 z-40 hidden flex-col items-end gap-3 md:flex"
       >
-        <AnimatePresence>
-          {open &&
-            actions.slice(1).map(({ label, href, icon: Icon, internal }, i) => {
-              const inner = (
-                <>
-                  <span className="text-sm">{label}</span>
-                  <Icon aria-hidden className="size-4" />
-                </>
-              )
-              const className =
-                'flex items-center gap-3 rounded-full border border-line bg-bg px-5 py-3 text-ink shadow-lg transition-colors hover:border-line-strong'
-              return (
-                <motion.div
-                  key={label}
-                  initial={reduced ? false : { opacity: 0, y: 12, scale: 0.96 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={reduced ? undefined : { opacity: 0, y: 12, scale: 0.96 }}
-                  transition={{ duration: 0.18, delay: reduced ? 0 : i * 0.04 }}
-                >
-                  {internal ? (
-                    <Link href={href} className={className}>
-                      {inner}
-                    </Link>
-                  ) : (
-                    <a
-                      href={href}
-                      className={className}
-                      {...(href.startsWith('http')
-                        ? { target: '_blank', rel: 'noopener noreferrer' }
-                        : {})}
-                    >
-                      {inner}
-                    </a>
-                  )}
-                </motion.div>
-              )
-            })}
-        </AnimatePresence>
+        {/* Kept mounted and hidden so the transition can run both ways in CSS;
+            aria-hidden + inert keep the collapsed links out of reach. */}
+        <div
+          className="flex flex-col items-end gap-3 transition-all duration-200 ease-editorial data-[open=false]:pointer-events-none data-[open=false]:translate-y-3 data-[open=false]:opacity-0"
+          data-open={open}
+          aria-hidden={!open}
+          inert={!open}
+        >
+          {actions.slice(1).map(({ label, href, icon: Icon, internal }) => {
+            const inner = (
+              <>
+                <span className="text-sm">{label}</span>
+                <Icon aria-hidden className="size-4" />
+              </>
+            )
+            const className =
+              'flex items-center gap-3 rounded-full border border-line bg-bg px-5 py-3 text-ink shadow-lg transition-colors hover:border-line-strong'
+            return internal ? (
+              <Link key={label} href={href} className={className} tabIndex={open ? undefined : -1}>
+                {inner}
+              </Link>
+            ) : (
+              <a
+                key={label}
+                href={href}
+                className={className}
+                tabIndex={open ? undefined : -1}
+                {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                {inner}
+              </a>
+            )
+          })}
+        </div>
 
         <div className="flex items-center gap-3">
           <Link

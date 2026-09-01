@@ -1,81 +1,87 @@
 'use client'
 
-import { motion, useReducedMotion, type Variants } from 'framer-motion'
-import type { ReactNode } from 'react'
-import { motion as tokens } from '@/lib/tokens'
+import { useEffect, useRef, type ReactNode } from 'react'
+import { cn } from '@/lib/utils'
 
 /**
- * Fade + rise on scroll. Honours prefers-reduced-motion by rendering the final
- * state immediately rather than animating to it, so nothing is ever hidden from
- * a reader who has asked for less movement.
+ * Fade + rise on scroll, done in CSS.
+ *
+ * Framer Motion drove this originally, which put ~60kB of JS on every page for
+ * what is a two-property transition — the brief's own 200kB budget wins that
+ * argument. The animation now lives in globals.css and this component only
+ * toggles a class.
+ *
+ * Content is visible by default and is hidden ONLY once the inline head script
+ * has set `html.js`, so a reader whose JavaScript fails still sees the page.
+ * prefers-reduced-motion is handled in CSS, where it also cancels the hidden
+ * state rather than merely shortening the animation to it.
  */
 export function Reveal({
   children,
   delay = 0,
-  distance = tokens.riseDistance,
-  duration = tokens.duration.base,
   className,
   id,
-  as = 'div',
+  as: Tag = 'div',
 }: {
   children: ReactNode
+  /** Seconds, to match the previous Framer Motion call sites. */
   delay?: number
-  distance?: number
-  duration?: number
   className?: string
   id?: string
-  as?: 'div' | 'section' | 'li' | 'article' | 'header'
+  as?: 'div' | 'section' | 'li' | 'article' | 'header' | 'ol' | 'ul'
 }) {
-  const reduced = useReducedMotion()
-  const MotionTag = motion[as]
+  const ref = useRef<HTMLElement>(null)
 
-  const variants: Variants = {
-    hidden: { opacity: reduced ? 1 : 0, y: reduced ? 0 : distance },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: reduced ? 0 : duration, delay: reduced ? 0 : delay, ease: tokens.ease },
-    },
-  }
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
+    // Anything already on screen at mount reveals immediately.
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        }
+      },
+      { rootMargin: '0px 0px -80px 0px' }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <MotionTag
+    <Tag
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ref={ref as any}
       id={id}
-      className={className}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: '-80px' }}
-      variants={variants}
+      className={cn('reveal', className)}
+      style={delay ? ({ ['--reveal-delay' as string]: `${delay}s` } as React.CSSProperties) : undefined}
     >
       {children}
-    </MotionTag>
+    </Tag>
   )
 }
 
-/** Hero-only variant: animates on mount rather than on scroll. */
+/** Hero variant: reveals on mount rather than on scroll. */
 export function RevealOnMount({
   children,
   delay = 0,
-  distance = tokens.riseDistance,
-  duration = tokens.duration.slow,
   className,
 }: {
   children: ReactNode
   delay?: number
-  distance?: number
-  duration?: number
   className?: string
 }) {
-  const reduced = useReducedMotion()
-
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: reduced ? 1 : 0, y: reduced ? 0 : distance }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: reduced ? 0 : duration, delay: reduced ? 0 : delay, ease: tokens.ease }}
+    <div
+      className={cn('reveal reveal-on-mount', className)}
+      style={delay ? ({ ['--reveal-delay' as string]: `${delay}s` } as React.CSSProperties) : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   )
 }

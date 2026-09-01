@@ -14,7 +14,6 @@ export function Stats() {
           <Reveal
             key={stat.label}
             delay={i * 0.05}
-            distance={16}
             className="flex flex-col gap-2 bg-bg-secondary px-6 py-8 md:px-8 md:py-12"
           >
             <dd className="order-1 font-display text-xl leading-none tracking-tight text-ink tabular md:text-2xl">

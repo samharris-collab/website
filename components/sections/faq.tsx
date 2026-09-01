@@ -1,9 +1,4 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion'
+import { Accordion, AccordionItem } from '@/components/ui/accordion'
 import { Section } from '@/components/primitives/section'
 import { Reveal } from '@/components/primitives/reveal'
 import { Eyebrow } from '@/components/primitives/section-heading'
@@ -16,12 +11,15 @@ export function FaqSection({
   heading,
   tone = 'paper',
   withSchema = true,
+  groupName = 'faq',
 }: {
   faqs: Faq[]
   eyebrow?: string
   heading: string
   tone?: 'paper' | 'cream'
   withSchema?: boolean
+  /** Distinguishes two FAQ groups rendered on the same page. */
+  groupName?: string
 }) {
   return (
     <Section tone={tone} id="faq">
@@ -37,12 +35,12 @@ export function FaqSection({
 
         <div className="lg:col-span-8">
           <Reveal delay={0.08}>
-            {/* Single-open accordion — collapsible so the reader can close it again. */}
-            <Accordion type="single" collapsible className="border-t border-line">
-              {faqs.map((faq, i) => (
-                <AccordionItem key={faq.question} value={`faq-${i}`}>
-                  <AccordionTrigger>{faq.question}</AccordionTrigger>
-                  <AccordionContent>{faq.answer}</AccordionContent>
+            {/* A shared `name` makes this single-open; each item still closes on
+                its own, so a reader can collapse everything. */}
+            <Accordion>
+              {faqs.map((faq) => (
+                <AccordionItem key={faq.question} name={groupName} question={faq.question}>
+                  {faq.answer}
                 </AccordionItem>
               ))}
             </Accordion>

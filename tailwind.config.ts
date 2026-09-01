@@ -126,23 +126,11 @@ const config: Config = {
       transitionTimingFunction: {
         editorial: 'cubic-bezier(0.16, 1, 0.3, 1)',
       },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0', opacity: '0' },
-          to: { height: 'var(--radix-accordion-content-height)', opacity: '1' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)', opacity: '1' },
-          to: { height: '0', opacity: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 280ms cubic-bezier(0.16, 1, 0.3, 1)',
-        'accordion-up': 'accordion-up 220ms cubic-bezier(0.16, 1, 0.3, 1)',
-      },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  // The site's two animations — the logo marquee and the scroll reveal — are
+  // hand-written keyframes in globals.css, so no animation plugin is needed.
+  plugins: [],
 }
 
 export default config

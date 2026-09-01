@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
-import { useReducedMotion } from 'framer-motion'
+import { usePrefersReducedMotion } from '@/lib/use-reduced-motion'
 import { Section } from '@/components/primitives/section'
 import { SectionHeading } from '@/components/primitives/section-heading'
 import { Button } from '@/components/ui/button'
@@ -16,7 +16,7 @@ const AUTOPLAY_MS = 6000
 export function Testimonials() {
   const railRef = useRef<HTMLDivElement>(null)
   const [paused, setPaused] = useState(false)
-  const reduced = useReducedMotion()
+  const reduced = usePrefersReducedMotion()
 
   const step = useCallback((direction: 1 | -1) => {
     const el = railRef.current

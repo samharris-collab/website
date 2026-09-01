@@ -147,6 +147,12 @@
     border-color: rgb(var(--border-subtle));
   }
 
+  :root {
+    /* Lets block-size transition to and from `auto`, which is what allows the
+       native <details> disclosure to animate open. */
+    interpolate-size: allow-keywords;
+  }
+
   html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
@@ -187,6 +193,52 @@
 }
 
 @layer components {
+  /* Native <details> disclosure. Browsers without ::details-content open
+     instantly, which is correct behaviour rather than a broken control. */
+  details::details-content {
+    block-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      block-size 280ms cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 200ms ease,
+      content-visibility 280ms allow-discrete;
+  }
+
+  details[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+  }
+
+  /* Scroll reveal. The hidden state is scoped to html.js so the page is fully
+     readable if JavaScript never runs; Reveal only adds .is-visible. */
+  .reveal {
+    transition:
+      opacity 400ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+      transform 400ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s);
+  }
+
+  html.js .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+
+  /* The hero animates on mount instead of on scroll, over a longer duration. */
+  .reveal-on-mount {
+    animation: reveal-rise 600ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s) both;
+  }
+
+  @keyframes reveal-rise {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   /* Shared page container — matches the spec: 24 / 40 / 80px gutters. */
   .container-editorial {
     width: 100%;
@@ -270,6 +322,16 @@
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  /* Cancel the hidden state outright — shortening the transition would still
+     leave content invisible until the observer fires. */
+  html.js .reveal,
+  html.js .reveal:not(.is-visible) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .reveal-on-mount {
+    animation: none !important;
   }
   *,
   *::before,
