@@ -33,8 +33,13 @@ export const contactSchema = z.object({
     .trim()
     .min(10, 'Tell us a little more — at least a sentence.')
     .max(5000, 'Please keep your message under 5,000 characters.'),
-  /** Honeypot. Real people never see this field, so anything in it is a bot. */
-  website: z.string().max(0).optional().or(z.literal('')),
+  /**
+   * Honeypot. Real people never see this field, so anything in it is a bot.
+   * It deliberately ACCEPTS any value: rejecting it here would return a 422
+   * naming the field, which tells the bot exactly what tripped it. The route
+   * checks it after validation and answers 200, so a bot learns nothing.
+   */
+  website: z.string().max(2000).optional(),
   /** Cloudflare Turnstile token, present only when Turnstile is configured. */
   turnstileToken: z.string().optional(),
 })

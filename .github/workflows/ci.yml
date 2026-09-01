@@ -36,5 +36,7 @@ jobs:
         run: node scripts/a11y.mjs
       - name: Internal links, images and anchors
         run: node scripts/check-links.mjs
+      - name: Contact API behaviour
+        run: node scripts/check-contact-api.mjs
       - name: Bundle size and Core Web Vitals
         run: node scripts/perf.mjs

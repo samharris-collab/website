@@ -29,6 +29,7 @@ with `node scripts/serve.mjs`, then:
 node scripts/a11y.mjs         # axe-core, WCAG 2.1 AA, 16 routes × light/dark
 node scripts/check-links.mjs  # every internal link, image and #anchor
 node scripts/perf.mjs         # bytes over the wire, LCP, CLS
+node scripts/check-contact-api.mjs   # validation, honeypot, rate limiting
 ```
 
 All three run in CI on every pull request. `a11y.mjs` must report zero
