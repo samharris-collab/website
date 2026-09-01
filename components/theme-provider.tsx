@@ -1,37 +1,43 @@
 'use client'
 
-import { createContext, useCallback, useContext, useEffect, useState } from 'react'
+import { createContext, useCallback, useContext, useSyncExternalStore } from 'react'
 
 type Theme = 'light' | 'dark'
 
-const ThemeContext = createContext<{
-  theme: Theme
-  toggle: () => void
-} | null>(null)
+const ThemeContext = createContext<{ theme: Theme; toggle: () => void } | null>(null)
 
 const STORAGE_KEY = 'dna-theme'
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  // Starts as 'light' on the server; ThemeScript has already set the real class
-  // on <html> before hydration, so we read it back on mount rather than guess.
-  const [theme, setTheme] = useState<Theme>('light')
+/**
+ * The <html> class is the source of truth — the blocking head script sets it
+ * before first paint, and the toggle writes to it. Reading it through
+ * useSyncExternalStore keeps React in step without a setState-in-effect
+ * round trip, and gives the server a stable 'light' snapshot so hydration
+ * matches whatever markup was sent.
+ */
+const subscribe = (onChange: () => void) => {
+  const observer = new MutationObserver(onChange)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+  return () => observer.disconnect()
+}
 
-  useEffect(() => {
-    setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light')
-  }, [])
+const getSnapshot = (): Theme =>
+  document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+
+const getServerSnapshot = (): Theme => 'light'
+
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   const toggle = useCallback(() => {
-    setTheme((current) => {
-      const next: Theme = current === 'dark' ? 'light' : 'dark'
-      document.documentElement.classList.toggle('dark', next === 'dark')
-      document.documentElement.style.colorScheme = next
-      try {
-        localStorage.setItem(STORAGE_KEY, next)
-      } catch {
-        // Storage can throw in private mode; the toggle still works for this page.
-      }
-      return next
-    })
+    const next: Theme = document.documentElement.classList.contains('dark') ? 'light' : 'dark'
+    document.documentElement.classList.toggle('dark', next === 'dark')
+    document.documentElement.style.colorScheme = next
+    try {
+      localStorage.setItem(STORAGE_KEY, next)
+    } catch {
+      // Private mode can throw; the toggle still works for this page view.
+    }
   }, [])
 
   return <ThemeContext.Provider value={{ theme, toggle }}>{children}</ThemeContext.Provider>

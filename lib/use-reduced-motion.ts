@@ -1,22 +1,24 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
+
+const QUERY = '(prefers-reduced-motion: reduce)'
+
+const subscribe = (onChange: () => void) => {
+  const query = window.matchMedia(QUERY)
+  query.addEventListener('change', onChange)
+  return () => query.removeEventListener('change', onChange)
+}
 
 /**
  * Tracks prefers-reduced-motion, including changes made while the page is open.
- * Starts false so server and first client render agree; the effect corrects it
- * before anything animates.
+ * The server snapshot is `false` so hydration matches; the real value arrives on
+ * the first client read, before anything has had a chance to animate.
  */
 export function usePrefersReducedMotion() {
-  const [reduced, setReduced] = useState(false)
-
-  useEffect(() => {
-    const query = window.matchMedia('(prefers-reduced-motion: reduce)')
-    setReduced(query.matches)
-    const onChange = (event: MediaQueryListEvent) => setReduced(event.matches)
-    query.addEventListener('change', onChange)
-    return () => query.removeEventListener('change', onChange)
-  }, [])
-
-  return reduced
+  return useSyncExternalStore(
+    subscribe,
+    () => window.matchMedia(QUERY).matches,
+    () => false
+  )
 }

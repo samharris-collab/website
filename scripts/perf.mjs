@@ -4,7 +4,16 @@
  *
  *   node scripts/perf.mjs [route ...]
  */
-import { chromium } from 'playwright-core'
+import { chromium } from 'playwright'
+
+import { existsSync } from 'node:fs'
+
+/** The sandbox ships Chromium at a fixed path; CI installs its own. */
+const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome'
+const executablePath =
+  process.env.CHROMIUM_PATH ??
+  (existsSync(SANDBOX_CHROMIUM) ? SANDBOX_CHROMIUM : undefined)
+
 
 const routes = process.argv.slice(2).length
   ? process.argv.slice(2)
@@ -12,7 +21,7 @@ const routes = process.argv.slice(2).length
 
 const browser = await chromium.launch({
   args: ['--no-sandbox'],
-  executablePath: process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+  executablePath,
 })
 
 const kb = (n) => `${(n / 1024).toFixed(1)}kB`

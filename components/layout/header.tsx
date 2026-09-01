@@ -22,9 +22,16 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close the mobile sheet on navigation and lock the background from scrolling
-  // while it is open.
-  useEffect(() => setOpen(false), [pathname])
+  // Close the mobile sheet when the route changes. Adjusting state during
+  // render is React's documented pattern for this and avoids the extra commit
+  // an effect would cost.
+  const [renderedAt, setRenderedAt] = useState(pathname)
+  if (renderedAt !== pathname) {
+    setRenderedAt(pathname)
+    setOpen(false)
+  }
+
+  // Lock the background from scrolling while the sheet is open.
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
     return () => {

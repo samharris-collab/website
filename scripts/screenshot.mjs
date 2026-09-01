@@ -1,5 +1,14 @@
 /** Dev-only visual check. Usage: node scripts/screenshot.mjs <path> <out.png> [width] [--full] */
-import { chromium } from 'playwright-core'
+import { chromium } from 'playwright'
+
+import { existsSync } from 'node:fs'
+
+/** The sandbox ships Chromium at a fixed path; CI installs its own. */
+const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome'
+const executablePath =
+  process.env.CHROMIUM_PATH ??
+  (existsSync(SANDBOX_CHROMIUM) ? SANDBOX_CHROMIUM : undefined)
+
 
 const [, , route = '/', out = 'shot.png', width = '1440', ...flags] = process.argv
 const full = flags.includes('--full')
@@ -7,7 +16,7 @@ const dark = flags.includes('--dark')
 
 const browser = await chromium.launch({
   args: ['--no-sandbox'],
-  executablePath: process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+  executablePath,
 })
 const page = await browser.newPage({
   viewport: { width: Number(width), height: Number(width) < 500 ? 900 : 1000 },

@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run build
+      - run: npm audit --omit=dev --audit-level=high
+
+      # The audits below drive a real browser against the production build.
+      - run: npx playwright install --with-deps chromium
+      - name: Start the built site
+        run: |
+          npx next start -p 3100 &
+          for i in $(seq 1 60); do
+            curl -sf http://127.0.0.1:3100/sitemap.xml >/dev/null && exit 0
+            sleep 1
+          done
+          echo "server did not start"; exit 1
+
+      - name: Accessibility (axe, WCAG 2.1 AA)
+        run: node scripts/a11y.mjs
+      - name: Internal links, images and anchors
+        run: node scripts/check-links.mjs
+      - name: Bundle size and Core Web Vitals
+        run: node scripts/perf.mjs

@@ -4,8 +4,17 @@
  *
  *   node scripts/a11y.mjs [route ...]
  */
-import { chromium } from 'playwright-core'
+import { chromium } from 'playwright'
 import { readFileSync } from 'node:fs'
+
+import { existsSync } from 'node:fs'
+
+/** The sandbox ships Chromium at a fixed path; CI installs its own. */
+const SANDBOX_CHROMIUM = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome'
+const executablePath =
+  process.env.CHROMIUM_PATH ??
+  (existsSync(SANDBOX_CHROMIUM) ? SANDBOX_CHROMIUM : undefined)
+
 
 const axeSource = readFileSync('node_modules/axe-core/axe.min.js', 'utf8')
 
@@ -37,7 +46,7 @@ const contexts = [
 
 const browser = await chromium.launch({
   args: ['--no-sandbox'],
-  executablePath: process.env.CHROMIUM_PATH ?? '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+  executablePath,
 })
 
 let total = 0
@@ -65,7 +74,6 @@ for (const ctx of contexts) {
     await page.waitForTimeout(1500)
     await page.addScriptTag({ content: axeSource })
     const results = await page.evaluate(async () =>
-      // eslint-disable-next-line no-undef
       await window.axe.run(document, {
         runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice'] },
       })
