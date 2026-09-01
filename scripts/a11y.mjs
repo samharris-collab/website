@@ -31,6 +31,8 @@ const routes = process.argv.slice(2).length
       '/get-featured-in',
       '/get-featured-in/forbes',
       '/guides',
+      '/guides/get-featured-in-forbes',
+      '/guides/how-to-get-featured-on-msn',
       '/reviews',
       '/publications',
       '/compare',
