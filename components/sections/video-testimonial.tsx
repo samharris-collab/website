@@ -49,7 +49,7 @@ export function VideoTestimonial() {
                 className="aspect-video w-full object-cover"
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-bg-dark/80 p-6 backdrop-blur-sm md:p-8">
-                <p className="font-display text-lg leading-heading tracking-tight text-ink-inverse md:text-xl">
+                <p className="font-display text-lg leading-heading tracking-tight text-ink-on-dark md:text-xl">
                   {videoTestimonial.attribution}
                 </p>
               </figcaption>

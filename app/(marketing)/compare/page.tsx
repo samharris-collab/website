@@ -45,7 +45,12 @@ export default function ComparePage() {
       {/* The table is the scannable summary; the cards below carry the argument. */}
       <Section>
         <Reveal>
-          <div className="overflow-x-auto">
+          <div
+            className="overflow-x-auto"
+            tabIndex={0}
+            role="group"
+            aria-label="Comparison of five routes to press coverage"
+          >
             <table className="w-full min-w-[52rem] border-collapse text-left">
               <caption className="sr-only">
                 How five routes to press coverage compare on cost, effort, timeline, editorial

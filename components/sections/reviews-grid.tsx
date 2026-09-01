@@ -58,7 +58,7 @@ export function ReviewsGrid({ testimonials }: { testimonials: Testimonial[] }) {
             )}
           >
             {option.label}
-            <span className="ml-2 text-xs text-current opacity-60">{option.count}</span>
+            <span className="ml-2 text-xs font-normal">{option.count}</span>
           </button>
         ))}
       </div>

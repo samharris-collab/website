@@ -30,6 +30,8 @@ const config: Config = {
         secondary: 'rgb(var(--text-secondary) / <alpha-value>)',
         muted: 'rgb(var(--text-muted) / <alpha-value>)',
         inverse: 'rgb(var(--text-inverse) / <alpha-value>)',
+        /** For surfaces that stay dark in both colour schemes. */
+        'on-dark': 'rgb(var(--text-on-dark) / <alpha-value>)',
       },
       accent: {
         DEFAULT: 'rgb(var(--accent) / <alpha-value>)',

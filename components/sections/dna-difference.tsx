@@ -14,7 +14,7 @@ export function DnaDifference() {
         </h2>
       </Reveal>
 
-      <ul className="mt-12 grid gap-px bg-ink-inverse/15 md:mt-16 md:grid-cols-3">
+      <ul className="mt-12 grid gap-px bg-ink-inverse/15 dark:bg-line md:mt-16 md:grid-cols-3">
         {difference.items.map((item, i) => (
           <Reveal
             as="li"

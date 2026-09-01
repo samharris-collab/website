@@ -17,8 +17,9 @@
     --color-bg-dark: #0a0a0a;
     --color-text-primary: #0a0a0a;
     --color-text-secondary: #4a4a4a;
-    --color-text-muted: #8a8a8a;
+    --color-text-muted: #6e6e6e;
     --color-text-inverse: #ffffff;
+    --color-text-on-dark: #f7f7f5;
     --color-accent-primary: #b4fb44;
     --color-accent-hover: #a3ea33;
     --color-accent-soft: rgb(180 251 68 / 0.12);
@@ -36,8 +37,11 @@
 
     --text-primary: 10 10 10;
     --text-secondary: 74 74 74;
-    --text-muted: 138 138 138;
+    --text-muted: 110 110 110;
     --text-inverse: 255 255 255;
+    /* Text on a surface that is dark in BOTH schemes (image overlays, the accent
+       band's button). Deliberately not redefined under .dark. */
+    --text-on-dark: 247 247 245;
 
     --accent: 180 251 68;
     --accent-hover: 163 234 51;
@@ -111,7 +115,7 @@
     --color-bg-dark: #000000;
     --color-text-primary: #f7f7f5;
     --color-text-secondary: #b4b4b0;
-    --color-text-muted: #7a7a76;
+    --color-text-muted: #8a8a85;
     --color-text-inverse: #0a0a0a;
     --color-border: #262625;
     --color-border-strong: #f7f7f5;
@@ -123,7 +127,7 @@
 
     --text-primary: 247 247 245;
     --text-secondary: 180 180 176;
-    --text-muted: 122 122 118;
+    --text-muted: 138 138 133;
     --text-inverse: 10 10 10;
 
     --border-subtle: 38 38 37;

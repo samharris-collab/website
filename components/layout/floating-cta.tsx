@@ -67,7 +67,10 @@ export function FloatingCta() {
       </nav>
 
       {/* Desktop: a collapsed cluster that expands on demand. */}
-      <div className="fixed bottom-8 right-8 z-40 hidden flex-col items-end gap-3 md:flex">
+      <nav
+        aria-label="Quick contact"
+        className="fixed bottom-8 right-8 z-40 hidden flex-col items-end gap-3 md:flex"
+      >
         <AnimatePresence>
           {open &&
             actions.slice(1).map(({ label, href, icon: Icon, internal }, i) => {
@@ -128,7 +131,7 @@ export function FloatingCta() {
             />
           </button>
         </div>
-      </div>
+      </nav>
     </>
   )
 }

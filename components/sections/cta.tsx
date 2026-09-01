@@ -14,7 +14,7 @@ export function MidCta() {
           <p className="max-w-measure font-display text-2xl leading-heading tracking-tight text-balance md:text-3xl">
             {midCta.text}
           </p>
-          <Button asChild size="lg" className="shrink-0 bg-ink text-ink-inverse dark:bg-bg-dark">
+          <Button asChild size="lg" className="shrink-0 bg-bg-dark text-ink-on-dark">
             <Link href={midCta.cta.href}>
               {midCta.cta.label}
               <ArrowRight aria-hidden />
@@ -47,7 +47,7 @@ export function FinalCta() {
               <ArrowRight aria-hidden />
             </Link>
           </Button>
-          <Button asChild variant="inverse" size="lg">
+          <Button asChild variant="inverse" size="lg" className="dark:border dark:border-line">
             <Link href={finalCta.secondaryCta.href}>{finalCta.secondaryCta.label}</Link>
           </Button>
         </div>

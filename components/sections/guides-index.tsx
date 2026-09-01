@@ -47,7 +47,7 @@ export function GuidesIndex({ guides }: { guides: Guide[] }) {
             )}
           >
             All guides
-            <span className="ml-2 text-xs opacity-60">{guides.length}</span>
+            <span className="ml-2 text-xs font-normal">{guides.length}</span>
           </button>
           {guideCategories.map((name) => (
             <button
@@ -63,7 +63,7 @@ export function GuidesIndex({ guides }: { guides: Guide[] }) {
               )}
             >
               {name}
-              <span className="ml-2 text-xs opacity-60">{counts.get(name) ?? 0}</span>
+              <span className="ml-2 text-xs font-normal">{counts.get(name) ?? 0}</span>
             </button>
           ))}
         </div>

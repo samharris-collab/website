@@ -29,7 +29,7 @@ await page.evaluate(async () => {
   }
   window.scrollTo({ top: 0, behavior: 'instant' })
 })
-await page.waitForTimeout(900)
+await page.waitForTimeout(1400)
 await page.screenshot({ path: out, fullPage: full })
 if (errors.length) console.log('CONSOLE ERRORS:\n' + errors.join('\n'))
 else console.log('no console errors')
