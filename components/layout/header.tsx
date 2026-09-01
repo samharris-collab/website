@@ -83,7 +83,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle className="hidden size-10 items-center justify-center rounded-full border border-line text-ink-secondary transition-colors hover:border-line-strong hover:text-ink sm:flex" />
           <Button asChild variant="accent" size="sm" className="hidden sm:inline-flex">
-            <Link href="/contact">Get Featured</Link>
+            <Link href="/contact">Book a Call</Link>
           </Button>
           <button
             type="button"
@@ -120,7 +120,7 @@ export function Header() {
           ))}
           <div className="mt-8 flex flex-col gap-3">
             <Button asChild variant="accent" size="lg">
-              <Link href="/contact">Get Featured</Link>
+              <Link href="/contact">Book a Call</Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
               <a href={`mailto:${site.email}`}>Email us</a>

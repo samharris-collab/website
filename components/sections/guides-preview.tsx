@@ -5,10 +5,13 @@ import { SectionHeading } from '@/components/primitives/section-heading'
 import { Reveal } from '@/components/primitives/reveal'
 import { Button } from '@/components/ui/button'
 import { featuredGuideSlugs, guideBySlug, guides } from '@/lib/content/guides'
+import { guideBodyBySlug } from '@/lib/content/guide-bodies'
 import { guidesSection } from '@/lib/content/home'
 
 export function GuidesPreview() {
-  const featured = featuredGuideSlugs.map((slug) => guideBySlug.get(slug)).filter(Boolean)
+  const featured = featuredGuideSlugs
+    .map((slug) => guideBySlug.get(slug))
+    .filter((guide) => guide !== undefined && guideBodyBySlug.has(guide.slug))
 
   return (
     <Section id="guides">
@@ -49,7 +52,7 @@ export function GuidesPreview() {
 
       <Reveal delay={0.1}>
         <p className="mt-10 text-sm text-ink-muted">
-          {guides.length} guides on getting featured, what it costs, and how to tell a real agency
+          {guides.filter((g) => guideBodyBySlug.has(g.slug)).length} guides on getting featured, what it costs, and how to tell a real agency
           from a bad one.{' '}
           <Link href="/guides" className="text-ink underline underline-offset-4">
             Browse them all

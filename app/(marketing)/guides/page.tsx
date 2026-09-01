@@ -5,6 +5,7 @@ import { Reveal } from '@/components/primitives/reveal'
 import { GuidesIndex } from '@/components/sections/guides-index'
 import { FinalCta } from '@/components/sections/cta'
 import { guides } from '@/lib/content/guides'
+import { guideBodyBySlug } from '@/lib/content/guide-bodies'
 import { JsonLd, breadcrumbSchema } from '@/lib/seo/json-ld'
 
 export const metadata: Metadata = {
@@ -14,6 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function GuidesPage() {
+  // A guide is listed once it has a body; the rest are not routed.
+  const published = guides.filter((guide) => guideBodyBySlug.has(guide.slug))
+
   return (
     <>
       <Section className="pb-0 md:pb-0">
@@ -30,7 +34,7 @@ export default function GuidesPage() {
       </Section>
 
       <Section>
-        <GuidesIndex guides={guides} />
+        <GuidesIndex guides={published} />
       </Section>
 
       <FinalCta />

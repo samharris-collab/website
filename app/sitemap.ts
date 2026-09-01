@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { site } from '@/lib/site'
 import { caseStudies } from '@/lib/content/case-studies'
 import { guides } from '@/lib/content/guides'
+import { guideBodyBySlug } from '@/lib/content/guide-bodies'
 import { industries } from '@/lib/content/industries'
 import { topPublications } from '@/lib/content/publications'
 import { legalDocuments } from '@/lib/content/legal'
@@ -44,11 +45,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
-    ...guides.map((guide) => ({
-      url: url(`/guides/${guide.slug}`),
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    })),
+    // Only guides that have a body are routed, so only those belong here.
+    ...guides
+      .filter((guide) => guideBodyBySlug.has(guide.slug))
+      .map((guide) => ({
+        url: url(`/guides/${guide.slug}`),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      })),
     ...legalDocuments.map((doc) => ({
       url: url(`/${doc.slug}`),
       changeFrequency: 'yearly' as const,

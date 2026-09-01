@@ -11,6 +11,7 @@ import { FinalCta } from '@/components/sections/cta'
 import { publicationBySlug, topPublications } from '@/lib/content/publications'
 import { outletPageBySlug } from '@/lib/content/outlets'
 import { guides } from '@/lib/content/guides'
+import { guideBodyBySlug } from '@/lib/content/guide-bodies'
 import { JsonLd, breadcrumbSchema } from '@/lib/seo/json-ld'
 
 export function generateStaticParams() {
@@ -41,7 +42,9 @@ export default async function OutletPage({ params }: { params: Promise<{ outlet:
   const page = outletPageBySlug.get(slug)
   if (!publication || !page) notFound()
 
-  const relatedGuide = guides.find((guide) => guide.outlet === publication.name)
+  const relatedGuide = guides.find(
+    (guide) => guide.outlet === publication.name && guideBodyBySlug.has(guide.slug)
+  )
   const others = topPublications.filter((p) => p.slug !== publication.slug)
 
   return (
