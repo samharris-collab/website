@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { FieldError, Input, Label, Select, Textarea } from '@/components/ui/input'
 import { TurnstileWidget } from './turnstile-widget'
 import { budgetRanges, contactDefaults, contactSchema, type ContactInput } from '@/lib/schemas/contact'
+import { track } from '@/components/observability'
 import { site } from '@/lib/site'
 
 type Status =
@@ -48,6 +49,13 @@ export function ContactForm() {
       if (response.ok) {
         reset(contactDefaults)
         setStatus({ kind: 'sent' })
+        // The one conversion that matters. No message body is sent — only the
+        // shape of the enquiry.
+        void track('contact_form_submitted', {
+          budget: values.budget || 'unspecified',
+          has_outlets: Boolean(values.outlets),
+          has_company: Boolean(values.company),
+        })
         return
       }
 
@@ -71,6 +79,7 @@ export function ContactForm() {
         kind: 'error',
         message: body.error ?? 'Something went wrong. Please try again, or email us directly.',
       })
+      void track('contact_form_failed', { status: response.status })
     } catch {
       setStatus({
         kind: 'error',

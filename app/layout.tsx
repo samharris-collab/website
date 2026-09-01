@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import { Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { display, sans } from '@/lib/fonts'
@@ -9,6 +10,7 @@ import { ThemeScript } from '@/components/theme-script'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { FloatingCta } from '@/components/layout/floating-cta'
+import { Observability } from '@/components/observability'
 import { JsonLd, organizationSchema, localBusinessSchema, websiteSchema } from '@/lib/seo/json-ld'
 import './globals.css'
 
@@ -90,6 +92,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd data={[organizationSchema, websiteSchema, localBusinessSchema]} />
         <Analytics />
         <SpeedInsights />
+        {/* useSearchParams needs a boundary so it cannot opt pages out of
+            static rendering. */}
+        <Suspense fallback={null}>
+          <Observability />
+        </Suspense>
       </body>
     </html>
   )

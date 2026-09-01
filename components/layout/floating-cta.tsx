@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Clock, Mail, MessageCircle, Plus, Star, type LucideIcon } from 'lucide-react'
+import { track } from '@/components/observability'
 import { site } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -25,6 +26,9 @@ const actions: QuickAction[] = [
 export function FloatingCta() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+
+  const record = (label: string) => () =>
+    void track('cta_clicked', { label, placement: 'floating', pathname })
 
   // On /contact every one of these actions is already on the page.
   if (pathname === '/contact') return null
@@ -48,7 +52,7 @@ export function FloatingCta() {
             accent && 'bg-accent text-accent-ink'
           )
           return internal ? (
-            <Link key={label} href={href} className={className}>
+            <Link key={label} href={href} className={className} onClick={record(label)}>
               {inner}
             </Link>
           ) : (
@@ -56,6 +60,7 @@ export function FloatingCta() {
               key={label}
               href={href}
               className={className}
+              onClick={record(label)}
               {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
             >
               {inner}
@@ -87,7 +92,13 @@ export function FloatingCta() {
             const className =
               'flex items-center gap-3 rounded-full border border-line bg-bg px-5 py-3 text-ink shadow-lg transition-colors hover:border-line-strong'
             return internal ? (
-              <Link key={label} href={href} className={className} tabIndex={open ? undefined : -1}>
+              <Link
+                key={label}
+                href={href}
+                className={className}
+                tabIndex={open ? undefined : -1}
+                onClick={record(label)}
+              >
                 {inner}
               </Link>
             ) : (
@@ -96,6 +107,7 @@ export function FloatingCta() {
                 href={href}
                 className={className}
                 tabIndex={open ? undefined : -1}
+                onClick={record(label)}
                 {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               >
                 {inner}
@@ -107,6 +119,7 @@ export function FloatingCta() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
+            onClick={record('Get Featured')}
             className="flex items-center gap-2 rounded-full bg-accent px-6 py-4 text-sm font-medium text-accent-ink shadow-lg transition-transform duration-200 ease-editorial hover:-translate-y-0.5"
           >
             <Star aria-hidden className="size-4" />

@@ -90,6 +90,12 @@ Everything is optional and the site degrades honestly without it. See
 | `RESEND_API_KEY`, `RESEND_FROM` | Contact form delivery. Without it the endpoint returns 503 and the form offers a prefilled mailto instead of a false success. |
 | `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` | Rate limiting that holds across serverless instances. |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` | Bot protection on the form. |
+| `SENTRY_DSN`, `NEXT_PUBLIC_SENTRY_DSN` | Error tracking, server and browser. |
+| `NEXT_PUBLIC_POSTHOG_KEY` | Product analytics and conversion events. |
+
+Sentry's browser SDK and PostHog are both imported lazily and only when their key
+is present, so an unconfigured deploy pays nothing for either — that is what
+keeps first-load JS inside budget.
 
 ## Deploying
 
