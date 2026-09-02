@@ -50,6 +50,36 @@ permanent placements, replies within 24 hours).
   describe the practices the rest of the site describes. **They are not legal
   advice and must be reviewed by your attorney before launch.**
 
+## How that copy was checked
+
+Everything in the list above was written against a fixed rule set — no invented
+statistics, no named editors or journalists, no placement guarantees, no claimed
+affiliation with any publication, no specific prices — and then read back
+against that same rule set by a reviewer whose brief was to reject it.
+
+The review found and we corrected:
+
+- Two industry pages that listed Apple News and Google News as places a feature
+  is commissioned. They are distribution surfaces; coverage reaches them through
+  a publisher already in the network.
+- A page that credited the publication with writing the article, when the site's
+  own model is that our editorial team writes it.
+- A publication page that gave the story questionnaire a duration ("under an
+  hour") that nothing supports.
+- Five guides carrying invented figures: a wire's reach in "hundreds of papers",
+  a claim about what "most buying decisions" involve, a two-year payoff horizon,
+  a one-year results duration, and a buyer's "ninety seconds of attention".
+- A guide that grouped MarketWatch with contributed-content routes. It is a Dow
+  Jones editorial property.
+- Two passages that implied placement was assured — one an unbroken process with
+  no branch where the publication declines, one the phrase "placements we
+  control".
+- A batch of duplicated and padded passages across adjacent guides, rewritten so
+  each page carries something its neighbors cannot.
+
+`scripts/check-content.mjs` keeps enforcing the mechanical half of these rules,
+including a minimum length and a cross-guide duplicate-sentence check.
+
 ## Assets that could not be recovered
 
 The build environment cannot reach `digitalnetworkingagency.com`, so the current
