@@ -229,7 +229,7 @@ export const guideBodies: GuideBody[] = [
         heading: 'How a feature comes together',
         paragraphs: [
           'The process is unglamorous, which is a good sign. You answer a questionnaire in your own words — that is the only writing you do. An editorial team shapes the angle, checks what you have given them, and drafts the piece to the standard the publication expects. You read it, mark what is wrong, and it comes back corrected.',
-          'Revisions matter more than people expect, because the version you approve is the version that follows your name around. Read it as though a competitor is reading it. Check every figure, every date, every claim about a client. When it is right, it goes to the publication, and once it is live it stays live and searchable.',
+          'Revisions matter more than people expect, because the version you approve is the version that follows your name around. Read it as though a competitor is reading it. Check every figure, every date, every claim about a client. When it is right, it is submitted — and the publication decides whether to run it. If it does not, the piece is revised or taken to another title, because a story written to editorial standard is not wasted by one no.',
           'With us that means unlimited revisions and no publication without your sign-off, and most placements go live within a few weeks. Timelines move with the outlet and with how many rounds you want, so we give you a realistic one before starting rather than an optimistic one afterward.',
         ],
       },
@@ -779,7 +779,7 @@ export const guideBodies: GuideBody[] = [
       {
         heading: 'What a wire actually does',
         paragraphs: [
-          'The Associated Press is a not-for-profit news cooperative. Its journalists report stories, verify them, and move them to member and subscriber newsrooms around the world, which is why a single AP story can appear in hundreds of papers on the same morning. Its own site is one surface among many, not the destination the whole operation exists to fill.',
+          'The Associated Press is a not-for-profit news cooperative. Its journalists report stories, verify them, and move them to member and subscriber newsrooms around the world, which is why one AP story can run in newsrooms that never spoke to the subject. Its own site is one surface among many, not the destination the whole operation exists to fill.',
           'Its sourcing standards are strict and publicly documented. Reporters attribute, corroborate and check before anything runs, and nothing runs because a company would like it to. That is inconvenient if you are shopping for a logo. It is also the entire reason a wire mention carries weight on the day you finally have one.',
           'Which leads to the first honest thing to say. There is no submissions queue, no contributor program, and no arrangement available for purchase. Anyone offering you an AP feature as a deliverable is either describing paid distribution or describing something that does not exist. Ask which, and listen carefully to how the answer is worded.',
         ],
@@ -840,7 +840,7 @@ export const guideBodies: GuideBody[] = [
   {
     slug: 'how-to-get-featured-in-la-wire',
     intro: [
-      'Most people arrive at a title like this after being told no somewhere larger, and treat it as a consolation prize. That is the wrong frame. A reachable outlet does one job well: it puts an accurate, permanent article where people look when they check you out, which is what most buyers are quietly doing anyway.',
+      'Most people arrive at a title like this after being told no somewhere larger, and treat it as a consolation prize. That is the wrong frame. A reachable outlet does one job well: it puts an accurate, permanent article where people look when they check you out.',
       'The trade is honest enough. You are not buying the weight of a national newsroom and should not talk as though you were. You are buying a real published piece in a title with a regional identity, developed well enough to hold up when somebody reads past the headline.',
     ],
     keyPoints: [
@@ -855,7 +855,7 @@ export const guideBodies: GuideBody[] = [
         heading: 'Where a title like this fits',
         paragraphs: [
           'Digital business and lifestyle titles that publish founder profiles, interviews and expert commentary occupy a real tier of the media landscape. They are not national newsrooms with investigative desks, and pretending otherwise helps nobody. What they are is reachable — and if your goal is having something accurate and permanent under your name, reachable is the quality that actually does the work.',
-          'Most buying decisions in professional services now include a search. Somebody hears your name, types it, and makes a quick judgment about whether you look like a real operation. What they find in that moment is mostly whatever you have published and whatever has been published about you. A feature in a title they recognize changes the shape of that page.',
+          'Assume a prospect will type your name before a first call. Somebody hears it, searches it, and makes a quick judgment about whether you look like a real operation. What they find in that moment is mostly whatever you have published and whatever has been published about you. A feature in a title they recognize changes the shape of that page.',
           'The regional identity is part of the value rather than a limitation. A Los Angeles-facing title reaches people who care what happens in Los Angeles, which is a sharper audience than a broad national one if your clients, patients or customers are here. Reach and relevance are different purchases, and it is worth knowing which one you need.',
         ],
       },
@@ -965,7 +965,7 @@ export const guideBodies: GuideBody[] = [
     realityCheck: 'Nobody can guarantee you a place here, ourselves included, and a guarantee is the fastest way to spot an agency worth avoiding. US Reporter is on the reachable side of the list rather than the aspirational one — that is the honest framing. What you get is a permanent, searchable article under a business masthead. What you do not get is the reach of a legacy newsroom, a ranking, or an implied endorsement of anything you sell.',
     faqs: [
       { question: 'Is US Reporter a real publication?', answer: 'Yes — a digital news and profile outlet with bylined, dated articles that stay online and searchable. It is not a wire service or a national newspaper, and the name invites that confusion, so it is worth saying plainly. Judge it as what it is: a credible home for a substantial article about you, with a readership smaller than the name suggests.' },
-      { question: 'How long does it take to get a piece published?', answer: "Most of the placements we control go live within a few weeks, and the variable is usually how fast your questionnaire comes back and how many rounds of edits you want. Pitching cold on your own is slower and less predictable, because you are waiting on somebody else's inbox. Either way, treat a firm date from anyone as a warning sign." },
+      { question: 'How long does it take to get a piece published?', answer: 'Pieces we place typically go live within a few weeks, and the variable is usually how fast your questionnaire comes back and how many rounds of edits you want. Pitching cold on your own is slower and less predictable, because you are waiting on somebody else’s inbox. Either way, treat a firm date from anyone as a warning sign.' },
       { question: 'Will a feature here help me rank for my own name?', answer: 'Often it helps, and we will not put a number on it. A substantial article on an established domain gives search engines something else to show for your name, which matters most when the current results are thin. This is not an SEO service, it will not outrank a determined competitor by itself, and anyone promising you a position is guessing.' },
     ],
   },
@@ -1447,7 +1447,7 @@ export const guideBodies: GuideBody[] = [
         heading: "Pitching without wasting the desk's time",
         paragraphs: [
           'Find whoever already covers your subject by reading recent work on the site, then write four sentences: what happened, why it matters now, what you can show, and how to reach you. No attachments, no deck, no paragraph about your journey. If it is not interesting in four sentences, it will not become interesting in nine.',
-          'Follow up once, then let it go and carry on doing whatever made the pitch plausible in the first place. Pitches go unanswered all the time, including good ones from people who do eventually get covered. Reading that silence as a verdict is how people quit roughly two years before the work would have paid off.',
+          'Follow up once, then let it go and carry on doing whatever made the pitch plausible in the first place. Pitches go unanswered all the time, including good ones from people who do eventually get covered. Reading that silence as a verdict is how people quit shortly before the work would have paid off.',
         ],
       },
       {
@@ -2005,7 +2005,7 @@ export const guideBodies: GuideBody[] = [
         paragraphs: [
           'Aim at three tiers and understand the difference between them. Regional business journals and local news outlets care about your market because it is their market — that is the hardest tier and the most useful one. Real estate and business trade titles want operator detail. And there is a wide band of business and lifestyle publications that run professional features regularly, where the bar is a genuinely useful article rather than a news event.',
           'Agents ask specifically about MSN, Apple News and Google News. None of them commission profiles of realtors. They are distribution surfaces and indexes that carry or list material from publications already inside their network, so coverage reaches them by way of an outlet that is already there, and nobody can promise a particular story travels. Treat a syndicated appearance as a bonus rather than the goal.',
-          'Yahoo Finance, MarketWatch, Benzinga and a number of regional digital titles are more reachable, and it is worth saying why rather than implying access nobody has. They publish at high volume and they carry contributed and partner material alongside staff reporting, so the route in is shorter. A seller who recognizes the name will not audit how the piece got there. You should still know which kind of placement you are getting.',
+          'Yahoo Finance, Benzinga and a number of regional digital titles are more reachable, and it is worth saying why rather than implying access nobody has. They publish at high volume and they carry contributed and partner material alongside staff reporting, so the route in is shorter. You should still know which kind of placement you are getting, because the label on the page is the first thing a careful reader checks.',
         ],
       },
       {
@@ -2166,6 +2166,1101 @@ export const guideBodies: GuideBody[] = [
       { question: 'Will my compliance department allow this?', answer: 'Usually, in some form. Educational writing that makes no performance claim and recommends nothing specific is the version most firms approve. What gets rejected is predictable: returns, forecasts, client quotes, and anything implying a result. Ask for the review requirements before you start, build the piece to them, and expect at least one round of edits. Revisions are unlimited on our side; the sign-off is theirs.' },
       { question: "Can I write about a client's situation?", answer: 'Only as a pattern, never as a person. Composite descriptions drawn from many households are fine and identifiable details are not, even with permission, since a client story in article form raises its own regulatory questions. The safer and better version describes the situation generically: a business owner approaching a sale, a family carrying a concentrated stock position into retirement.' },
       { question: 'How long before it does anything?', answer: 'The article itself moves quickly — most placements are live within a few weeks once the draft is approved, and compliance review is usually the longest step. The effect on your business is slower, because advisory decisions are slow. Expect it to show up as prospects arriving better informed and referrals that need less explaining, over quarters rather than weeks.' },
+    ],
+  },
+  {
+    slug: 'how-to-get-press-for-your-medical-practice',
+    intro: [
+      'The front desk hears a version of it every week: a new patient says a friend recommended you, then mentions something they read with your name on it. Referral and search are not separate paths. One leads to the other, and the second one decides.',
+      "What that search returns, for most practices, is a directory profile built from credential data somebody scraped years ago, a scatter of star ratings, and your own website. Press is the only item on that page carrying a publication's name rather than yours. Getting there is mostly a question of what a clinician is allowed to say in public — and there is more of it than most physicians assume.",
+    ],
+    keyPoints: [
+      'Patients research after the referral, not instead of it — what they find decides whether they call your office or the next one.',
+      'Privacy rules and board advertising standards rule out case stories and outcome claims — build the piece from judgment instead.',
+      'The most persuasive thing a physician can publish is who they turn away and why.',
+      'Have compliance, and your malpractice carrier if your agreement requires it, read the draft before it goes anywhere.',
+      'One article works on patients, referring clinicians and recruits at once, so write it for all three.',
+    ],
+    sections: [
+      {
+        heading: 'What a patient does before calling',
+        paragraphs: [
+          'By the time someone calls your office they have usually searched your name, opened your website, and skimmed reviews looking for a pattern rather than a score. Elective and cash-pay procedures stretch that window further, because the patient is spending their own money and comparing clinics. The question they are trying to answer is not whether you are qualified. They assume that. They want to know whether you are careful.',
+          'Which means the material that moves them is not a credential list. It is evidence of how you think — what you ask in a first consultation, what you tell people to expect in the second week of recovery, when you send someone to a colleague instead. A patient cannot evaluate your surgical technique. They can evaluate whether your description of a condition matches what they have been living with.',
+          'There is a second audience reading the same page. Referring physicians check who they are sending patients to, hospital committees look up new applicants, and the nurse practitioner you are trying to hire wants to know what kind of practice this is. A piece written purely as patient marketing reads thin to all of them. One written as an explanation of your approach works on everyone.',
+        ],
+      },
+      {
+        heading: 'What you cannot publish',
+        paragraphs: [
+          'Start from the constraints, because they shape everything else. You cannot discuss an identifiable patient without written authorization, and in a small town or a narrow subspecialty, details you believe are anonymous are not. You cannot promise a result. Most state medical boards have their own advertising rules, they are not identical, and yours is the version that governs you rather than any general marketing advice you read.',
+          'None of this is a reason to stay quiet. It is a reason to write from judgment rather than from cases. A publication cannot verify your outcomes anyway, and no editor is asking you to prove them. What they want is an explanation a general reader can follow, from somebody qualified to give it.',
+        ],
+        list: [
+          'Patient stories, photographs and quotes without written authorization, including composites a reader in your area could match to a real person.',
+          'Any claim about outcomes, success rates, or being the best, most experienced or only practice doing something.',
+          'Titles your board reserves — check how your state treats specialist and board certified before either appears in print.',
+          'Advice aimed at an individual. Publish education a general reader can use, not instructions for someone you have not examined.',
+          'Anything your employer, group or carrier has not reviewed, where your agreement requires that review.',
+        ],
+      },
+      {
+        heading: 'What is left, and it is a lot',
+        paragraphs: [
+          'Every practice has a consultation it delivers several times a day — the one where you explain what the procedure actually involves, what the first week feels like, what it will not fix. That explanation has already been refined by repetition. Written down, it becomes a piece patients read before they arrive, which changes the appointment itself. You spend the visit on their situation instead of the same preamble.',
+          'The stronger version is the one that rules people out. Say plainly who is not a good candidate, which symptoms point somewhere else entirely, and what you tell patients who want a procedure you do not think they need. Readers have seen enough medical marketing to discount it. Something that costs you inquiries reads as clinical judgment, and it filters the calls that do come in.',
+          'Beyond that: how you built the practice and why appointments run the length they do, a symptom people routinely misread, what changed in your field that patients have not heard about yet, and the questions worth asking in a second opinion. None of it touches a chart.',
+        ],
+      },
+      {
+        heading: 'Where these pieces get placed',
+        paragraphs: [
+          'Two different rooms. Healthcare trade and business-of-medicine outlets publish clinicians writing about how care gets delivered — staffing, access, technology, the economics of running a small practice. Consumer titles and their health sections want the reader-facing version: what a condition feels like, how to decide, what to ask. The same underlying material can produce both, but not in one article, and mixing them is the most common reason a draft goes nowhere.',
+          'MSN and Apple News come up in almost every one of these conversations. Neither commissions physician profiles. They carry material from publications already in their networks or index, so a piece reaches them by running somewhere that feeds them, not by being pitched to them directly. Worth knowing before you pay anybody who describes them as outlets they place clients in.',
+          "The most selective national titles are a separate matter. Their health coverage is reported by staff, and you get into it by being a useful source over time — answering a reporter's question accurately, quickly, on the record, including when the honest answer is that you do not know. Nobody can sell you a place in those.",
+        ],
+      },
+      {
+        heading: 'Getting it written when you have no time',
+        paragraphs: [
+          'The bottleneck is almost never the idea. It is that you have a full schedule and writing is slow. The way out is to stop trying to write. Talk it through instead — record yourself explaining the topic the way you would explain it to a patient, into a phone between appointments, and have that transcript shaped into a draft. The vocabulary comes out right, because it is the vocabulary you actually use.',
+          "Then run it through the checks in order: clinical accuracy first, then privacy, then whatever your employer, carrier or compliance function requires, then the publication's own standards. Doing them in that sequence saves rewrites. That sequence is what we manage for clients — our editorial team drafts from your interview, revisions are unlimited, and nothing reaches a publication until you have approved it.",
+        ],
+      },
+      {
+        heading: 'After it publishes',
+        paragraphs: [
+          'A published article has a shelf life measured in years, and most practices leave it sitting on a link. Put it in the new-patient packet. Have the front desk send it when somebody calls asking what the procedure involves. Link it from the specific service page it explains rather than a general press list, so that searches for the condition point at it too.',
+          'Send it with referral letters, include it when you apply for privileges or speaking slots, and give it to candidates you are recruiting. Then write the next one on a different question. A single piece answers one search. A small body of published explanation is what makes you the obvious choice among three clinics that look equally qualified on paper.',
+        ],
+      },
+    ],
+    realityCheck: 'Press does not fill a schedule on its own, and an agency implying otherwise should worry you. What it changes is the search a patient runs after somebody recommends you, and the impression made on a referring physician who has never met you. It works slowly, it works best alongside a practice that answers its phone, and the limits on what a clinician can publish are real. Better to know that before you spend anything.',
+    faqs: [
+      { question: 'Can I write about a patient case if I take out the identifying details?', answer: 'Assume you cannot, unless you have written authorization. De-identification is harder than it looks: a rare presentation, an age, a town and a timeframe can be enough for a neighbor to recognize someone. Composites carry the same risk if a real patient sees themselves in one. Build the piece from your general approach, and if a case is essential, get consent in writing and have counsel look at it first.' },
+      { question: 'Does my employer or malpractice carrier need to approve this?', answer: 'Check, before you write anything. Hospital-employed physicians and group members often have media or marketing clauses that require review, and some carriers take an interest in what you publish about your own work. Finding this out after a draft is finished wastes weeks. The approval itself is usually straightforward when the piece contains no outcome claims and no patient detail.' },
+      { question: 'Will an article actually bring in patients?', answer: 'Not the way an ad does, and nobody should quote you a number. What it does is show up when someone searches your name or the procedure, and give a hesitant caller a reason to choose you over an equally qualified clinic down the road. Practices that see the clearest effect are usually elective or cash-pay, where patients research longer before booking. If your schedule is full and referral-driven, spend elsewhere.' },
+    ],
+  },
+  {
+    slug: 'how-to-get-press-for-your-ecommerce-brand',
+    intro: [
+      'A product page is a claim. Every line on it — the sourcing, the testing, the reason the price is what it is — was written by the company that wants the sale, and shoppers know it. Which is why the tab they open next matters more than the one you designed.',
+      'Coverage is what sits in that tab. It does not replace paid media and it will not rescue a product nobody wants. What it does is give a stranger a reason to believe the claims on your site, at the moment they leave to verify them. The work is figuring out what a product brand can credibly be written about, which formats are worth your time, and how to judge the result without pretending press is a performance channel.',
+    ],
+    keyPoints: [
+      'Shoppers leave your site mid-purchase to check whether you are real; coverage is what they find there.',
+      'Product roundups and gift guides run on long lead times and often on affiliate links — plan and ask accordingly.',
+      'A launch is only news when something genuinely changed; otherwise pitch the decision behind the product.',
+      'Judge press on branded search, direct traffic and post-purchase surveys, never on last-click attribution.',
+      'Low-price impulse products with no research window rarely justify a press budget.',
+    ],
+    sections: [
+      {
+        heading: 'Where a shopper checks you out',
+        paragraphs: [
+          'Watch a considered purchase and the pattern repeats. Ad, product page, then a detour — the brand name typed into search, a review site, a forum, whatever comes up that the brand did not write. High-consideration categories make the detour longer: anything worn on the body, put in it, kept for years, or bought as a gift for somebody who matters.',
+          'That detour is a real cost. You paid for the click that started it. If what comes back is a thin page of ad copy, marketplace listings and one unresolved complaint, the shopper does not announce that they left. They simply do not return, and your acquisition cost quietly rises while the creative still looks fine in the dashboard.',
+          "There is also a second buyer you rarely think about. Retail buyers, marketplace category managers and creators deciding whether to work with you all run the same check, with more skepticism and a budget attached. Coverage shortens that conversation more than it shortens a consumer's, because they are committing somebody else's money.",
+        ],
+      },
+      {
+        heading: 'Roundups, gift guides and the affiliate question',
+        paragraphs: [
+          'The formats most product brands want — best-of lists, gift guides, category roundups — do not work like features. They are planned against a calendar that runs ahead of the shopping season, so approaching an outlet in November about a December guide is usually pitching next year. Rather than guessing, ask each publication what its own timing is, and build your product calendar backward from the answer.',
+          'Many of these lists carry affiliate links, meaning the publisher earns a commission on sales. That is disclosed, legal and extremely common, and it has a practical consequence: some outlets will only consider products whose affiliate program they can join, through a network they already work with. Without a program, you are invisible to a slice of this coverage no matter how good the product is.',
+          'Chasing roundups is worth doing and it is not a strategy on its own. You appear alongside every competitor the writer also liked, the framing belongs to them, and the link often outranks your own store for the phrase people search. Take them when they come. Build the rest of your press on stories nobody else can supply.',
+        ],
+        list: [
+          'An affiliate program on a network editors already use, with a commission rate that is not insulting.',
+          'Clean product photography on white and in use, downloadable without a request to your agency.',
+          'Accurate price, sizes, materials, shipping and returns in one place a writer can copy from.',
+          'Samples you can send within days, to a named address, without a purchase order.',
+          'Stock that will survive a spike, and a clear answer if it will not.',
+          'One sentence explaining who the product is for and who it is not.',
+        ],
+      },
+      {
+        heading: 'Four stories that are not a launch',
+        paragraphs: [
+          'The pitch most brands send is a product announcement, and a new colorway is not news outside your own customer base. The stories that get run are about decisions — what you chose, what it cost you, what you were wrong about — because decisions are checkable, and because no competitor can publish the same article.',
+          'The fourth one is the most underused. You can see how people actually buy in your category: what they return and why, which size runs short, what they add at the last minute, how behavior shifted when you changed one thing. Publish your own numbers if you are comfortable with competitors reading them, and never publish a figure you cannot show. A single honest number carries an article that adjectives cannot.',
+        ],
+        list: [
+          'The supplier you left, the material that doubled your unit cost, or the test a product failed twice before shipping.',
+          'The category norm you sell against — a markup, an ingredient, a size chart, a return policy nobody designed for the customer.',
+          'What the first year taught: the channel you overspent on, the launch that broke fulfillment, the product you killed.',
+          'A pattern in your own order data, written up plainly, using figures you are willing to stand behind publicly.',
+        ],
+      },
+      {
+        heading: 'When to spend on ads instead',
+        paragraphs: [
+          'Press is not right for every store. If your product is cheap, bought on impulse, and nobody researches the brand before checkout, you are paying for trust the purchase does not require. Same if you are pre-launch with nothing to send, or if your margin cannot survive any spend that fails to return within the month. That is not a failure of PR. It is a mismatch, and it is better spotted early.',
+          'The signals that press is worth it are easy to check. Look at whether branded search rises alongside your ad spend, whether days pass between a first visit and a purchase, whether the item is a gift or a body product or something carrying a warranty, and whether partners keep asking who else has written about you. Two or more of those, and coverage is doing work you can feel.',
+        ],
+      },
+      {
+        heading: 'Measuring it without fooling yourself',
+        paragraphs: [
+          'An article will not appear in last-click attribution, and any agency offering you a revenue figure from a single placement is guessing. That does not make press unmeasurable. It makes it measurable in a different column — the one that moves before a sale rather than at the moment of it.',
+          'Give it quarters. A placement keeps being findable long after a paid campaign has stopped running, which is the opposite of how paid media behaves and the reason the comparison keeps confusing people. Judge the body of coverage rather than the individual article, and judge it against what happens when somebody searches your brand name.',
+        ],
+        list: [
+          'Branded search volume and direct traffic, compared month over month rather than week over week.',
+          "One post-purchase question — how did you first hear about us — answered in the buyer's own words.",
+          'Time from first session to purchase, watched for a shift in either direction.',
+          'How often retail buyers, creators and partners ask what has been written about you.',
+        ],
+      },
+      {
+        heading: 'Using a placement properly',
+        paragraphs: [
+          'Most brands post the link once and forget it. Put the article where the doubt is: on the product page for the item it discusses, in the post-purchase email, in the abandoned-cart sequence, and in the creative you are already paying to distribute. A line quoted from a publication reads differently in an ad than the same idea in your own words.',
+          'Two cautions. Publication names and logos are trademarks and the terms of use vary, so check before an as-seen-in bar goes up, and never imply an endorsement the article does not contain. And do not paraphrase a piece into a stronger claim than it made. The value is that somebody else said it. Rewriting it into marketing language throws that away.',
+        ],
+      },
+    ],
+    realityCheck: 'Coverage will not fix a product problem, a fulfillment problem, or a landing page that does not convert. It is trust arriving before the purchase, and trust only helps when everything downstream of it works. Nobody can promise you a place in a specific gift guide or on a specific title, and anyone selling a guaranteed roundup slot is usually selling advertising with the word press attached. Ask what you are actually buying.',
+    faqs: [
+      { question: 'How far ahead should we approach holiday gift guides?', answer: 'Earlier than feels reasonable. Treat the season as decided months before it arrives, and ask each publication directly what its window is — many state it openly. Build your calendar backward from that, with photography, pricing, samples and stock confirmed before you contact anyone. A late pitch with a perfect product loses to an early pitch with an adequate one, every year.' },
+      { question: 'Do we need an affiliate program to get into product roundups?', answer: "Not for every outlet, but for enough of them that going without one narrows your options considerably. Commission-supported lists are standard, and some publishers work only through particular affiliate networks. Joining one your category's outlets already use costs little and removes an obstacle you would otherwise never see, because nobody writes back to explain that you were skipped over it." },
+      { question: 'Is press worth it if we already spend heavily on paid social?', answer: 'Often more, not less. Paid traffic creates the exact moment press is useful — a stranger who has just seen an ad, is mildly interested, and leaves to check whether you are a real company. If that search returns nothing but your own pages and a marketplace listing, you paid for the click and lost it. Coverage catches spend you have already committed.' },
+    ],
+  },
+  {
+    slug: 'how-to-get-press-as-an-author',
+    intro: [
+      'Two clocks run on a book, and they are badly out of sync. Yours ends when the manuscript is delivered. The one that decides whether anybody hears about it started long before that, and keeps running well after the publication date you have been counting toward.',
+      'Publicity runs on the second clock. Authors who start when the box of finished copies arrives usually find the useful windows already closed, while a writer with no book yet is sometimes better placed than one holding a finished copy. The work has an order to it, and it begins earlier than the calendar in your head suggests.',
+    ],
+    keyPoints: [
+      "Trade reviewers and long-lead outlets want the book well before publication day — find each one's window and work backward.",
+      'Editors publish arguments, not summaries; the pitch is the idea inside the book, not the book.',
+      'Agents and producers search your name before they commit, and published pieces answer what a proposal cannot.',
+      'Launch week is the smallest part of the plan; a placement keeps working long after it closes.',
+      'Build a press page a producer can use without emailing you: bios, headshot, topics, contact.',
+    ],
+    sections: [
+      {
+        heading: 'Start before there is a book',
+        paragraphs: [
+          'The best time to be publishing is while the manuscript is still unfinished. Not excerpts — the thinking. If your book argues something, that argument can appear in print long before the book does, in pieces that stand on their own and never mention a publication date. By the time the book exists, you are a name an editor recognizes rather than a stranger arriving with a favor to ask.',
+          'This is also what an agent or acquisitions editor means when they ask about platform. They are not asking for follower counts alone. They want evidence that people outside your immediate circle already pay attention to this subject when you write about it, and published work is the most legible form that evidence takes.',
+          "If you are self-publishing, the same work does more, because there is no publisher's name doing any of it for you. Everything a reader uses to decide whether to take the book seriously has to come from somewhere else — coverage, citations, the places your name turns up when they check.",
+        ],
+      },
+      {
+        heading: 'Reviews, galleys and the long-lead calendar',
+        paragraphs: [
+          'Trade review outlets — the ones librarians, booksellers and rights buyers read — generally want to see a book well before it is published, in galley or advance form. Windows differ, several publish theirs openly, and some run clearly labeled paid review programs for indie and self-published titles. Find the actual requirements for each one you care about and put them on a calendar before your print date is locked.',
+          'Consumer long-lead outlets run on their own schedule, and monthly print titles sit further ahead than anything online. The practical rule is to treat publication day as the deadline for the last wave rather than the first. If your publisher has a publicist, ask which of these they are covering and be specific — the answer is often narrower than you assumed, and the gap is where outside effort belongs.',
+        ],
+      },
+      {
+        heading: 'Pitch the idea, not the book',
+        paragraphs: [
+          'An editor is not looking for a book to promote. They are looking for a piece worth publishing, and that difference decides almost everything about your success rate. A pitch describing what the book covers gives them nothing to work with. A pitch that makes a claim, takes a position somebody could argue with, and can be read by a person who will never buy the book gives them a reason to run it.',
+          'Excerpts have their place and are the weakest of these on their own, because an excerpt is a fragment of something built for a different reading experience. If you use one, choose a passage that resolves a question inside itself, and rewrite the opening so it does not lean on pages the reader has not seen.',
+          'Most authors cannot see this from inside the manuscript, having lived in it for years. Finding the piece that would stand up without the book attached is the first thing we do with an author, and it is worth doing even if you never hire anyone — hand the manuscript to a reader outside your field and ask which single claim they would argue with.',
+        ],
+        list: [
+          'The central argument, stated plainly and with the disagreement left in rather than smoothed away.',
+          'What you believed going in and abandoned during the research, and what changed your mind.',
+          'The chapter that suddenly matches the news, offered while the story is still moving.',
+          'How the book got made — the rejections, the decision to self-publish, the years — for readers who write.',
+        ],
+      },
+      {
+        heading: 'Podcasts, radio and the pre-interview',
+        paragraphs: [
+          'Producers book from what they can read. Before anyone talks to you, somebody junior is deciding whether you can hold a segment, and the evidence they use is your published work and any recording of you speaking. This is the main practical reason to have written pieces in place before the launch push rather than as a result of it.',
+          'Make the booking easy. Offer a segment idea rather than a book, in one sentence, with a few questions a host could ask cold. Say what you can talk about beyond your own subject, since a show with a full calendar would rather have a guest who fits several episodes. And send something they can listen to, even if it is a recording made at your own desk.',
+          'Small shows deserve more respect than they get. They record on time, they publish, and their audiences are specific, which is what you actually need. They are also where you get fluent enough to be worth a larger booking later, without learning that lesson in front of the audience you most wanted.',
+        ],
+      },
+      {
+        heading: 'The month after launch is not the end',
+        paragraphs: [
+          'The window everybody plans for is short and crowded, and it closes whether or not it worked. What survives it is anything published, because an article does not expire on a release schedule. A reader who finds your piece a year from now arrives with the same interest as one who read it in week one, and books get bought long after their publicity stops.',
+          'So plan a second wave deliberately. Anniversaries of the events in the book, a policy change that touches your material, a paperback edition, an award list, an adjacent news story where you can be a source rather than a subject. Each is a reason for an editor to publish you again, and each new piece makes the earlier ones easier to find.',
+          'Keep writing about the subject rather than about the book. The author still publishing on their topic years later is the one who gets called when the topic is in the news, and that standing outlasts any launch week. It is also the cheapest publicity available to you, since you are already the person who spent years on the material.',
+        ],
+      },
+      {
+        heading: 'The press page you probably do not have',
+        paragraphs: [
+          'Somewhere on your site there should be a page that lets a producer, an event organizer or a journalist act without emailing you first. Short bio, long bio, a headshot at print resolution, the cover, the topics you speak on, a list of published pieces and interviews, and a direct contact address that a person actually monitors. It takes an afternoon to build.',
+          'Then check what a search for your name returns, because that is the real press page. If the first results are a retailer listing and a social profile you have not used in two years, no amount of pitching fixes the impression. Published articles are what fills that page, which is the other reason to start before the book is finished.',
+        ],
+      },
+    ],
+    realityCheck: 'Press does not sell books, at least not in any way you can trace to a single article. Anyone quoting you sales from a placement is inventing the figure. What coverage does is make you findable and credible to the people who decide whether a book gets attention — agents, producers, event bookers, and readers who need a second reason to trust an unfamiliar name. That is worth a great deal, and it is not the same thing as a sales channel.',
+    faqs: [
+      { question: 'When should an author start on press?', answer: 'While the manuscript is still in progress, if you can. Long-lead outlets and trade reviewers need the book far ahead of publication, and the pieces that build your name as a writer on the subject work best when they are not obviously launch material. If the book is already out, start now anyway — an article published this month still reaches readers next year.' },
+      { question: 'My publisher has a publicist. Do I need anything else?', answer: "Ask them precisely what they are covering and for how long. In-house publicity is usually concentrated on the launch window and on outlets that review books, and the attention available for any one title depends on the season's list. The work outside that — features about your subject, podcasts, pieces that keep running after the window closes — is where authors most often find the gap." },
+      { question: 'Does this work for a self-published book?', answer: "Yes, with two adjustments. Some review outlets handle indie titles through separate, often paid programs, so check each one's terms rather than reading silence as rejection. And because no publisher's name is vouching for you, more of the credibility has to come from published work under your own byline. Editors care about the argument, not the imprint on the spine." },
+    ],
+  },
+  {
+    slug: 'how-to-get-press-as-a-speaker',
+    intro: [
+      'The decision to book you is made in a meeting you are not invited to. A program chair has three names, a budget and a room to fill, and everybody at the table wants to be the one who suggested the safe choice. Your reel gets watched. Your topic gets argued over. Then somebody types your name.',
+      'Press does not win that meeting on its own, and no article ever filled a stage. What coverage does is remove the reason to say no, and hand the person arguing for you something worth forwarding. What follows is how to build that kind of record, when to build it, and what to do with it once it exists.',
+    ],
+    keyPoints: [
+      'Bookers watch video first and read second, so if your reel is weak, fix that before spending anything on press.',
+      'Publish on one subject repeatedly, because speakers get rebooked for a theme rather than for a performance.',
+      'Coverage has to exist before the programming season, since committees choose speakers long before an audience sees them.',
+      'Announcing that you spoke somewhere is not a story; what you argued on stage sometimes is.',
+      'Put the article where the decision happens: the speaker page, the one-sheet, and the first email a booker opens.',
+    ],
+    sections: [
+      {
+        heading: 'Who actually approves your fee',
+        paragraphs: [
+          'The person who watched you speak is rarely the person who approves the number. A program chair builds the shortlist, a committee or a sponsor signs off on the budget, and at larger events a bureau sits somewhere in the middle. Each of them is protecting something different, and the differences matter: the chair is protecting the room, the sponsor is protecting a logo, the bureau is protecting a client relationship it spent years building.',
+          'That shapes what is worth publishing. The chair may have watched you hold an audience; the people approving the fee almost certainly have not. They are working from a name, a link, and whatever the chair says out loud in a meeting. A feature somebody can read in four minutes travels further in that room than a highlight reel nobody opens on a laptop during a budget review.',
+          'So write for the person who was not there. The most useful piece of coverage a speaker can own is one an advocate can forward with two lines of email attached, and have it carry the rest of the conversation without her having to make the case herself a second time.',
+        ],
+      },
+      {
+        heading: 'What a booker opens first',
+        paragraphs: [
+          'Vetting has an order to it, and press is not first. Video comes first, because delivery is the part that cannot be faked on paper. Then the topic, to check whether you fit a theme that was probably chosen before your name came up. Then evidence that somebody outside your own business has taken the subject seriously. Being third is not the same as being unimportant: the first two get you onto the list, and the third is usually what keeps you there.',
+          'The search is where doubt shows up. If the first screen is your own website, your own social profiles and a directory listing you did not create, an organizer with two other names in front of her has no particular reason to keep arguing for yours.',
+        ],
+        list: [
+          'Your video: a few minutes in front of a real audience, with the audience visible and audible.',
+          'Your topic page: one subject stated plainly, not five listed as though they were menu options.',
+          'Your name in search, on a phone, signed out — the first screen is the one that counts.',
+          'Published work on your subject, written for the people who attend events rather than for other speakers.',
+          'Where you have spoken recently, and whether those rooms look anything like theirs.',
+        ],
+      },
+      {
+        heading: 'Pick one subject and stay on it',
+        paragraphs: [
+          'Speakers dilute themselves faster than almost anyone else who hires a publicist. The speaker page lists four topics because turning down work feels expensive, and the result reads as availability rather than expertise. An organizer scanning it cannot tell what you are for, and the safest thing to do with a speaker you cannot categorize is book somebody you can.',
+          'Choosing the subject is not a branding exercise. It is usually the question that comes up in every Q and A, or the argument you would still be making at eleven at night in a hotel bar. Write down the one you would defend in front of a hostile room, because that is the one worth publishing on more than once.',
+          "Repetition does the work here. A single feature is a credential; four pieces circling the same argument across a year is an association, and associations are what get you called when that theme lands on next year's agenda. It also makes each pitch easier to make, because the last piece is proof you can carry the next one.",
+        ],
+      },
+      {
+        heading: 'Write to the calendar, not the event',
+        paragraphs: [
+          'Events are programmed long before anybody sees a schedule. By the time a conference is promoting its lineup, the keynote was settled earlier, often by a committee that met once and will not meet again until the next cycle. Coverage that appears the week you want to be booked is not late by a few days. It is late by a season.',
+          'So work backwards. Find out when the events you want actually choose their speakers, which usually means asking an organizer you already know, because most of them will tell you plainly. Then make sure the record behind your name is in place before that window rather than after it has closed.',
+          'The second timing question is relevance. When your subject turns up in the news, that is the moment to publish on it, and it is also the moment organizers start adding a session about it. The two move together, which is why a piece written in a quiet month often does nothing and the same piece written in a loud one gets read.',
+        ],
+      },
+      {
+        heading: 'What to do with the placement',
+        paragraphs: [
+          'Most people publish and then stop, which wastes the part that costs nothing. A placement earns its money by circulating in the places where somebody is already making a decision about you, rather than in a feed where it competes with everything else that happened that day. Put it in front of the decision.',
+          'There is a version of this that goes too far. Nobody needs a monthly email announcing your latest article, and an organizer who receives one learns that you are marketing rather than working. Send it when there is a reason: a conversation already running, a program being built, somebody who asked what you actually think about something.',
+        ],
+        list: [
+          'Add it to your speaker page as a linked headline with the publication named, not as a logo bar.',
+          'Pull one line from it into your one-sheet and into the first email an organizer receives.',
+          'Send it to events that have booked you before, because a rebooking is the cheapest booking you will get.',
+          "Hand the event's marketing team a quotable line, which makes their job easier and yours likelier.",
+          'Keep the link somewhere you can find in thirty seconds, because you will be asked for it.',
+        ],
+      },
+      {
+        heading: 'Where speakers waste the effort',
+        paragraphs: [
+          'Three habits soak up money and return very little. The first is the announcement release: a notice that you will appear at an event, distributed to people who have no stake in that event. It is news to your existing audience and to nobody else, and it does not read as coverage to an organizer who is checking you before a call.',
+          'The second is writing about speaking. Pieces on stage presence and how to work a room find an audience of other speakers, and other speakers do not book you. Write about the subject you speak on, for the people who sit in the audience, and let the speaking show up as a fact in the byline rather than as the topic.',
+          'The third is collecting logos. A row of publication marks linking to nothing, or to a thin post on a site nobody reads, gets clicked more often than people expect. An organizer who follows one and lands on a page she would be embarrassed to bring to a committee has learned something about you that you did not intend to tell her.',
+        ],
+      },
+    ],
+    realityCheck: 'Coverage does not book you. Referrals, a strong reel and a subject somebody wants on their agenda book you, and press works at the end of that process rather than the start of it. Nobody can promise you a stage, a fee, or a place in a specific title, and an agency selling bookings alongside placements should be asked plainly which of the two it is actually doing. If your video is weak, spend there first.',
+    faqs: [
+      { question: 'Will press actually get me booked?', answer: 'Indirectly, and only at one stage. No editor forwards you to organizers. Coverage works when somebody is already deciding whether to shortlist you, and it removes the doubt that turns a maybe into a no. If you are getting shortlisted and losing at the research step, press is well aimed. If nobody knows you exist yet, smaller stages and a better reel come first.' },
+      { question: 'Should I send out a release when I get booked?', answer: 'Rarely worth it. An announcement that you will appear somewhere is news to your existing audience and to almost nobody else, and it does not read as coverage to an organizer checking you out. What travels is the argument you make on stage, written as a piece that stands up on its own without the event attached to it.' },
+      { question: 'I speak for free right now. Is it too early for press?', answer: 'No, provided you have a subject and rooms in which to test it. Free stages are where the material gets sharp, and publishing while you do that work is honest. The mistake is coverage claiming a standing you have not earned yet, because a profile calling you a leading voice reads badly to anybody who checks. Publish the thinking rather than the title.' },
+    ],
+  },
+  {
+    slug: 'how-to-build-a-personal-brand-with-press',
+    intro: [
+      'A personal brand is not how you describe yourself. It is the sentence somebody else uses about you when you are not in the room, and the page they land on when they go looking for more than a sentence.',
+      'Most advice on the subject is really advice about posting. Posting builds an audience, which is a different asset with a different failure mode, and it disappears the moment a platform changes its mind. A published record does something else: it stays where you left it, written by somebody with their own name to protect. What follows is the practical order of building one, starting with the part nobody wants to do first.',
+    ],
+    keyPoints: [
+      'Decide the one sentence you want attached to your name before you commission a single article.',
+      'Search yourself the way a stranger would, on a phone and signed out, then write down what comes back.',
+      'You cannot cite yourself, which is the entire reason a third party writing it down carries weight.',
+      'Cadence beats volume: three placements spread across a year outwork six in a fortnight and then silence.',
+      'Coverage magnifies whatever is already there, including a position you have not finished deciding on.',
+    ],
+    sections: [
+      {
+        heading: 'Decide the sentence first',
+        paragraphs: [
+          'Before any of this is worth paying for, you need one sentence: who you help, at what, and the thing you believe about it that most people in your field do not. Most people cannot say it out loud without three qualifiers and a story about how they got here. That is the actual problem, and no amount of coverage will solve it for you.',
+          'The test is simple enough. Could somebody who read one article about you introduce you correctly at a dinner, without checking their phone first? If the introduction would come out as does something in consulting, I think, the sentence is not finished, and anything published now inherits the vagueness rather than curing it.',
+          'This is also what makes the rest possible. Editors do not publish people, they publish arguments, and somebody with a clear position is somebody with material. The sentence becomes the brief for every piece that follows, which is why it deserves a week of thinking rather than the twenty minutes most people give it.',
+        ],
+      },
+      {
+        heading: 'Audit what a stranger finds',
+        paragraphs: [
+          'Now go and look at what already exists. Not the version you remember, but the version a buyer meets, which is a phone, a clean browser and very little patience. Do it properly and write down what you see, because almost nobody has actually done this and the result is usually a mild surprise.',
+          'Then hold the results against your sentence. The gap between the two is your brief, and it will be more specific than any general strategy. Sometimes the fix is one substantial article. Sometimes it is that your own site still describes work you stopped doing three years ago. Sometimes it is that you share a name with a more prominent stranger.',
+        ],
+        list: [
+          'Search your full name on a phone, signed out, and screenshot the first screen — that is your homepage now.',
+          'Search your name with your city, your company and your profession, because buyers narrow the query.',
+          'Ask an answer engine who you are, and note every detail it gets wrong or cannot find at all.',
+          'Check the images, since a photograph from a company you left still turns up beside your name.',
+          'Mark which results you control and which you do not, because only the second group carries weight.',
+        ],
+      },
+      {
+        heading: 'Which layer is actually missing',
+        paragraphs: [
+          'A public record has three layers and they do different jobs. Owned media — your site, your profiles, your newsletter — gives you total control and earns you no credit, because you wrote it. Social gives you attention that expires within a day. Earned coverage is the only layer where somebody outside your business made the judgment, and the only one that holds still afterwards.',
+          'Nearly everyone arrives with too much of the first two. The diagnosis matters, because if your real problem is that nobody has heard of you, articles will not fix it as quickly as showing up in the places your buyers already gather. If your problem is that people have heard of you and cannot verify you, that is precisely what press is for.',
+          'Be honest about the middle ground too. Some publications run contributed work under their own editorial oversight, and the accurate word for that is published, not profiled by a reporter. Describe your coverage the way you would be comfortable defending it to somebody who checks, because the people whose opinion you want tend to be the people who check.',
+        ],
+      },
+      {
+        heading: 'A year, in the right order',
+        paragraphs: [
+          "Start where you can genuinely be published. The first placement's job is to exist: to put something on your name that you did not write about yourself, and to give the next pitch a reason to be read. People who insist on beginning at the top of the masthead usually spend a year beginning nothing at all.",
+          'Then build a run on one theme, across outlets that reach different parts of your audience. Then, with a record behind you, pitch upward. Selective titles read an unknown name and a name with published work differently, not because clippings impress anybody, but because the second one is a smaller risk to their own credibility.',
+          'Spread it out. A name that appears every few months across a year looks like somebody doing work, while six pieces in a fortnight followed by silence looks like a campaign that ended, and reads that way to anybody paying attention. Treat coverage as a habit with a rhythm rather than as a launch with a date.',
+        ],
+      },
+      {
+        heading: 'Say the same thing in different rooms',
+        paragraphs: [
+          'The mechanism behind recall is repetition, and it is duller than most people want it to be. Not the same article twice, but the same position argued for different readers in places that do not share an audience. What sticks is the association between your name and one idea, and associations are built by consistency rather than by range.',
+          'There is a practical test for it. If three people each read a different piece about you and came away with three different impressions, you have published three times and built nothing. If they would come away with the same impression from three angles, each piece has quietly made the other two worth more than they were alone.',
+          'It also changes how systems you do not control summarize you. Answer engines and search results describe you from whatever is available, and consistent, attributable material gives them something coherent to work from. Scattered coverage produces the vague, hedged description that you would never use about yourself.',
+        ],
+      },
+      {
+        heading: 'Keeping it from going stale',
+        paragraphs: [
+          'Coverage ages, and aged coverage can work against you. A profile describing a company you left, a title you no longer hold, or a number that has moved on is worse than nothing, because it makes everything else on the page look uncertain to the person reading it for the first time.',
+          'Maintenance is not much work. Keep your bio consistent across pieces so the details do not drift apart. Check your links once a year and find out what has moved. When the newest thing on your name is more than a year old, add something, because the date on a record is itself a signal about whether you are still doing the work.',
+          'The other half of maintenance is restraint. Award-winning with no named award, an as-seen-in row linking nowhere, a founder bio that quietly promotes itself each year: these are the details noticed by exactly the people you were trying to impress. A smaller true claim survives scrutiny. A larger one invites it.',
+        ],
+      },
+    ],
+    realityCheck: 'Press will not make you famous and it will not grow an audience. A feature is not a post, it does not go viral, and anybody promising that is selling something. What coverage does is hold still while everything else moves, so the person checking you in two years finds something solid. And if the sentence underneath is still undecided, publishing only makes the confusion more visible. Fix the sentence first. That part costs nothing.',
+    faqs: [
+      { question: 'How many articles do I actually need?', answer: 'There is no number, and anybody quoting you one is guessing. It depends entirely on what currently occupies your name. If the first screen is thin, one substantial placement changes it noticeably. If you share a name with somebody more prominent, or an unflattering old result is sitting there, it takes a sustained run. Look at the page first, then decide.' },
+      { question: 'Can I do this without hiring an agency?', answer: 'Yes. The audit costs nothing, the sentence costs nothing, and pitching is mostly research, patience and a willingness to be ignored for a while. People hire us for the time it takes and the relationships we already have, not because any of this is secret. If you have more time than budget, do it yourself and spend money later.' },
+      { question: 'My company is the brand. Does this still apply?', answer: "Usually, because people buy from people and a company page cannot answer the question a buyer is really asking. Keep the two records distinct, though: publish the company's news as the company's, and your thinking as yours. A founder whose name absorbs everything makes the business harder to hand to somebody else later on." },
+    ],
+  },
+  {
+    slug: 'how-to-get-featured-on-apple-news',
+    intro: [
+      'There is no Apple News desk, no editor to email, and no submissions page for individuals. Apple News is an app that carries articles from publications that have joined it, which means the honest version of the question is a different one: which publication is going to run your story?',
+      'That is not a disappointing answer. It is a useful one, because it tells you exactly where the work sits — in the outlet, the piece, and the reasons somebody would open it. What follows is how coverage reaches the app, how to check the ground before you pitch, and which parts of this you can influence at all.',
+    ],
+    keyPoints: [
+      'Apple News carries publishers rather than people, so coverage arrives through a publication already in the network.',
+      "Check the app before you pitch by searching the outlet's name and seeing whether it has a channel.",
+      'You influence the outlet, the headline, the image and the timing; you do not influence curation.',
+      "The permanent asset is the article on the publisher's own site, not the version inside the app.",
+      'Anyone claiming an Apple News contact should be asked to explain the mechanism out loud.',
+    ],
+    sections: [
+      {
+        heading: 'What the phrase actually means',
+        paragraphs: [
+          'Two different claims travel under the same phrase. The first is that an article about you ran at a publication whose content appears in Apple News, so readers of the app can find it there. The second is that Apple surfaced it somewhere prominent. The first is a consequence of where you were placed. The second is a decision made inside Apple, by people and systems nobody outside has access to.',
+          'The distinction matters because the claim gets checked. Describing syndication as a feature is the sort of overstatement that costs you the credibility the coverage was supposed to buy, and it is easy to catch, since anybody with an iPhone can look. The person most likely to look is the one deciding whether to work with you.',
+          'The useful framing is this. Apple News is reach layered on top of a placement, never the placement itself. Judge the work by which publication ran your story and by how good the story is, then treat app distribution as something that either happens or does not, and say so plainly on the occasions when it does not.',
+        ],
+      },
+      {
+        heading: 'How an article reaches the app',
+        paragraphs: [
+          'Apple News carries content from publishers who have joined it. Their articles become available inside the app, where readers follow channels, browse topics, and receive a personalized feed assembled for them. Apple News+ is a separate paid tier carrying magazines and the fuller catalogs of some publications, which is why a single title can be present in the app in more than one way.',
+          'Nothing in that chain includes an entrance for an individual. There is no pitch desk for people, no submission form, and no advertising product that buys editorial curation. The only door is a publication that already feeds the app, which is why the practical question is never how do I reach Apple News, but which outlet is going to run this piece.',
+          'Geography matters too. The app is available in a small number of countries rather than everywhere, among them the United States, the United Kingdom, Canada and Australia. If the people you are trying to reach sit outside that set, this surface may not be worth planning around at all, and a publication your buyers actually read will serve you better.',
+        ],
+      },
+      {
+        heading: 'Check the app before pitching',
+        paragraphs: [
+          'Ten minutes inside the app tells you more than any media list will. It is free, it takes one sitting, and it stops you paying to reach a surface that a particular outlet does not touch. Do it before you commission anything, and do it again for every outlet somebody proposes to you afterwards.',
+          'If a publication has no presence in the app, no amount of pitching will get your article there through it. That is not a judgment on the publication, since plenty of good outlets sit outside this particular network. It does mean you should stop describing that placement as an Apple News strategy and judge it on whatever else it genuinely offers you.',
+        ],
+        list: [
+          'Search the publication by name in Apple News; if it has a channel there, its articles can reach app readers.',
+          'Follow it for a week and read what it actually runs — length, tone, and whether it profiles people at all.',
+          'Notice whether the channel is active or dormant, because a title that has not posted in months tells you something.',
+          'Search your own subject and read what exists already, so you do not pitch a story that ran last month.',
+          'Ask anybody proposing an outlet to show you its channel rather than simply describe it to you.',
+        ],
+      },
+      {
+        heading: 'The parts you can influence',
+        paragraphs: [
+          'Outlet choice is the largest lever and it is entirely yours. After that comes the piece itself: a headline that makes sense to somebody who has never heard of you, an opening paragraph that does not assume the reader knows who you are, and an image that survives being shown at the size of a thumbnail on a phone.',
+          'Timing is the other one. A story attached to something readers are already following gets opened more often wherever it appears, and that holds in an app feed, in search, and in an email. It is also the least gameable part of this, because either your subject is live this month or it is not, and no writing fixes that.',
+          "Then there is the list of things nobody influences, and it is the longer list: personalization, position in any feed, how long a piece stays visible, and whether a human curator ever sees it. Those are Apple's decisions to make. If somebody offers to sell you one of them, you have learned something useful about that somebody.",
+        ],
+      },
+      {
+        heading: 'Your own channel is not a shortcut',
+        paragraphs: [
+          "Every so often somebody suggests starting a publication of their own and getting it into the app, on the theory that this removes the gatekeeper. Apple's publisher program is built for publications and applications are reviewed rather than automatic, but the more important objection is what you would be holding at the end of the exercise.",
+          'You would be publishing yourself. The whole value of press is that somebody with their own name to protect decided your story was worth running, and a channel you own is owned media with a longer setup and a technical hurdle in the middle of it. Being carried somewhere is not the same as being read there.',
+          'If you genuinely run a publication, with writers and an audience and an editorial standard, this is a different conversation and worth having on its own terms. Most people asking the question do not, and would get further being written about somewhere that already has readers than by building a place in which to write about themselves.',
+        ],
+      },
+      {
+        heading: 'What to do once it runs',
+        paragraphs: [
+          "Link the publisher's page. An apple.news link is convenient for somebody already inside the app and awkward for everybody else, while the article on the publication's own site opens on any device, stays where it is, and is the version that turns up when somebody searches your name six months from now.",
+          'Screenshots are weaker evidence than people think. An image of your article inside the app is a fine keepsake and fine proof to yourself that syndication happened, but it proves little to a stranger, because anybody can make one. A live link opening a real article at a real publication does more work than any picture of one.',
+          'Then build on it. One appearance is a moment and reads like luck, while several across a year reads like somebody whose work gets covered. That pattern is what a prospect, a partner or a journalist is really assessing when they look you up, and it is not something any single placement anywhere can produce on its own.',
+        ],
+      },
+    ],
+    realityCheck: "Nobody can promise you Apple News. There is no desk to persuade, no ad unit that buys curation, and no relationship with Apple that any agency holds. What can honestly be promised is a placement at a publication that already feeds the app, and after that, whether it surfaces for any particular reader is Apple's business rather than ours. Anyone selling a position inside the app is selling something they do not own.",
+    faqs: [
+      { question: 'Can an agency get me featured on Apple News?', answer: "An agency can place your story with publications already in the network, which is the mechanism, and it is the only one there is. What nobody can do is pitch Apple directly or buy a place in the app's curation. Ask whoever is selling it to explain the route in. If the answer is a contact rather than a publication, be careful." },
+      { question: 'Does appearing in Apple News help my search results?', answer: "Not directly. The app is a reading surface rather than a web page competing in search, so it does not move rankings by itself. What helps is the article on the publication's own site, which is permanent, crawlable and the thing that surfaces when somebody types your name. Treat app distribution as extra readers layered on top of that." },
+      { question: 'My piece ran but I cannot find it in the app.', answer: 'There are two likely explanations. Either the publication does not feed Apple News, or it does and the article is not surfacing for you, since feeds are personalized and your own phone is not a fair test of what other people see. Ask whoever placed it which network publications were targeted. Either way, the live article still does its job.' },
+    ],
+  },
+  {
+    slug: 'how-to-get-featured-on-google-news',
+    intro: [
+      'Search your own name, then click through to the News tab and look at what comes back. A competitor. Somebody else with your name in another state. Nothing at all. That tab is what the question is really about.',
+      'There is no editor there to persuade and no submissions queue to join. Google News gathers articles that publications already ran, which puts the actual work one level down: getting published by an outlet the index already treats as a news source, with a story worth surfacing. That distinction decides how you spend both your time and your budget.',
+    ],
+    keyPoints: [
+      'Google News is an index of articles published elsewhere, not a newsroom that commissions or accepts anything.',
+      'Inclusion is a property of the publication that runs your piece, so choose the outlet rather than the surface.',
+      "News surfaces lean toward what is recent, which is why the article on the publisher's own site is the durable asset.",
+      'No agency owns a route in, and anyone selling guaranteed Google News inclusion is charging for something they do not control.',
+      'One consistent name and several real articles do more for a name search than any single placement.',
+    ],
+    sections: [
+      {
+        heading: 'Start with your own News tab',
+        paragraphs: [
+          'Before you plan anything, run the search. Log out or open a private window, then look up your name, your company, and your name alongside your city, clicking into the News tab each time. Write down what appears. Most people find one of three things: nothing at all, somebody else who shares their name, or a single old item that no longer describes what they do.',
+          'Each of those points somewhere different. Nothing means no publication the index recognizes has written about you, which is a supply problem and not a ranking problem. Somebody else means you have a name collision and will need enough coverage to outweigh theirs. An old item means the record exists but has gone stale, and the fix is a newer piece rather than a bigger one.',
+        ],
+      },
+      {
+        heading: 'An index, not a publication',
+        paragraphs: [
+          "Google News gathers and organizes articles from sources it already treats as news publishers. Nothing is written there and nothing is commissioned there. There is no address a person can pitch, no submission form for an article about you, and no paid route in. What appears, and for how long, is decided by Google's own systems against its own policies.",
+          'So the phrase featured on Google News describes where an article ended up, not who decided it was worth writing. The useful sentence is always one level down: which publication ran it. If you cannot answer that question about your own coverage, or if a seller keeps steering you back to the logo, you are looking at the wrong half of the transaction.',
+          'Google does offer tools for publishers to manage how their own sites appear. That is a job for the outlet, not for you, and no part of it puts a story about your business into the tab. You are the subject here, not the publisher, and the two roles have completely different levers.',
+        ],
+      },
+      {
+        heading: 'The outlet decides whether you are indexable',
+        paragraphs: [
+          'Because the index draws from sources it already carries, the most consequential decision you make is which publication runs your piece. A careful, accurate, genuinely interesting article on a site the index does not treat as news will never surface there, however good it is. That is a fact about the site, not a verdict on your writing, and no amount of editing changes it.',
+          "This is checkable before you spend anything, which is why it is worth ten minutes. Look at how the outlet's own recent work behaves, ask for evidence rather than assurances, and pay attention to what sits at the top of the pages it publishes. A seller who answers these plainly is describing the job accurately.",
+        ],
+        list: [
+          "Search the outlet's name in the News tab and see whether its recent articles appear there at all.",
+          'Ask for live links to two or three pieces the agency actually placed with that outlet, never screenshots.',
+          'Read what sits above the article: the byline, and any label reading contributor, sponsored or press release.',
+          'Check whether the site publishes anything resembling reporting in your field, or only promotional posts.',
+          'Ask what happens to the piece, and to the price, if it never appears in the index at all.',
+        ],
+      },
+      {
+        heading: 'Give the story a fair chance',
+        paragraphs: [
+          'Nobody outside Google knows how it ranks anything, and anyone describing the mechanism to you is guessing. What you can do is make the piece look like news rather than a brochure. Something happened, on a date, with a consequence a stranger could restate: a rule changed, a season turned, a filing landed, a decision was made and you can say when you made it.',
+          'The writing carries the rest. A headline that says what occurred rather than teasing it. Your name and your company named in the first paragraph, not left to a photo caption. Numbers you own and can stand behind. This is not a lever inside an algorithm — it is simply what a news story looks like, which is the only part of this you control.',
+        ],
+      },
+      {
+        heading: 'Name consistency does the quiet work',
+        paragraphs: [
+          'If you carry a middle initial in one article, drop it in the next, use a shortened first name on your website and a maiden name on an older profile, you have split your record into four smaller ones. Pick a single form and use it everywhere — bylines, quotes, your site, your directory listings, your speaker bios. It is dull, it costs nothing, and it compounds.',
+          'Do the same for the description. Write one factual sentence about what you do, for whom, and where, then repeat it verbatim wherever you are asked. Reporters copy that sentence. Editors paste it. Summarizing tools reuse it. A business that describes itself three different ways gives everyone reading about it three different businesses to keep straight.',
+        ],
+      },
+      {
+        heading: 'A plan you can run without us',
+        paragraphs: [
+          'Pick one subject you could talk about for an hour without notes. Get published on it by a publication the index already carries, then check the tab. Fix your name and your standing description while you wait. Add a second and third piece across different outlets over the following quarter, because one article rarely holds a name search on its own for long.',
+          "Skip the shortcuts. Do not buy links, do not buy guaranteed inclusion, and do not judge a quarter of work by whether a tab happened to display something on the morning you looked. The article on the publisher's site is what stays put, and it keeps working long after the index has moved on to newer things.",
+          'If you would rather not run that process yourself, it is what we do — we develop the story, write it to editorial standard, and place it, and we tell you before you sign which outlets we can place you in and which we can only pitch toward. It is quoted to your goals.',
+        ],
+      },
+    ],
+    realityCheck: 'Nobody can guarantee Google News. There is no editor to persuade, no submission queue and no paid route in, and the systems that decide what surfaces change without telling anyone. What can honestly be committed to is the input: a real article, on a named publication, written to a standard that gives it a fair chance. If someone quotes you a price for the index itself, they are charging for the one part of this they do not control.',
+    faqs: [
+      { question: 'Can I submit my article to Google News?', answer: 'Not as the subject of one. Google provides tools for publishers to manage how their own sites appear, and you are not the publisher — the outlet is. For someone who wants coverage, the working version of the question is which publication the index already carries and would plausibly write about you. There is no form that places an article about your business into that tab.' },
+      { question: 'My article showed up for two days and then vanished. What went wrong?', answer: "Probably nothing. News surfaces lean hard toward what is current, so items rotate out as newer ones arrive, and that is the design rather than a fault. The article on the publisher's site is the part that stays, keeps your name attached and turns up when somebody searches for you later. Judge a placement by the live article, not by how long a tab displayed it." },
+      { question: 'Does appearing in Google News help my search rankings?', answer: "Treat any effect there as a bonus rather than the reason to buy. What reliably helps is a credible page about you, on a site people recognize, that a buyer or a reporter finds when they check. Anything purchased primarily for links is a different transaction with different risks, and it is not what a publication's editors think they are agreeing to." },
+    ],
+  },
+  {
+    slug: 'how-to-get-featured-in-marketwatch',
+    intro: [
+      'A MarketWatch reader usually has money in the thing they are reading about. That single fact explains most of what runs there and most of what does not. The reporting is written for people making decisions with their own capital, not for people browsing profiles of founders they have never heard of.',
+      'It is a Dow Jones title staffed by working financial journalists, which puts it in the same category as Bloomberg and Business Insider: editorially selective, not for sale, and not something any agency can hand you. What follows is what actually gets somebody quoted there, and what to be doing in the meantime.',
+    ],
+    keyPoints: [
+      'MarketWatch is staff-reported financial journalism, so you earn a place inside a story rather than supplying one.',
+      "Most people who appear there are sources in someone else's article, not the subject of a profile.",
+      'Financial desks want data you own, a dated call you made, or a position you will defend on the record.',
+      'Compliance review is the usual reason a good quote never runs, so get your language cleared before a reporter calls.',
+      'If a fixed price is quoted for MarketWatch, ask which page it lands on and what the label at the top says.',
+    ],
+    sections: [
+      {
+        heading: 'Who is on the other end',
+        paragraphs: [
+          'Picture the person reading. They hold the stock, or they are deciding whether to, or they are working out what a rate move does to a mortgage they already signed. They are not browsing. A story earns their attention by changing something they might do with their own money, which is a much narrower test than the one a general business title applies.',
+          "That test is why founder-profile pitches die on a financial desk. Your funding round, your award, your anniversary and your new hire are events in your life, not in your reader's. The pitches that survive start somewhere else entirely: something is happening in a market, and you are the person who can explain it accurately and quickly.",
+        ],
+      },
+      {
+        heading: 'Markets coverage and money coverage',
+        paragraphs: [
+          'Broadly, two streams run through a title like this one. There is market and company news — earnings, rates, filings, deals, the behavior of a sector — and there is personal finance service journalism about retirement, taxes, housing, insurance and how people actually handle their savings. They reward different people and they are reached in different ways.',
+          "For the first, you generally need to be part of the event or hold data about it. For the second, you need to explain a decision clearly enough for a non-specialist to act on, which is the door through which advisors, planners, tax specialists and economists realistically appear. Work out which stream you belong in before you write a word, because pitching the wrong one wastes everybody's time.",
+        ],
+      },
+      {
+        heading: 'What a financial desk can use',
+        paragraphs: [
+          'Financial reporters are handed opinions all day and can source them anywhere. What is scarce is specific, checkable material from somebody who owns it and will put their name on it. That means saying something falsifiable — a view that could turn out to be wrong, stated clearly enough that a reader could tell later whether it was.',
+          'It also means being reachable in a way most executives are not. Reporting on markets happens against a clock you do not set, and the second-choice source who answers is the one who ends up quoted. None of that is glamorous, and all of it is more decisive than the quality of your pitch email.',
+        ],
+        list: [
+          'Data from your own book or product that nobody else can pull, and that you are permitted to share.',
+          'A call you made on a date you can point to, including the ones that went against you.',
+          'A plain explanation of a rule change or a filing that a non-specialist reader could follow.',
+          'A named client, fund or counterparty who has already agreed to speak on the record.',
+          'Availability within a few hours, on a phone you answer, with your language already cleared internally.',
+        ],
+      },
+      {
+        heading: 'Compliance is a scheduling problem',
+        paragraphs: [
+          'Advisors, fund managers and public-company executives work under review, and reporters work in hours. The mismatch, not the message, is what kills most of these opportunities. Solve it before it arises: draft and clear a set of paragraphs on the three subjects you would plausibly be called about, and identify the one internal person who can approve a quote the same afternoon.',
+          "Review also shapes what you can say, and that limit is worth accepting rather than fighting. No performance promises, no forecast dressed up as a fact, nothing that implies a result for somebody else's money. Explaining mechanics and tradeoffs is both the compliant version and, as it happens, the version a service desk actually wants.",
+        ],
+      },
+      {
+        heading: 'What to do while the pitch is out',
+        paragraphs: [
+          "A pitch to a staffed newsroom runs on the newsroom's clock and may simply never be picked up, which is not a reflection on the pitch. So do not let a quarter hinge on it. Finance-adjacent outlets such as Yahoo Finance, Benzinga, Digital Journal and International Business Times are more reachable, because they publish at volume and carry partner and contributed material alongside their own reporting.",
+          'Reachable is not the same as reported, and it is worth saying that out loud rather than letting a logo wall imply otherwise. What those placements do is build a record: a body of published, consistent thinking under your name that a reporter finds when they check an unfamiliar source, and that your prospective clients find at the same time.',
+        ],
+      },
+      {
+        heading: 'Where we fit',
+        paragraphs: [
+          'We develop the angle, write the piece to editorial standard and place it, and we say up front which outlets on your list are placements and which are pitches. MarketWatch sits firmly in the second group — for us and for every other agency. If a market angle is not there, we would rather tell you on the first call than take the money and pitch something thin.',
+          'Most of what we place goes live within a few weeks, revisions are unlimited, and nothing publishes without your approval. Everything is quoted to your goals. If your buyers never look at markets or money, this is probably the wrong page for you and we will say so.',
+        ],
+      },
+    ],
+    realityCheck: 'MarketWatch cannot be bought, and no agency — ours included — has a route into a Dow Jones newsroom. Many people who want it are also a poor fit: if your expertise does not touch markets, rates, taxes or household money, its readers have no reason to care. A fixed-price offer for it is almost always describing something else, usually a labeled release or a site with a similar name. Pitch toward it, and plan around not getting it.',
+    faqs: [
+      { question: 'Is there a paid way into MarketWatch?', answer: 'Not into its journalism. Finance sites commonly carry newswire feeds and clearly labeled sponsored material, and a labeled release is not a reported article — the readers who matter, reporters among them, tell the difference at a glance. If a price is quoted, ask which exact page the piece lands on, what the label above it says, and to see a live example before you agree to anything.' },
+      { question: 'I am a financial advisor. Is MarketWatch realistic for me?', answer: 'As a source, sometimes. Personal finance desks do quote practitioners who can explain a decision clearly and stay within what they are able to defend. As the subject of a profile, no — that is not what the title publishes about advisors. Narrow yourself to one subject you know unusually well, get the language pre-cleared, and answer faster than the other people on the list.' },
+      { question: 'How long should I give a pitch like this?', answer: "Longer than you would like, with no date attached to it. A newsroom pitch moves on the newsroom's schedule and may never be taken up at all. Judge the quarter by what actually got published instead — the placements we can deliver are usually live within a few weeks — and treat a selective title as upside rather than as the plan." },
+    ],
+  },
+  {
+    slug: 'what-does-chatgpt-say-about-your-business',
+    intro: [
+      'Somebody asked an assistant about you before they asked you. They typed your company name into a chat window, read a confident paragraph, formed a view, and you never saw the paragraph.',
+      'It is worth finding out what it says, because it is frequently wrong in ways that are easy to explain and slow to correct. The answer is assembled from whatever the system can find about you, which for most businesses is thin, several years out of date, or written entirely by their own marketing team. What follows is how to check properly, what the failures usually are, and what genuinely moves them.',
+    ],
+    keyPoints: [
+      'Answer engines summarize you from whatever they can find, which for most businesses is thin and out of date.',
+      'Run the check signed out and more than once, because answers vary between sessions, tools and individual users.',
+      'The common failures are name collisions, stale facts, confident invention, and your own marketing copy read back.',
+      'You cannot edit the answer, and nobody you hire can either — you can only change the record it draws on.',
+      'Independently published articles give a summary something to lean on besides pages you wrote about yourself.',
+    ],
+    sections: [
+      {
+        heading: 'Run the check properly',
+        paragraphs: [
+          'Sign out, or open a temporary chat, so you are not shown a friendlier version shaped by your own history. Then ask what a prospect would ask, in their words rather than yours. Do it in more than one assistant, because they draw on different material and disagree more than people expect. Save the answers somewhere with the date on them.',
+          'Run each question at least twice. These systems produce different responses to the same prompt, so a single output is a sample rather than a verdict — do not panic at one bad answer and do not relax at one good one. Ask what the answer is based on, and note carefully where it says it does not know versus where it invents something.',
+        ],
+        list: [
+          'Ask who you are by full name, what you do, and what your company is best known for.',
+          'Ask whether your company is a good choice for what you sell, and what the alternatives are.',
+          'Ask what people say about you, and whether there are complaints or controversies worth knowing about.',
+          'Ask who founded the company, where it is based, how large it is, and when it started.',
+          'Ask it to compare you with two named competitors for a buyer in your own city or sector.',
+        ],
+      },
+      {
+        heading: 'The four ways it gets you wrong',
+        paragraphs: [
+          'The first failure is a name collision. Another business, or another person, shares enough of your name to absorb your identity, and the answer describes them with total confidence. The second is staleness: a role you left, an office you closed, a co-founder who moved on, a product you retired two years ago and still cannot get anyone to stop mentioning.',
+          'The third is invention. A founding year, a headcount, a service you do not offer, an award you never won, delivered in the same even tone as everything else. The fourth is subtler and more common than the rest: the answer is simply your own homepage read back with the enthusiasm removed, because there was nothing else to work from.',
+        ],
+      },
+      {
+        heading: 'Why your own website is not enough',
+        paragraphs: [
+          'Nobody outside these companies can see how their systems weigh anything, so treat confident claims about the mechanism as guesswork. What is observable is more basic. When the only material about a business is material the business wrote, a summary has nothing to corroborate and tends to hedge, generalize, or repeat the vaguest sentence on the page back at the reader.',
+          "Independent, published articles change the input. They state the facts in a form that can be reused — who you are, what you do, for whom, and one specific thing you actually did — and they carry a publication's name rather than yours. The same pages do the same job for a human buyer who clicks through, which is why this is not a separate exercise from ordinary credibility.",
+        ],
+      },
+      {
+        heading: 'What you can actually change',
+        paragraphs: [
+          'There is no dashboard, no submission form and no correction desk for a paragraph about your business. Accept that and the work becomes clear: you are not editing an answer, you are changing the record an answer gets drawn from. That is slower and less satisfying, and it is the only thing available to anybody, at any price.',
+          'Most of it is unglamorous maintenance you have probably been postponing anyway. Do the cheap items first, because inconsistency in your own material is the single largest source of confusion, and it is entirely within your control to remove. The published part takes longer and matters more, but it works badly on top of a record that still contradicts itself in four places.',
+        ],
+        list: [
+          'Write one factual paragraph — what you do, for whom, where, since when — and use it verbatim everywhere.',
+          'Use a single form of your name and company name across bylines, profiles, your site and every listing.',
+          'Fix the stale pages you control first: old team pages, dead service pages, outdated addresses and titles.',
+          'Correct third-party listings you can edit, and request corrections where a publication has a fact wrong.',
+          'Publish more than once on the single subject you want to be summarized as knowing something about.',
+        ],
+      },
+      {
+        heading: 'A correction plan when it is wrong',
+        paragraphs: [
+          'Start by working out what the wrong claim rests on. Ask the assistant what it used, then search those phrases yourself. The origin is usually findable and usually mundane: an old directory entry, a press release from a job you left, a similarly named company in another country, a bio you wrote once and forgot about.',
+          'Fix it at the source where you can, then publish accurate material that states the correct version plainly. After that, wait. These systems update on their own schedule and there is no way to force a re-read, so set a reminder to run the same questions each quarter and compare against the dated answers you saved.',
+          'Two things to avoid. Do not stuff instructions to machines into your web pages, which reads badly to the humans who find them and achieves nothing. And be careful with anyone selling a specific AI answer as a deliverable, because that output is not theirs to promise.',
+        ],
+      },
+      {
+        heading: 'How often to look',
+        paragraphs: [
+          'Quarterly is enough for most businesses. Checking weekly turns normal variation into a source of anxiety and tempts you into chasing outputs rather than fixing the record underneath them. What you are watching for is a mistake that repeats across sessions and across tools, because that points at a source you can go and find.',
+          'The honest summary is that this is credibility work wearing new clothes. A business with accurate, consistent, independently published material about it gets described accurately by people, by search engines and by assistants. If you would like help building that record, it is what we do, and we will tell you plainly what it can and cannot change.',
+        ],
+      },
+    ],
+    realityCheck: 'You cannot edit what an assistant says about you, and neither can anyone you hire. There is no correction desk, answers differ between users, and they change without notice or explanation. Any service promising a specific AI output is selling access it does not have. What you can change is the material these systems have to work with — slowly, by publishing accurate and attributable things and keeping your own facts current — and then waiting longer than you want to.',
+    faqs: [
+      { question: 'Can I get ChatGPT to correct something about my business?', answer: 'There is no correction desk for a summary of a company, and nobody outside these companies can edit an answer directly. The workable route is indirect: find what the wrong claim rests on, fix or correct that source, and publish accurate material that states the right version plainly. Then expect it to take time, because these systems refresh on their own schedule rather than on yours.' },
+      { question: 'Different people get different answers about my company. Which one is real?', answer: 'All of them and none of them. These systems produce different responses between sessions, accounts and tools, so any single output is a sample rather than a verdict. Run the same questions several times, across more than one assistant, and pay attention only to the errors that repeat. A recurring mistake points at a source you can locate; a one-off usually does not.' },
+      { question: 'Is this just search engine optimization with a new name?', answer: 'It overlaps, and it is not identical. A search engine hands you a list to judge for yourself, while an assistant hands you a paragraph that has already done the judging. Both reward the same underlying thing — accurate, consistent, independently published material about you — but the assistant version is far less forgiving of a record that exists only on your own domain.' },
+    ],
+  },
+  {
+    slug: 'how-ai-engines-choose-sources',
+    intro: [
+      'Two people can ask an assistant the same question about your company and get answers that disagree. Both are assembled on the spot from material the system could find and was prepared to attribute, which means the answer is mostly a reflection of what has been published about you — not of what you have published yourself.',
+      'How the choosing works is not public, it differs between tools, and it changes without announcement. What holds steady is the shape of the material these systems keep reaching for. That shape is worth understanding, because it is the part you can influence and because the rest is guesswork sold as expertise.',
+    ],
+    keyPoints: [
+      'Answer engines describe you from sources they can attribute, which is why your own website carries less weight than you expect.',
+      'A fact stated the same way across several independent publications is far easier for a machine to repeat safely.',
+      'Nobody outside these companies knows the weighting, and it shifts without notice, so build a record instead of chasing a formula.',
+      'Plain checkable sentences — name, role, company, city, date — survive summarizing in a way adjectives never do.',
+      'Contradictory bios across your own profiles are the most common reason an assistant gets you wrong.',
+    ],
+    sections: [
+      {
+        heading: 'What the machine is working from',
+        paragraphs: [
+          'Two mechanisms are at work and they behave differently. Some of what an assistant says comes from material absorbed while the model was trained, which is fixed until the next version and cannot be edited by anyone outside the lab. The rest comes from pages fetched at the moment of the question, which is why some tools show links beside their answers and why those answers move from one week to the next.',
+          'The difference is practical. Anything sitting in training data is out of your reach, and you are waiting on a future release whether you like it or not. Anything retrieved live is contestable now, because it depends on what exists and is findable today. Conveniently, both reward the same behavior: pages on sites other than your own, describing you in sentences a stranger could check.',
+          'It also explains a frustration people report. You rewrite your homepage, the answer does not move, and the conclusion is that none of this works. Your site is one source among many and, for the question of whether you are credible, it is the least independent one available. Changing what the wider record says is slower and does more.',
+        ],
+      },
+      {
+        heading: "Why other people's pages outweigh yours",
+        paragraphs: [
+          "A system producing a claim about a real company is safer repeating something it can hang on a named publication than something it found on that company's own marketing. Your site is a primary source about what you sell. It is not a source about your standing, because you wrote it, and nothing on it was ever going to say that you were middling at your job.",
+          'Corroboration does the rest of the work. When the same description of you appears in several places that are not connected to each other, a summarizer has something stable to repeat and little reason to hedge. When the only description is yours, the answer either quotes you as a claim or gets vague. Neither is what you wanted when someone asked whether you were any good.',
+          'None of this is new behavior. It is what a careful researcher has always done — check whether anyone outside the room has said the same thing. The machine version is faster, less curious, and much less forgiving of a record that consists entirely of your own words.',
+        ],
+      },
+      {
+        heading: 'What makes a page easy to quote',
+        paragraphs: [
+          'Writing style matters more than people expect, and the useful style is unglamorous. Declarative sentences. Your full name, your role and your company in the same sentence, at least once, near the top. Specifics a reader could verify. A summarizer has to lift something; give it a sentence that can be lifted without the meaning falling apart on the way out.',
+          'Then keep the entity stable. If you appear as one name in a bio, a shortened version on a panel listing, and a third variant in an article headline, you have made yourself harder to resolve into one person. The same goes for your company name, your title and the description of what you actually do. Boring consistency across the record beats a clever phrase used once.',
+        ],
+        list: [
+          'Your full name, role and company in one sentence, spelled identically everywhere it appears.',
+          'Concrete detail a reader could check — where you work, what you build, who you serve.',
+          'A visible date and byline, so the material can be placed in time by whoever reads it.',
+          'One clear claim per paragraph, rather than a stack of adjectives about your vision.',
+          'Direct quotes attributed to you by name, which give a summarizer something safe to repeat.',
+          'A stable URL on a publication that keeps its archive online and reachable.',
+        ],
+      },
+      {
+        heading: 'Things that do not work',
+        paragraphs: [
+          "There is now a market in services promising a fixed position in AI answers. Treat that the way you would treat a promise of tomorrow's front page. There is no advertising slot inside a generated answer that anybody can sell you, and the people running these systems are actively working against attempts to manipulate them. A vendor who will not explain the mechanism does not have one.",
+          'Volume is the other misfire. Pushing one release out to dozens of thin sites produces many near-identical pages that say nothing new, which is not corroboration — it is the same source wearing different hats. A record built that way tends to read as promotional to a machine and to a person, and it crowds out the few pieces that were actually worth finding.',
+          'The quiet third mistake is assuming the record corrects itself in time. It does not. An old job title, a company you dissolved, a namesake in another industry, a story that got one detail wrong — each of those sits there being repeated until something newer, clearer and better attributed exists to stand beside it. Absence is not neutral either; where there is nothing to find, the answer is assembled from whatever is nearest.',
+        ],
+      },
+      {
+        heading: 'How to check the sources',
+        paragraphs: [
+          'Do this yourself before you pay anyone to do it. Ask several tools the same question in a few phrasings, and ask the questions a buyer would actually ask rather than only your own name. Who are the credible people doing this work. Is this firm legitimate. What is this company known for. The differences between the answers tell you where the record is thin.',
+          'The prose is not the interesting part. The citations are. Where a tool shows its sources, open every link and note which domains keep appearing, because those pages are functioning as your references whether or not you would have chosen them. If your search results and those citations are dominated by profiles you wrote, you have found the actual problem, and it is a supply problem rather than a wording problem.',
+        ],
+      },
+      {
+        heading: 'Fixing an answer that is wrong',
+        paragraphs: [
+          'Correct the sources, not the summary. Start with what you control: the same name, role and description across your site, your professional listings and every profile you can still log into. Retire the pages that contradict the current version of you. This is dull work and it removes a surprising share of the errors, because most wrong answers are assembled faithfully from material that genuinely disagrees.',
+          'Then add material that is not yours. Published, attributable articles carrying your name give these systems something independent to work from, and they keep working long after the week they ran. What nobody can offer you is a date. Crawling, indexing and model releases run on their own schedule, so the honest expectation is that the record improves first and the answers follow later.',
+        ],
+      },
+    ],
+    realityCheck: 'No one can promise you a place in an AI-generated answer, and any agency selling that is selling a mechanism it does not control. These systems disagree with each other, change without notice, and can describe you wrongly for months while you do everything right. What is actually available is slower: a published, attributable record that says the same true things in several credible places. We write and place that material. We do not control the summary, and we will not pretend to.',
+    faqs: [
+      { question: 'Does publishing more on my own blog help?', answer: 'It helps with detail and it is worth doing, but it does not solve the independence problem. Your blog can explain what you do and how you think, which gives any system better raw material. It cannot corroborate that you are credible, because you are the one saying it. Use it to be clear, and use third-party coverage to be verified.' },
+      { question: 'How long before an answer about me changes?', answer: 'It depends which mechanism produced it. Where a tool retrieves live pages, new material can start showing up once it has been crawled and indexed, which is weeks rather than days. Where the claim came from training data, you are waiting on a future model release that nobody can schedule for you. Treat any specific date you are quoted as invention.' },
+      { question: 'Can I submit my company to these tools directly?', answer: 'You can make your own site crawlable, keep your listings accurate, and remove pages that contradict each other — all of which is worth doing. What does not exist is a paid listing that places you inside an answer. If someone offers you one, ask exactly which system they are submitting to and what the confirmation looks like.' },
+    ],
+  },
+  {
+    slug: 'what-is-earned-media',
+    intro: [
+      'A client forwards a link and asks whether it counts. It is a real article, on a real publication, with their name at the top — and from looking at it they cannot tell whether they earned it, supplied it, or bought it. That is a reasonable place to be confused.',
+      'The three-way split of earned, owned and paid was built for a simpler media market and still does useful work, provided you know where it stops being clean. Most of the money in this industry is spent in the seam between the categories, which is where the rest of this page lives.',
+    ],
+    keyPoints: [
+      'Earned media is coverage somebody else decided to publish; owned is yours to control; paid is space you bought.',
+      'Most of what agencies sell sits between those categories, so the useful question is who decided it should run.',
+      'A visible sponsored label changes how a customer, a journalist and a future investor read the same page.',
+      'Earned coverage is unpredictable in timing, and that unpredictability is exactly what gives it weight.',
+      'The return shows up in searches and second opinions later, not in the traffic report the week it runs.',
+    ],
+    sections: [
+      {
+        heading: 'The three categories, briefly',
+        paragraphs: [
+          'Owned media is everything you publish on property you control: your site, your newsletter, your social accounts, your podcast. You decide what it says and when it appears, and everybody reading it knows that. Paid media is space or attention you buy — advertising, sponsorships, promoted posts. It runs on your schedule, says what you want, and is normally labeled so a reader can tell.',
+          'Earned media is the third thing. Somebody outside your business looked at your story and decided it was worth putting in front of their audience. You did not buy the space and you do not control the wording. That loss of control is the entire source of its value, because a reader knows you could not simply order it.',
+        ],
+        list: [
+          'Owned: your website, blog, newsletter and social profiles — full control, no independent credibility.',
+          'Paid: advertising and sponsorships — reliable timing and placement, clearly marked as bought.',
+          'Earned: articles, interviews, quotes and reviews someone else chose to publish about you.',
+        ],
+      },
+      {
+        heading: 'The middle ground nobody labels',
+        paragraphs: [
+          'Contributor and bylined articles are the largest gray zone. The piece is written by or on behalf of the subject, then submitted to a publication that applies its own standards before running it. An editor still says yes or no, so it is not advertising. The story started with you rather than with a reporter, so it is not a staff-reported profile either. It sits honestly in between, and it should be described that way.',
+          'Sponsored and branded content is a different animal. It is advertising in editorial clothing and is normally marked with a label somewhere on the page. There is nothing wrong with buying it, provided you know that is what you did. The problem arrives when it is sold to you as coverage, and you find out how it reads only when a customer or an investor opens the link.',
+          'Then there is distribution, which people mistake for publication constantly. MSN, Apple News and Google News are surfaces and indexes rather than newsrooms commissioning profiles, so an article reaches them through a publication already in the network or the index. A press release wire distributes copy you wrote and paid to send. A news agency such as AP is something else entirely — a newsroom with strict sourcing standards, not a distribution service.',
+        ],
+      },
+      {
+        heading: 'Where our own work sits',
+        paragraphs: [
+          'It would be convenient to describe everything we do as earned media and leave it there. The accurate version is narrower. We develop the story, write the article to editorial standard, and place it with publications your audience already trusts — which means the work usually begins with you rather than with a journalist who came looking. An editor still decides whether it runs. You still approve every word before it does.',
+          "Outlets differ enormously in how reachable they are, and we would rather say so than let a logo do the talking. Titles like Yahoo Finance, Benzinga, Digital Journal, CEO Weekly, NY Weekly and Women's Journal are more open to work developed this way. Forbes, Bloomberg, Business Insider, Inc. and Fast Company are editorially selective, and no fee changes that. We tell you which list your story is realistically on before you spend anything.",
+        ],
+      },
+      {
+        heading: 'Why the label matters more now',
+        paragraphs: [
+          'The people you care about read the label. A prospect doing a last check before signing, an investor building a picture, a hiring committee, a reporter deciding whether you are a serious source — they all open the page and see what is at the top of it. A wall of obviously purchased pages does not read as momentum. It reads as a budget, which is a different message than the one you paid for.',
+          'There is a second audience now, and it does not skim. Answer engines assemble descriptions of you from material they can attribute to somebody, and the sentence a summarizer lifts depends on what the page says and whose name is on it. Independent third-party writing gives those systems something to work with. Pages that are transparently promotional give them your marketing copy back, credited to you.',
+        ],
+      },
+      {
+        heading: 'How to tell what you bought',
+        paragraphs: [
+          'You can settle this in about ten minutes with the article in front of you, and it is worth doing before you put a logo on your website. None of these questions is rude. Anyone who has done this work properly will answer them without flinching, and a supplier who bristles has told you the answer already.',
+          'The one that settles most cases is the first. If the only people who agreed this should exist are you and the person you paid, you bought advertising, whatever it says on the invoice. That can still be the right purchase — it is simply a different one, valued differently by everybody who reads it later.',
+        ],
+        list: [
+          'Who decided this would run — an editor, or only me and the person sending the invoice?',
+          'Whose byline is on it, and does the page say sponsored, partner or contributor anywhere?',
+          'What is the exact domain, read letter by letter, and is it the outlet I was quoted?',
+          'Will this still be online and indexed in a year, on a publication that keeps its archive?',
+          'Does it read like journalism, or like my About page with a masthead above it?',
+          'Could I describe it out loud to a customer without changing a single word?',
+        ],
+      },
+      {
+        heading: 'Getting value from it afterwards',
+        paragraphs: [
+          'Most coverage is wasted in the week after it appears. Link to the original rather than reposting the whole text, and check what the publication allows before you reproduce anything. Then put the link where the checking actually happens: your homepage, your proposal, your email signature, the profiles that come up when someone searches your name. That is where a curious buyer goes, and it is usually not your press page.',
+          'Describe it accurately in your bio and let the accuracy do the work. Written for is not profiled by, and people in your industry can tell the difference. One honest line about a piece a reader can open beats a row of logos nobody can trace. The effect also compounds — several accurate pieces across titles your buyers recognize change the answer to a question you never hear asked.',
+        ],
+      },
+    ],
+    realityCheck: 'Most of what gets sold as earned media is not staff-reported journalism, and that includes a good deal of ours. We write articles and place them, which means an editor still decides, but the story starts with you rather than with a reporter chasing it. That is a real, permanent, searchable article, and it is genuinely useful. It is not the same as being profiled by a national newsroom, and anyone blurring those two is hoping you will not ask which one you are buying.',
+    faqs: [
+      { question: 'Is a contributor article still earned media?', answer: 'Partly, and the honest word is contributed. Someone outside your company still had to accept it and put their masthead on it, which is more than owned media offers. You supplied the story, which is less than a reported profile. Describe it as writing you did for a publication, and nobody can later accuse you of overstating what happened.' },
+      { question: 'Does a press release count as earned media?', answer: 'The release itself is owned — you wrote it and you control it. Wire distribution is paid, because you are buying the send. Any coverage a journalist writes after reading it is earned. Those three things get collapsed into one line on a lot of invoices, so ask which of them you are being charged for and what the deliverable actually is.' },
+      { question: 'Is earned media better than advertising?', answer: 'They do different jobs and neither replaces the other. Advertising buys attention on your schedule, in your words, at a volume you choose. Earned coverage answers the question a buyer asks quietly afterwards, when they search your name to check whether you are real. If nobody ever looks you up before buying, spend the money on ads.' },
+    ],
+  },
+  {
+    slug: 'is-guaranteed-pr-legit',
+    intro: [
+      'Sometimes, and it turns entirely on the noun after the word. A promise to develop your story, write it properly and revise it until you approve it is an ordinary commercial commitment. A promise of a named, editorially selective magazine is not, because the person selling it does not make that decision and cannot make it.',
+      'Both versions get sold in the same tone of voice by people who sound equally certain, which is what makes the question hard from the outside. So instead of a verdict, here is how to read the promise: which forms of it are honest, how the dishonest ones are usually kept, and the questions that force the difference out into the open before money moves.',
+    ],
+    keyPoints: [
+      'A guarantee is only as good as the noun after it — a deliverable, an outlet, a label, or a refund.',
+      'Certainty about an editorially selective title is the clearest warning sign in this industry.',
+      'Dishonest promises are usually kept on a technicality: a lookalike domain, a paid label, or a page later removed.',
+      'Ask where the article will live, who decides whether it runs, and what a refund actually returns to you.',
+      'Money back does not return the months you waited or the announcement you already made.',
+    ],
+    sections: [
+      {
+        heading: 'What the word is attached to',
+        paragraphs: [
+          'Three very different things get promised. The first is work: a draft, a set number of pitches, revisions, an account manager who answers. The second is an outcome in general terms — publication somewhere, on a site of a described type. The third is a specific named publication, on a date, for a fixed fee. Each step moves further from what the seller controls.',
+          'That distance is the whole test. A supplier can honestly commit to anything happening inside their own building. They can speak with reasonable confidence about outlets where their work is published regularly. They cannot commit to a decision made by strangers who have never heard of them, and the further a promise travels from their own desk, the more it is a bet dressed as a warranty.',
+        ],
+      },
+      {
+        heading: 'The promises that are honest',
+        paragraphs: [
+          "Commitments about the work itself are not only legitimate, they are what you should be demanding. Ours are ordinary examples: unlimited revisions, your approval before anything is published, and a reply within 24 hours. None of those depend on an editor's mood. Any agency should put its equivalents in writing without being pushed, and a refusal to do so tells you what their scope really contains.",
+          'Then there is honest confidence about reachable outlets. An agency that has published clients repeatedly at a given title knows roughly how that tends to go, and saying so is not the same as a guarantee. The honest form sounds like a likelihood with a plan attached: where we expect this to land, what the timeline looks like as a range, and what happens next if the first answer is no.',
+          'Look for the line being drawn out loud. We tell clients which outlets we can place them in and which we can only pitch toward, and any agency worth hiring will draw that line for you before you pay rather than after something fails to run. The willingness to name the limit is a better signal than any promise on the other side of it.',
+        ],
+        list: [
+          'A written scope naming deliverables in nouns — articles, drafts, interviews — not in hopeful verbs.',
+          'A named person on your account and a stated response time you can hold them to.',
+          'Revisions until you approve the wording, and your sign-off before anything goes live.',
+          'A tier of outlets described as reachable, backed by live links from the past year.',
+          'A timeline given as a range, with a stated plan if the first outlet passes.',
+          'Refund terms written down before you pay, not described warmly on a call.',
+        ],
+      },
+      {
+        heading: 'The promises nobody can keep',
+        paragraphs: [
+          'Editorially selective titles are decided inside newsrooms. Forbes, Bloomberg, Business Insider, Inc. and Fast Company publish what their own people judge worth publishing, and no agency sits in that meeting. A fixed price attached to one of those names is buying something else — usually a different product wearing a similar label, occasionally a different website altogether.',
+          "Distribution surfaces are the second impossible promise. MSN, Apple News and Google News are places coverage arrives rather than newsrooms that commission it, so whether a given article travels there depends on the publisher's arrangements and the systems behind them. Nobody sells that pickup, however confidently it appears on a package page. The article is the deliverable; the surface is a possibility.",
+          'The third group is everything downstream of publication. Rankings, traffic, inbound leads, an investor reply, a phone that rings on Monday. A promise about those is a promise about the behavior of thousands of people none of us can direct. Good coverage makes those things likelier over time, which is a genuinely different sentence, and it is the only one anyone can honestly say.',
+        ],
+      },
+      {
+        heading: 'How the promise gets kept',
+        paragraphs: [
+          'When a guarantee that could not be honored is honored anyway, there is nearly always a mechanism. Knowing the common ones in advance turns a vague unease into a specific question you can ask before signing, and most of these can be settled with one look at the sample links a supplier is already offering you.',
+          'Notice that several of these are legitimate products described dishonestly rather than outright fraud. That is harder to argue with afterwards, not easier, because you did receive what the contract described. The time to catch it is while the contract is still a draft and the person selling it still wants your signature.',
+        ],
+        list: [
+          'A different site with a similar-sounding name — read the domain letter by letter, twice.',
+          'A clearly marked sponsored or partner section that any reader can see is advertising.',
+          'A byline that is not yours, in a section of the site nobody has reason to visit.',
+          'A page that appears, satisfies the invoice, and quietly disappears some months later.',
+          'The words we pitched it, because the scope promised effort and effort was duly delivered.',
+          'A last-minute outlet swap into something you have never heard of and cannot verify.',
+        ],
+      },
+      {
+        heading: 'Reading the refund clause',
+        paragraphs: [
+          'A refund is worth having and it is not the protection people assume. It returns the fee. It does not return the quarter you spent waiting, the launch you timed around a feature that never ran, or the credibility you spent telling a board it was coming. Anyone relying on the refund as their reassurance has already accepted the outcome they were trying to avoid.',
+          'Read the mechanics closely. Who decides whether the condition was met, and on what evidence. How long the window stays open. Whether it is money back or a credit toward more of the same work you did not want the first time. Whether a placement on any site at all closes the obligation, which is the clause that quietly does most of the damage.',
+        ],
+      },
+      {
+        heading: 'Questions that end the ambiguity',
+        paragraphs: [
+          'Send the same short list to everyone you are considering and ask for written answers. You are not trying to catch anybody out; you are converting three flattering proposals into three answers to the same question. Vagueness at this stage is itself information, and it is far cheaper to collect now than after an invoice has been paid.',
+          'One test does more than the rest. Ask for three live links from the past year for clients who resemble you, then open them on your phone and read them the way a skeptical customer would. Check the domain, look for a label, see whether the piece is still indexed, and decide whether you would be pleased to have your name on it.',
+        ],
+        list: [
+          'Which exact URL will this live on, and is that domain the outlet I was quoted?',
+          'Who decides whether it runs, and what happens to my money if the answer is no?',
+          'Will the page carry a sponsored, partner or contributor label visible on a phone?',
+          'Where have you placed a client like me before, and which titles are you only pitching?',
+          'If the first outlet passes, what is the plan, and who chooses the replacement?',
+        ],
+      },
+    ],
+    realityCheck: 'We do not promise placement at any publication, including the reachable ones, and against a firm that will, this reads as a disadvantage. What we commit to instead is the work: your story developed, the article written to editorial standard, unlimited revisions, your approval before anything publishes, and a straight answer about which outlets we can place you in versus pitch toward. If what you are buying is the feeling of certainty, we are not the cheapest way to get it.',
+    faqs: [
+      { question: 'Are all placement promises a scam?', answer: 'No, and treating them that way will cost you good suppliers. A promise about work the seller controls is normal. A promise about outlets where their clients are published regularly can be made carefully and honestly. The version to walk away from is a named, selective title at a fixed price with a delivery date attached, because that decision belongs to somebody else.' },
+      { question: 'What about no placement, no fee?', answer: 'Better than nothing, and worth reading closely. The clause usually turns on who decides what counts as a placement. If any live page anywhere satisfies it, the promise costs the seller very little and protects you about as much. Ask what the minimum acceptable outcome is, in writing, and whether you get to reject it and still be refunded.' },
+      { question: 'How do I check a claimed placement before I pay?', answer: 'Open their examples on your phone. Read the domain character by character and compare it with the outlet you were quoted. Look at the top and bottom of the page for a sponsored or partner label. Search a distinctive sentence from the article to see whether it exists on dozens of near-identical sites. Then check the page is still indexed.' },
+    ],
+  },
+  {
+    slug: 'how-to-vet-a-pr-agency',
+    intro: [
+      'Most agency relationships that end badly did not start with a scam. They started with a mismatch that was visible on the first call — a placement shop hired by someone who wanted reported journalism, or a strategy firm hired by someone who wanted articles by the end of the month. Nobody lied. Nobody asked the question that would have surfaced it.',
+      'So treat this as a sequence rather than a checklist. There is what you can find before you speak to anyone, what to ask while you have them on the phone, what to read in the contract, and what the first thirty days should produce. The last section is the one we would fail.',
+    ],
+    keyPoints: [
+      'Live links to recent work tell you more than a deck, a logo wall or a written case study.',
+      'Ask which outlets an agency can place you in and which it can only pitch toward.',
+      'Find out who develops the angle, who writes the draft, and who answers your email in month three.',
+      'The contract should say plainly what you receive in a month where nothing is published.',
+      'References are curated by definition, so ask about the client who left and why they went.',
+    ],
+    sections: [
+      {
+        heading: 'What to check before the call',
+        paragraphs: [
+          "Start with an hour and a browser. Read three pieces the agency says it placed, in full, the way a skeptical customer would read them. Look at the byline, the label at the top of the page, and the date. Check that each one still loads and still comes back when you search the client's name. You are not judging the outlet yet. You are judging the writing.",
+          'Screenshots are not evidence. A live URL is, and anyone who has done the work will hand over three without hesitating. If what arrives instead is a slide of logos, a wire-service report, or a page on a site that carries nothing but near-identical profiles, you have learned something useful and it cost you nothing.',
+          'Then check the ordinary things. How long the company has existed, who signs the contract, whether the address resolves to something real, and what unhappy clients say in public. Reviews are gameable in both directions, so read the middling ones rather than the best and worst. A three-star review is usually the most accurate document available about any service business.',
+        ],
+        list: [
+          'The byline, and whether the page labels the piece as contributed, sponsored or written by staff.',
+          'The date, and whether anything else for that client ran before or after it.',
+          'Whether the article argues something specific or reads like a brochure under a masthead.',
+          "Whether the URL still loads and still surfaces in a search for the client's name.",
+          'What else that publication runs, and whether you would send the link to a customer.',
+        ],
+      },
+      {
+        heading: 'Placing versus pitching',
+        paragraphs: [
+          'One question does more work than all the others: which outlets can you place me in, and which can you only pitch toward? A good answer is two lists with names in them. An agency that treats every publication as equally available is either inexperienced or counting on you not noticing which half of the promise went unfulfilled.',
+          'Editorially selective titles decide for themselves. Forbes, Bloomberg, Business Insider, Inc. and Fast Company are staffed by people no agency employs, so pitching is the honest verb and placing is not. More reachable business titles exist, there is nothing wrong with them, and they are a different product. Ask which of the two your quote is built on, and get the answer in writing.',
+          'MSN, Apple News and Google News belong in neither list. They distribute or index work from publications already inside their networks, so an honest answer to a question about them names the publisher instead of the surface. If a proposal sells you the logo rather than the publication behind it, it is selling the part nobody controls.',
+        ],
+      },
+      {
+        heading: 'Who actually does the work',
+        paragraphs: [
+          'The person who sells the engagement is rarely the person who runs it. That is normal in every professional service and only becomes a problem when nobody says so out loud. Ask who develops the angle, who writes the draft, who edits it, and who you will be emailing in month three. Names are better than roles, and roles are far better than reassurance.',
+          'Ask to read something the writer wrote — not a case study about it, the piece itself. Writing is the part of this work that cannot be faked in a meeting, and it is the part your buyers will silently judge. If every sample sounds like one template with the nouns swapped, that is what will arrive with your name on it.',
+          'Then ask about capacity in plain terms. How many clients does the person handling your account carry at once, and what happens when two of them need something urgent in the same week? You are not looking for a heroic answer. You are looking for one that sounds like somebody has thought about it before you asked.',
+        ],
+      },
+      {
+        heading: 'Read the contract for the bad month',
+        paragraphs: [
+          'Most agreements are written for the good outcome. The clauses worth your attention describe the other one. Find the sentence that says what you receive in a month where nothing publishes, and if there is no such sentence, ask for one before you sign. A written activity report is a legitimate answer. Silence on the point is not, and it is the single most common gap.',
+          'Then read for approval and ownership. You should see every word before anyone else does, and nothing should run without your sign-off. Check who owns drafts you paid for if the relationship ends. Check whether any placement will be labeled as sponsored or paid, because that label changes what the piece is worth to the person reading it.',
+          'Term and notice matter more than the monthly figure. A long lock-in with a short notice window is how a mediocre engagement outlives its own results. Ask what happens to work in progress if you leave mid-cycle, and whether published pieces stay live afterward. Coverage that quietly disappears a year later was never the asset you were sold.',
+        ],
+        list: [
+          'The deliverable in nouns — articles, pitches, interviews, hours — rather than verbs like manage, amplify or position.',
+          'What arrives in a month with no coverage, written in the document rather than promised on a call.',
+          'Approval rights: you read and sign off on every word before publication, every time.',
+          'Whether any placement is paid or sponsored, and whether the published page will say so.',
+          'Term, notice period, and what happens to work in progress if you leave mid-cycle.',
+          'Whether published pieces stay up, and who you contact if one comes down.',
+        ],
+      },
+      {
+        heading: 'What the first thirty days show',
+        paragraphs: [
+          'Vetting does not stop at signature. The first month is the cheapest information you will ever get about an agency, because everything done in it is a sample of everything that follows. By the end of it you should have had a real conversation about your story, read a draft, and know by name which publications are being approached and why those.',
+          'What you should not have is a month of activity nouns — outreach, positioning, groundwork — with nothing you can actually read. Ask to see the pitch that went out. Ask which outlets replied and which did not. A firm doing the work hands these over without ceremony, because to them it is simply the job rather than a disclosure.',
+          'Give it enough time to be fair. Editorial timelines are not yours, and a quiet first month is not automatically a bad sign. Most of our own work goes live within a few weeks, and even that is a range rather than a date. Set the review date at the start, in writing, and keep it even when everyone is being pleasant.',
+        ],
+      },
+      {
+        heading: 'The checks we would fail',
+        paragraphs: [
+          'We do not publish prices, which is genuinely inconvenient if you are comparing options in browser tabs. The reason is real — the same headline outlet involves very different work depending on your industry and your story — but the effect is that you have to ask us, and we are quoted to your goals rather than from a rate card. If a published price is what you need to shortlist, we will lose that comparison.',
+          'We cannot promise a selective national title, and we will not pretend otherwise to win the work. Before you sign we tell you which publications we can place you in and which we can only pitch toward. Part of what we place sits on reachable business titles rather than staff-reported national journalism, and we say which is which rather than blurring the two into one logo wall.',
+          'And we are 45+ publicists and journalists, not one person. Your piece is written by someone you will be introduced to rather than by the name at the top of the homepage. If what you want is one senior operator on every email, a small boutique will serve you better than we will, and we would rather say that on the first call than in month four.',
+        ],
+      },
+    ],
+    realityCheck: "No amount of diligence makes coverage certain. You are choosing between people who will work hard on an uncertain outcome and people who will not, and these checks reliably catch only the second group. References are curated, case studies are written by the party that benefited, and every agency's worst month is invisible in its portfolio, ours included. Ask about the client who left and why. The answer, or the flinch before it, tells you most of what you need.",
+    faqs: [
+      { question: 'Is it a red flag if an agency will not quote a price on the first call?', answer: "Not by itself. Most quote to scope, and a number offered before anyone understands your story is a guess wearing a proposal's clothes. The real warning sign is a firm that still cannot give you a written figure attached to a specific deliverable after a proper conversation. Ask for it in writing, with the deliverable stated in nouns, and set a date by which you expect it." },
+      { question: 'Should I hire a freelance publicist instead of an agency?', answer: 'Often, yes. A good solo publicist gives you the person you hired on every email, which an agency structurally cannot. What you trade away is capacity — one illness, one holiday or one larger client and your work waits. Decide which failure you could live with, then ask both to describe a busy month honestly. The two answers will not sound anything alike, and that is the useful part.' },
+      { question: "How much can I trust an agency's case studies?", answer: "Treat them as proof that the outcome is possible, not that it is typical. They are written by the party that benefited, and the engagements that went nowhere are never in them — true of ours as much as anyone's. The better move is to ask for three live links from the past year for clients who resemble you, then read the articles instead of the summaries." },
+    ],
+  },
+  {
+    slug: 'haro-alternatives',
+    intro: [
+      'The daily email that built a decade of small-business coverage does not arrive anymore. Help a Reporter Out changed hands more than once, ended up inside Cision, was rebranded as Connectively, and that platform has since closed. A lot of founders were left with a habit and nowhere to put it.',
+      'The model itself did not die. Writers still work to deadlines and still need a named person who can explain something quickly and be verified. What changed is that the requests are now spread across several smaller platforms, none of which has the old reach on its own. Here is where they went, what a reply has to look like, and how to tell whether the hours are earning anything.',
+    ],
+    keyPoints: [
+      'HARO became Connectively and then closed, but the source-request model survived across several smaller, narrower platforms.',
+      'Watching two or three platforms beats subscribing to six you never open on a busy week.',
+      'Speed and a finished, quotable answer beat credentials; most replies lose by being late or vague.',
+      "You are supplying a quote inside someone else's story, so you choose neither the outlet nor the framing.",
+      'Log your hours against published mentions for one month, then decide honestly whether to keep going.',
+    ],
+    sections: [
+      {
+        heading: 'What happened to HARO',
+        paragraphs: [
+          'The original service ran on a simple trade. Journalists posted what they needed, sources answered, and everyone tolerated the volume because often enough it worked. Ownership moved, the name was retired in favor of Connectively, and that platform was later shut down. If you have been wondering why the old alerts stopped, that is the whole explanation.',
+          'It is worth being honest about what you are actually missing. The signal was never good. Plenty of requests came from people assembling round-ups rather than reporting stories, answering well took real time every single day, and the best requests were gone within hours of landing. What has been lost is mainly the convenience of one funnel, and no single subscription rebuilds it.',
+          'The demand underneath is unchanged, which is the encouraging part. A writer on deadline still wants a practitioner who can say something specific and be checked in an afternoon. Being that person is the same job it always was. You just have to look in more than one place to find out who is asking.',
+        ],
+      },
+      {
+        heading: 'Where the requests moved',
+        paragraphs: [
+          'Nothing replaced it wholesale, so most people who take this seriously watch two or three sources and ignore the rest. Which two depends on your field — business software, consumer health and residential property draw requests from completely different writers. Sign up for more than you need for a month, then cut anything that has not produced a request you could answer well.',
+          'Regional services matter more than people expect. If your market is the United Kingdom, services carrying requests from British journalists will do more for you than the larger American platforms. The same holds for trade associations in your industry, several of which quietly circulate media requests to members and are read by far fewer competitors.',
+        ],
+        list: [
+          'Qwoted, where reporters post requests and sources pitch back; strongest around business, finance and technology.',
+          'Featured, where you answer standing questions and selected responses appear in published round-ups.',
+          'Help a B2B Writer, narrow and free, aimed at writers who need practitioners rather than executives.',
+          "Source of Sources, a free service launched in HARO's wake that runs on the same email model.",
+          'SourceBottle, long-running, with a consumer and lifestyle lean and strong Australian coverage.',
+          'Journalists posting requests directly on LinkedIn, X and Bluesky — unstructured, and often the fastest.',
+        ],
+      },
+      {
+        heading: 'What a winning answer looks like',
+        paragraphs: [
+          'Speed decides most of it. Someone posting a request has a deadline in hours, and the replies read first are the ones near the top of the pile. If you cannot check a feed once a day, these platforms will not work for you, and no amount of expertise makes up for arriving on Thursday to a request filed on Monday.',
+          'Then write something publishable. Two or three short paragraphs that could be pasted into the piece untouched — a direct claim, one specific example from your own work, and a line of context. Not a pitch. Not a link to your homepage. Not an offer to jump on a call. The answer that wins is the one that saves the writer work.',
+          "Answer only what you genuinely know. A confident quote on a subject outside your field is the fastest way to be excluded from someone's contacts permanently, and writers remember who wasted their time. Close with a line on who you are and why you can say this, a title, and an email address you actually monitor. That is the entire format.",
+        ],
+        list: [
+          'Reply the same day, ideally within a couple of hours of the request appearing.',
+          'Two or three short paragraphs written as finished quotes, not as an offer to talk.',
+          'One specific example from your own work, with detail a stranger could verify.',
+          'Your name, title, company, and a link to a page that confirms you exist.',
+          'No attachments, no press kit, and no request to review the article before it runs.',
+          'Nothing outside your expertise, however attractive the request looks from a distance.',
+        ],
+      },
+      {
+        heading: 'The honest math on your time',
+        paragraphs: [
+          'Nobody can tell you the return, because it depends on your field, your speed and how well you write. What you can do is measure it. For one month, log the minutes spent on responses and the pieces that actually published with your name in them. Then look at the trade the way an outsider would, and decide whether you would recommend it to someone whose time you respected.',
+          "Most people who quit these platforms quit over what the wins look like rather than how often they come. A good outcome here is one sentence, attributed to you, inside an article about something adjacent to your business. That is real — it puts a third party's description of you into search results — but it is not a feature and it will never read like one.",
+          'Two adjustments improve the trade quickly. Narrow what counts as a relevant request so you answer fewer and better. And keep a working file of what you already think about the five questions you get asked constantly, so a strong reply takes minutes rather than most of an afternoon.',
+        ],
+      },
+      {
+        heading: 'What works better than waiting',
+        paragraphs: [
+          'Source requests are reactive by design. You are waiting for a stranger to need what you have, on a subject they picked, for a publication you did not choose. As a supplement that is fine. As a strategy it leaves the most important decisions with other people, and the alternatives all amount to being findable before anyone needs you.',
+          "Build a page a writer can verify without emailing you: who you are, what you can speak to, a usable photograph, and two or three claims with evidence attached. Then go direct. Read a trade journalist's last three pieces and send one genuinely useful note with no ask in it. Slower, and it produces the relationships these platforms exist to substitute for.",
+          "Publish your own thinking somewhere real as well. A quote in someone else's story helps. An article under your byline that argues something does more, because it is what a reporter, a buyer or an answer engine finds when they check you — and it does not depend on anybody posting a request this week.",
+        ],
+      },
+    ],
+    realityCheck: 'Source platforms are cheap in money and expensive in attention. The realistic ceiling is a sentence attributed to you inside an article about something else, in an outlet you did not choose, and plenty of good answers are simply never used. None of that is controllable, by you or by anyone you hire. It is still worth doing if you can reply the same day, every day. If you cannot, cancel the subscriptions rather than paying to feel busy.',
+    faqs: [
+      { question: 'Is HARO gone for good?', answer: 'The original service is. It changed hands, was rebranded as Connectively, and that platform closed, so the old daily digests no longer exist. The model continued elsewhere: Qwoted, Featured, Help a B2B Writer, Source of Sources and a set of regional services all carry journalist requests now. No single one has the old reach, which is why most people who bother watch two or three at once.' },
+      { question: 'Do links from these mentions help my search results?', answer: 'Sometimes, and it is the wrong reason to do this. How a publication treats links varies and you have no say in it, so any platform selling itself mainly on links is selling something it does not control. The benefit that lasts is different — a third party quoting you by name, on the subject you want to be known for, on a page that stays up.' },
+      { question: 'Can an agency answer source requests on my behalf?', answer: 'Some will, and it can work if the quotes are genuinely yours and you approve them before they are sent. Be careful what you are buying. Someone writing at speed in your voice, on subjects you have not thought about, is how a weak quote ends up permanently attached to your name. Insist on approving every response, and treat this as one small part of a plan.' },
     ],
   },
 ]
