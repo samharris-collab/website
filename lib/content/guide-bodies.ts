@@ -286,18 +286,18 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'What to bring before you pitch',
+        heading: 'What a profile writer needs from you',
         paragraphs: [
-          'Before anyone writes a word, assemble the raw material. Not a bio — bios are the least useful document in PR, because they contain only the things that are already public and already flattering. What a writer needs is closer to what you would tell a friend over dinner: the decision you nearly got wrong, the year that did not work, the reason you do this instead of something easier.',
-          'That last item matters more than people expect. Every founder has something they would rather keep out — a previous business that failed, a partner who left, a health reason behind a gap in the timeline. Naming it upfront is not hiding; it is scoping. The story is better when the boundaries are set before the writing starts rather than argued over afterwards.',
+          'A profile writer is looking for things that can go on the page — a room, a street, a moment, a sentence somebody actually said. Most of what founders send is the opposite: positioning, adjectives, a services list, none of which can be described. Think in scenes instead. Where the work happens, what it sounds like when it is busy, and what you were doing on the day the thing you are known for started.',
+          "The New York material is worth gathering separately, because it is what earns the title's attention in the first place. Which clients, buildings, neighborhoods, suppliers and industry bodies you actually touch here — named exactly enough that a writer could check one without calling you. Set the boundaries at the same time: what confidentiality stops you naming, and what you would rather were not discussed at all. That is far easier to agree before a draft exists than after.",
         ],
         list: [
-          'The specific problem you set out to solve, described the way a customer would describe it rather than the way your website does.',
-          'One decision you made that a reasonable person would have made differently, and what it cost you.',
-          'Facts you can stand behind and verify — headcount, years in operation, markets served — and nothing you cannot.',
+          'The scene: where you work, who else is in the room, and what an ordinary Tuesday there involves.',
+          'Your real New York footprint — offices, clients, suppliers, the neighborhoods you operate across — specific enough to be verified.',
+          'The change you saw arrive in this city before it reached your industry elsewhere, and how you noticed.',
+          'People who will talk about you on the record — a client, a former partner, a supplier — and confirmation they are willing.',
+          'Facts a writer can check without you: dates, licensure, locations, how many people work there now.',
           'Two or three sentences in your own voice that sound like you and not like a brochure.',
-          'Anything already on the record: prior coverage, a podcast, a talk, a licensing body listing.',
-          'A clear statement of what you do not want discussed, so it never reaches a draft.',
         ],
       },
       {
@@ -317,10 +317,11 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'Doing this without an agency',
+        heading: 'Sending it in yourself',
         paragraphs: [
-          'You can do all of this alone. Read the site, build the raw material, write a draft that reads like a piece rather than a pitch, and approach the outlet with the finished thing instead of an idea. That last part is the step most people skip, and it is the one that changes the reply rate more than anything else you could do.',
-          'What an agency adds is time and judgment about fit — knowing which title suits which story, and saying so when the answer is none of them. We tell clients which outlets we can place them in and which we can only pitch toward, and NY Weekly falls into a more reachable group than the national business titles. That is a difference of degree, not a promise.',
+          'The route in is whatever the site publishes — a contact page, an editorial address, a submissions form — and that is the one to use. Do not go hunting for a personal inbox through a scraping tool, and do not send the same note to several addresses at the title. Both are visible from the other side, and both start you at a deficit. If a form is what is offered, the form is the route, however unsatisfying that feels.',
+          'Send the finished piece rather than the idea of one. The subject line names the person and the angle in plain words, the draft goes in the body of the email rather than an attachment, and the headshot is one you own the rights to. Anything that requires the reader to open a file or a link before the pitch makes sense is a step you have added for them.',
+          'Then leave it alone. One follow-up is reasonable, a second is noise, and silence is an answer you should read as one. A draft written to editorial standard is not wasted by a no — it goes to the next title that fits it, which is the best argument for writing it properly the first time.',
         ],
       },
     ],
@@ -523,11 +524,10 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'Know which door you are using',
+        heading: 'Where your piece lands on the site',
         paragraphs: [
-          'Financial media generally has more than one way in, and the routes are not equivalent. There is reported journalism, written by staff and not for sale. There is contributed and partner content, which sits under different labeling. And there is paid wire distribution, which is a product rather than coverage. All three can end up on a finance site, and readers do not always tell them apart.',
-          "You should. Before you pay anyone for a Benzinga placement, ask plainly which of those routes they are using, whether the piece will carry a label, and whether the byline is yours or a staff writer's. An honest answer costs nothing to give. A vague one — we know people, we can get you in — usually means the seller is hoping you will not ask twice.",
-          'None of this makes the reachable routes bad. A clearly labeled, well-written piece on a finance title is a real asset: permanent, searchable, and credible to the people who look you up before a term sheet or a partnership. It is only bad when it is sold to you as something it is not.',
+          "Financial sites carry more than reporting, and on a markets title the difference shows up in where a piece lives. Company news and releases feed into ticker and company pages, timestamped and indexed against your name. That has real uses: it puts a fact on the public record with a date attached, which matters for an announcement you may need to cite later. What it does not do is put a reporter on your company or place you among the stories the site's own staff produce.",
+          "Contributed and commentary pieces are edited differently again. Expect the figures to be questioned, expect a label on the page, and expect the byline to be settled before anything runs — yours, a staff writer's, or a firm's, and each says something different to a reader. Ask which of those you are buying, and which publication originates it, before you pay. Our Yahoo Finance guide runs that check line by line, and the same reading works on any finance surface.",
         ],
       },
       {
@@ -818,7 +818,7 @@ export const guideBodies: GuideBody[] = [
         heading: 'Where the confusion starts',
         paragraphs: [
           'A great deal of the "as seen on AP" material floating around comes from paid press-release distribution rather than AP journalism. Those are different products, with different prices and different meanings, and the difference is invisible in a screenshot — which is precisely why screenshots are what gets shown to you on the sales call.',
-          "Check any link before you buy another like it. Is there a journalist's byline on the piece? Does the page carry a label describing it as a press release or sponsored content? Does it read like reporting, with independent voices in it, or like an announcement written by the company it happens to be about?",
+          "A reported wire story wears marks a paid page cannot borrow. There is a reporter's name on it, a dateline naming the city it was filed from, and somewhere in the piece a voice from outside the company being written about. A release has none of those. It opens with the announcement, quotes only the people who approved it, and the wire's name on the page describes who carried it rather than who checked it.",
           'Paid distribution is not worthless. It has real uses for regulatory notices, financial announcements and getting a fact onto the public record where it can be cited later. It simply is not editorial coverage, and any buyer who spends thirty seconds looking will know. Selling it as the other thing is where agencies lose people permanently.',
         ],
       },
@@ -833,7 +833,7 @@ export const guideBodies: GuideBody[] = [
     realityCheck: 'Nobody can place you on AP. Not us, not anyone — those decisions belong to its journalists, and that is the point of a wire. Most people who prepare for this properly are never quoted by it, and that is a normal outcome rather than a failed campaign. The preparation is still worth doing, because being checkable and reachable is exactly what gets you quoted everywhere else.',
     faqs: [
       { question: 'Can a PR agency get me on AP News?', answer: 'No, and how an agency answers that question tells you most of what you need to know about it. What an agency can honestly do is prepare you as a source, put your name forward on stories where you genuinely belong, and build the published record that makes you easier to trust. The decision stays with the newsroom.' },
-      { question: 'My press release appeared on apnews.com. Does that count?', answer: "It counts as distribution, which is a real thing with real uses. It is not reported coverage. Look at the page itself: if there is no journalist's byline, no independent sources, and a label marking it as a release, what you have is your own words republished. Useful in its place, and worth describing accurately." },
+      { question: 'My press release appeared on apnews.com. Does that count?', answer: 'It counts as distribution, which has real uses — putting a fact on the public record, meeting a disclosure obligation, giving customers something to link to. What it does not buy you is the sentence AP covered you. Say you issued a release and the wire distributed it. That version survives a follow-up question, and the other one is checkable in seconds.' },
       { question: 'What should I aim at instead?', answer: 'The outlets where you can actually be published, starting now. A body of permanent, searchable articles does most of the job people want from AP anyway — it reassures buyers, answers due diligence, and gives a journalist something to check. It also makes any later approach easier, because you are no longer an unfamiliar name.' },
     ],
   },
@@ -890,19 +890,18 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'What it does and does not do',
+        heading: 'What to do with the link',
         paragraphs: [
-          'What a placement here does: it puts a real article under your name where people look, and it stays there. It gives you something to send after a first meeting, a line for a bio, and a page that sits alongside your own site when somebody searches you. That is a genuine asset, and it does not expire.',
-          'What it does not do: deliver a wave of traffic, substitute for a reported national feature, or make a weak offer strong. A row of logos with nothing behind them reads as bought, because it usually was. The article has to be worth reading on its own terms, or the logo starts working against you with exactly the people you wanted to impress.',
-          'Used properly it is one entry in a record you are building deliberately, across titles that match your audience. That record is what changes how people treat your name — not any single placement, however good it looks in a screenshot. The compounding is the strategy; each piece is only a step in it.',
+          "On the day it publishes, do three unglamorous things. Link to it from your own site with the outlet's name as the words in the link, so the article and your pages surface together when somebody searches you. Save a dated copy of the page. And send it individually to the people who already asked what you do — the ones mid-decision, not a mailing list.",
+          'After that it works as a reference rather than an announcement. The link belongs in the proposal, in the follow-up after a first meeting, in the bio an event organizer asks for, and on whichever local association or directory page your buyers actually browse. In a city that runs on referral, the person passing your name along needs something to forward that is not your sales page.',
         ],
       },
     ],
-    realityCheck: 'LA Wire is more reachable than a national newsroom, which is precisely its usefulness — but reachable is not the same as certain. An editor still decides, timing still moves, and nobody can honestly hand you a publication date before the story exists. It is also not a reported national feature and should never be described as one. Used plainly, it is a real article doing real work; oversold, it is the thing that makes a careful buyer suspicious.',
+    realityCheck: 'The ceiling here is the readership, not the byline. An LA-facing title reaches people who care what happens in Los Angeles, which is the right audience or the wrong one depending on who buys from you — and a strong piece aimed at the wrong city still does nothing for you. Editors also run to their own calendar, we do not control it, and nobody can hand you a publication date before the story exists.',
     faqs: [
       { question: 'Is this real press, or is it paid placement?', answer: 'It is a real, published article on a real title, which is what most people mean by press. It is not a reported story where a journalist independently investigates you. Titles that can be reached reliably generally involve an arrangement of some kind, and an honest agency will tell you plainly which applies to your piece before you commit.' },
       { question: 'Do I need to be based in Los Angeles?', answer: 'A genuine connection helps and a manufactured one hurts. If you operate here, serve people here, or work in an industry concentrated here, say so early and specifically. If none of that is true, your effort goes further at a title matched to your own region or your industry, and we would rather point you there than sell a poor fit.' },
-      { question: 'Can I do this without an agency?', answer: 'Yes. Read the site, use whatever contact or submission route it publishes, and send a short pitch with the angle in the first two lines and a link to something you have written. Nothing here is hidden. What an agency mostly provides is story development, writing to editorial standard and follow-through, not secret access.' },
+      { question: 'Can I do this without an agency?', answer: 'Yes. What decides it is the opening two lines, and a regional title needs both of them working: the local tie stated plainly — where you operate, who you serve in this city — and the thing a reader takes away that they did not have before. Nothing about you goes first. Most rejected pitches here were shaped for no particular publication, and an editor can see that immediately.' },
     ],
   },
   {
@@ -1098,7 +1097,7 @@ export const guideBodies: GuideBody[] = [
     ],
     realityCheck: "We do not guarantee Int'l Business Times, and we will not take money on the pretense that we can. Editorial judgment belongs to the publication. What we can tell you honestly, before you spend anything, is whether your story has the substance a business news readership requires — and if it does not yet, what would have to change. Where the answer is no, we say so and place the story where it will actually run. That is a normal outcome at this level.",
     faqs: [
-      { question: 'How is this different from a wire release that gets picked up?', answer: "Paid distribution puts an announcement onto commercial newswire feeds, where it may appear on partner sites automatically. That is a distribution product. Editorial coverage means a publication decided your story was worth its readers' time. Both can be useful, and they are not interchangeable — anyone showing you a syndicated release as proof of a business news placement is hoping you will not check." },
+      { question: 'Do I need to be a public company to be covered here?', answer: 'No. Size is not the qualifier — consequence is. A private company holding operating data about a shift other people are only guessing at is more useful to a business desk than a listed company announcing a hire. What you give up without filings is free verification, so you supply it yourself: named sources outside the building, a plain description of method, records a stranger can check.' },
       { question: 'I have data nobody else has. How should I use it?', answer: 'Carefully, and probably not all at once. Decide first what you are willing to have quoted permanently, then check it against your contracts and privacy obligations before it leaves the building. Anonymize it, describe the sample plainly, and be ready to explain your method. Data that cannot survive a follow-up question does more damage than no data at all.' },
       { question: 'What should I do if my story is not ready for this yet?', answer: 'Build the record somewhere it can run now, and go find what is missing. That usually means a specific result you can point to, a number you can defend, or a position on something your industry is currently arguing about. In our experience the gap is rarely writing quality. We would rather tell you which it is than bill you for a pitch we do not believe in.' },
     ],
@@ -1226,8 +1225,8 @@ export const guideBodies: GuideBody[] = [
       {
         heading: 'What raises the cost on your side',
         paragraphs: [
-          "Some of the price is decided by your situation rather than the outlet. A story that has to be found rather than simply written costs more, because the discovery work is real. Regulated fields — medicine, law, financial advice — carry review and careful phrasing that a coaching profile does not. So does anything involving other people's confidential work, where half the interesting detail cannot be printed.",
-          'Speed costs. So does committee — every extra approver adds rounds, and rounds are hours. Volume works the other way: several pieces developed from one body of research cost less each than the first one did, because the expensive part is already done. If a quote surprises you, ask which of these is driving it. A good answer will be specific.',
+          'Some of the price is decided by your situation rather than the outlet. Two businesses can be quoted differently for the same publication in the same week, and that is not a markup — it is the difference in what has to happen before a draft exists. The unit being priced is hours, and the items below are the ones that reliably add them.',
+          'Most of what sits on your side is negotiable before a price exists. An approver you can actually reach, a deadline set by your calendar rather than a panic, and evidence handed over rather than excavated will each take real hours out of a quote. If the number still surprises you, ask which of these drove it and expect a specific answer — a vague one usually means the quote was picked rather than built.',
         ],
         list: [
           'A thin story: more discovery time before anyone can write a first draft.',
@@ -1286,8 +1285,8 @@ export const guideBodies: GuideBody[] = [
         heading: 'Pick outlets by who reads them',
         paragraphs: [
           'Make a list of the last ten people who bought from you and work out what they read. Not what you read — what they do. Trade newsletters, regional business pages, association publications, the two or three national sites they open at breakfast. That list is your target list, and it usually looks less glamorous than the one you would have written from memory.',
-          "Then sort by reachability, honestly. Titles like Forbes, Bloomberg, Business Insider, Inc. and Fast Company are editorially selective; you can pitch them, and you cannot arrange them. Others — Yahoo Finance, Benzinga, Digital Journal, CEO Weekly, NY Weekly, Healthcare Business Today, LA Wire, US Reporter, Women's Journal, Fox Interviewer, International Business Times — are more reachable for a founder or expert with a clear story. Start where you can actually get published and build outward.",
-          'Two more notes. MSN, Apple News and Google News are not places to pitch — they carry or index work from publications already in their networks, so the way in is the publication. And read three recent pieces from any title before you contact it. Pitching a story a site plainly does not run is a common reason for silence, and the easiest to avoid.',
+          'Now sort by evidence rather than reputation. Open each title and find a piece from the last month about someone at roughly your stage — not a household name, not a public company. Several of those and the door exists. None and you are looking at an editorial decision your pitch will not move this year. Start where the evidence says you can get published and work outward. Our guide to what a feature costs sorts the common titles into those two groups.',
+          "Before you contact anyone, read a few recent pieces and note the section, the length, and whose name sits on the byline. Most silence comes from pitching a shape the title does not run — a founder profile to a desk doing trend reporting, an essay to a section that runs short news. Match the shape first. And if a piece later turns up on MSN or Apple News, that is the publication's network doing it, not a place you pitched.",
         ],
       },
       {
@@ -1451,10 +1450,10 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'What to build in the meantime',
+        heading: 'Publish what the check will find',
         paragraphs: [
-          'The record you build elsewhere is not a consolation prize. It is the thing that makes the background check come back clean. Real articles on real publications, permanent and searchable, do the quiet work of establishing that you exist, that your claims stay consistent, and that somebody with an editorial standard has already checked you once.',
-          'Those placements also move faster. Most of the coverage we can actually place goes live within a few weeks, which gives you something to point at while the slower work of becoming a source continues underneath. Treat the two as one plan rather than a fallback and the sequencing stops feeling like a compromise.',
+          'That background check is the reason to publish elsewhere at all. A reporter working to a deadline is not weighing your record; they are scanning it for a reason to stop and call the next person. Articles under your name on real publications remove those reasons. They show that your title and your claims have stayed the same over time, and that somebody with an editorial standard already let them stand.',
+          'So publish the things a check can land on. A byline that argues the same point you would make to a reporter today. A piece where a figure you are willing to repeat is already on the record. An interview where your role reads the way it reads everywhere else. Consistency is the whole asset here — a record that contradicts itself is worse than a thin one, because a thin record is merely unhelpful.',
         ],
       },
     ],
@@ -1650,10 +1649,11 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'Building the record that gets you read',
+        heading: 'Put the checkable parts on the record first',
         paragraphs: [
-          'Almost nobody gets a national business feature as their first piece of coverage. What usually happens is slower and duller: a trade publication in your sector, a regional business journal, a podcast your buyers listen to, a byline somewhere respectable. Each one adds something a reporter can verify without taking your word for it, and that is what makes the next conversation shorter.',
-          'That sequence is what we do for clients, and you can run a version of it yourself. We develop the angle, write the piece to editorial standard, and get it published where our relationships are real — then pitch upward with a stronger record behind your name than you had at the start. Which outlets fall into which group is something we tell you before you spend anything.',
+          'The disclosure conversation goes faster when part of it has already happened. A reporter at an operator title will not print a growth figure because you said it on a call. They need it attached to something outside you — a customer who will confirm the contract, a filing, a statement your accountant signed, a regional business journal that already ran the number with your name beside it. Each of those is a question that does not have to be reopened.',
+          'So build that deliberately instead of hoping it accumulates. Ask your best two customers now, in writing, whether they would confirm to a journalist what you actually did for them — a confirmation, not a testimonial. Get the figure you are willing to stand behind published somewhere an editor put their name to it, so the next reporter is corroborating a number rather than being the first to print it.',
+          'That preparation is most of what we do before anything is written: working out which figures you can defend, getting the permissions in writing, and getting the piece published where we place clients regularly. Whether a reporter takes the story is still their decision. What changes is that when the call comes, the checkable parts are already checked, and the conversation is about your business rather than about whether you are who you say you are.',
         ],
       },
     ],
@@ -1726,7 +1726,6 @@ export const guideBodies: GuideBody[] = [
         paragraphs: [
           'A published article is not the finish line; it is an asset most founders leave idle. Put the link where the three readers will hit it — the site, the deck, the outbound email, the careers page, the founder bio. Send it to the investors who passed, with one line and no ask. Coverage works hardest when it arrives just after someone has been thinking about you.',
           'It also feeds the systems that answer questions about you now. Search results are one; the AI assistants your buyers ask about vendors are another, and they summarize from published, attributable sources rather than from your homepage. A record of real articles under your name is what those tools have to work with. Nothing else you publish does that job.',
-          'You can run all of this yourself with a few weeks of effort. If you would rather not, that is what we do — we build the angle, write the piece to editorial standard, and place it with publications your buyers already trust. We say plainly which outlets we can place and which we can only pitch toward.',
         ],
       },
     ],
@@ -1900,7 +1899,7 @@ export const guideBodies: GuideBody[] = [
       'Confidentiality rules out case studies, not publishing — the pattern, the sequence and the diagnosis are yours.',
       'You are compared with firms that have more people; published thinking is how a small practice shows method.',
       'Write about how you decide, and you help set the criteria you are later judged against.',
-      'A trade title reaches buyers who can hire you; a national one reassures the committee behind them.',
+      "Publish in your client's industry, not in consulting media — your peers are not the people who hire you.",
       'Publish before you need it — the article must already exist the evening somebody looks you up.',
     ],
     sections: [
@@ -1928,11 +1927,11 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'Narrow usually beats famous',
+        heading: "Publish in your client's industry, not your own",
         paragraphs: [
-          'Independent consultants tend to want the biggest name available, which is understandable and often the wrong call. A trade publication read by facilities directors, hospital administrators or logistics operators reaches a small audience composed almost entirely of people who can hire you. A national business title reaches an enormous audience composed almost entirely of people who cannot.',
-          'The national piece still does a job, just a different one. It is what your champion forwards to a procurement committee that has never heard of you, and it is what sits in the search results when a referral checks you late at night. Broad surfaces like Yahoo Finance, Benzinga and International Business Times serve that purpose; the selective business magazines serve it better and cannot be bought.',
-          'A sensible plan runs both and does not confuse them. Trade coverage for the buyers, broader coverage for the people who validate the decision, and no pretense that a syndication surface is a newsroom. If a piece appears on MSN or in Apple News, that happened because the publication that ran it distributes there — say it that way, because the person checking you can tell.',
+          "The instinct is to aim at the biggest name available, but the more common error is direction rather than size. Consultants publish in consulting media, which is read almost entirely by other consultants. The title that actually earns work is the one your client's industry reads without thinking about it — the association journal, the sector monthly, the magazine that turns up at their annual conference. Being the outsider who visibly understands that world is the whole proposition.",
+          'A broader business title does a narrower job than most people assume, and it is largely a procurement job. When a buyer picks a small practice over a firm many times its size, somebody has to defend that choice in writing — to a sponsor, a board, a supplier review. Published work under your name is what gets attached to that defense. It also settles the quiet check the person who referred you runs before committing.',
+          'So choose titles the way you would choose a conference. Ask your last few clients which publication they read at work, and which one they would notice a supplier appearing in; the answers are rarely what a media kit suggests. Then check whether the outlet publishes practitioners at all — many sector journals run bylined work from outside contributors, and some run only staff reporting. That check saves more time than any list of logos.',
         ],
       },
       {
@@ -2027,7 +2026,7 @@ export const guideBodies: GuideBody[] = [
     ],
     realityCheck: 'Press will not fill your pipeline. If you need transactions this quarter, spend the money on lead generation and come back to this later. Coverage does not target your zip code, cannot be guaranteed at any specific publication, and will not be traceable to a closing. What it does is win close comparisons and survive a search — which matters most to agents who already get appointments and lose some of them narrowly.',
     faqs: [
-      { question: 'Will an article bring me listing leads?', answer: 'Occasionally, and not reliably enough to plan around. The dependable return is on appointments you already have — the seller comparing you with two other agents, the out-of-market agent deciding whether to send a referral. If your business needs volume at the top of the funnel, coverage is the wrong tool. If it needs a higher close rate on the appointments you get, it is the right one.' },
+      { question: 'Can I target coverage to my farm area?', answer: 'Only partly. A regional business journal or a local outlet is geographically targeted by definition; broader business titles are not, and no publication will restrict who reads you. What you can control is the article itself. Name the market, the streets and the price bands you actually work in, and the piece becomes what surfaces when somebody searches your area rather than only when they search your name.' },
       { question: "Do I need my broker's permission?", answer: "Assume yes until someone tells you otherwise in writing. Most brokerages have a policy covering anything published under an agent's name, and some require review before it runs. The conversation is short, and it is far easier before a draft exists than after one is live. Where a brokerage does require changes, they are usually about naming and disclosure rather than substance." },
       { question: 'Should I aim for local press or national?', answer: 'Both, for different reasons. Local coverage carries more weight with a seller in that market and is harder to get, because you are competing with actual news. National and business titles are more attainable and travel further — they reach the relocating buyer and the referring agent from another state. Most agents do best with one strong local piece and a few broader ones.' },
     ],
@@ -2145,17 +2144,18 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'When markets move, be ready',
+        heading: 'Reporters move faster than review',
         paragraphs: [
-          "There is a recurring moment when reporters need advisors: a rate decision, a sharp drop, a headline that has everyone's clients calling at once. What they want is someone who explains what is happening in plain language and declines to say what happens next. Advisors who cannot resist a prediction get quoted once. Advisors who stay careful get called back.",
-          "The preparation is the same preparation your clients need. Know what you would say about a drawdown, an inflation print, a change in retirement rules. Have it approved in advance if your firm requires it, because a compliance queue and a reporter's deadline do not run at the same speed. Being second is the same as being absent.",
-          "This is also the honest limit of what a commentary strategy delivers. A quote inside someone else's article is a credential, not a campaign. It is worth having, it is not schedulable, and it belongs alongside writing you control rather than in place of it.",
+          'A reporter working a rate decision needs a usable comment the same afternoon. Firm review runs on a different clock, and at a registered rep it can depend on who is at their desk that week. That mismatch, rather than a shortage of things to say, is why advisors miss the window. Either the work was done before the news or it does not happen, because no queue moves faster because the request is interesting.',
+          'So build a small library of language that has already been through review. A few paragraphs on the subjects that recur — a drawdown, an inflation print, a change to contribution or withdrawal rules — written generally enough that they do not expire, and updated when the rules actually move. Responding then means choosing which approved paragraph applies, rather than drafting against a deadline and hoping review is quick.',
+          'A live request is also not a commissioned article, and most firms treat the two differently. Ask who may answer a reporter without separate sign-off, and in which format, since written answers are easier to capture and retain than a phone call and plenty of firms permit one and not the other. Then settle what you do when approval will not arrive in time. Declining cleanly keeps a reporter; going quiet does not.',
         ],
       },
       {
         heading: 'Where advisors realistically get published',
         paragraphs: [
-          'Finance has an unusually clear tiering. Bloomberg, Business Insider and Forbes staff coverage is editorially selective and cannot be arranged — an advisor generally appears there as a source inside a reported piece, if at all. Yahoo Finance, MarketWatch and Benzinga are more reachable, because they publish at volume and carry partner and contributed material alongside their own reporting.',
+          'Sort the options by route rather than by prestige. A contributed column runs under your byline and clears your review before anybody else reads it, and Yahoo Finance, Benzinga and the professional titles your referral sources read all carry material of that kind. A quoted comment inside a reported story is the other route: written by somebody else, cut for space, arranged by nobody. Both are worth having, and only the first can be planned around.',
+          'That distinction gets blurred in proposals, sometimes deliberately. MarketWatch, to take the one that comes up most, is a Dow Jones editorial property — its journalists decide what runs there and there is no contributed slot to buy into. When a proposal lists a title like that in the same column as outlets that genuinely accept submitted work, whoever wrote it either does not know the difference or is counting on you not to.',
           'MSN, Apple News and Google News come up in almost every conversation. They do not commission articles about advisors. They carry or index work from publications already inside their networks, which means a piece can reach them through the outlet that published it and nobody can promise that it will. If someone sells you MSN as a placement, ask which publication is actually running the article.',
           "Where it lands matters less than most advisors think, provided the reader recognizes the name and the piece is genuinely good. The prospect running a search at eleven at night is not evaluating the masthead's editorial standards. They are deciding whether the person their friend recommended sounds like someone who understands their situation.",
         ],
@@ -2216,7 +2216,7 @@ export const guideBodies: GuideBody[] = [
         heading: 'Where these pieces get placed',
         paragraphs: [
           'Two different rooms. Healthcare trade and business-of-medicine outlets publish clinicians writing about how care gets delivered — staffing, access, technology, the economics of running a small practice. Consumer titles and their health sections want the reader-facing version: what a condition feels like, how to decide, what to ask. The same underlying material can produce both, but not in one article, and mixing them is the most common reason a draft goes nowhere.',
-          'MSN and Apple News come up in almost every one of these conversations. Neither commissions physician profiles. They carry material from publications already in their networks or index, so a piece reaches them by running somewhere that feeds them, not by being pitched to them directly. Worth knowing before you pay anybody who describes them as outlets they place clients in.',
+          'Ask where an article originates rather than where it ends up. Aggregators and phone news feeds, MSN and Apple News among them, reproduce pieces that ran somewhere else first, and the downstream copy is not always the one you approved. Headlines get rewritten by whoever republishes them, and a rewritten health headline can promise something you were careful not to promise. Judge the outlet that commissioned the work, because it is the only one with an editor you can reach.',
           "The most selective national titles are a separate matter. Their health coverage is reported by staff, and you get into it by being a useful source over time — answering a reporter's question accurately, quickly, on the record, including when the honest answer is that you do not know. Nobody can sell you a place in those.",
         ],
       },
@@ -2391,7 +2391,7 @@ export const guideBodies: GuideBody[] = [
         heading: 'The press page you probably do not have',
         paragraphs: [
           'Somewhere on your site there should be a page that lets a producer, an event organizer or a journalist act without emailing you first. Short bio, long bio, a headshot at print resolution, the cover, the topics you speak on, a list of published pieces and interviews, and a direct contact address that a person actually monitors. It takes an afternoon to build.',
-          'Then check what a search for your name returns, because that is the real press page. If the first results are a retailer listing and a social profile you have not used in two years, no amount of pitching fixes the impression. Published articles are what fills that page, which is the other reason to start before the book is finished.',
+          'A search for a working author should return the book, a byline or two, and somebody else interviewing you about the subject. What it usually returns is one retailer page. That tells a producer or a bookseller the book exists and nothing about whether anybody outside your publisher takes the argument seriously, which is the question they are really asking. Published pieces are what answer it, and that is the other reason to start before the book is finished.',
         ],
       },
     ],
@@ -2480,7 +2480,7 @@ export const guideBodies: GuideBody[] = [
     realityCheck: 'Coverage does not book you. Referrals, a strong reel and a subject somebody wants on their agenda book you, and press works at the end of that process rather than the start of it. Nobody can promise you a stage, a fee, or a place in a specific title, and an agency selling bookings alongside placements should be asked plainly which of the two it is actually doing. If your video is weak, spend there first.',
     faqs: [
       { question: 'Will press actually get me booked?', answer: 'Indirectly, and only at one stage. No editor forwards you to organizers. Coverage works when somebody is already deciding whether to shortlist you, and it removes the doubt that turns a maybe into a no. If you are getting shortlisted and losing at the research step, press is well aimed. If nobody knows you exist yet, smaller stages and a better reel come first.' },
-      { question: 'Should I send out a release when I get booked?', answer: 'Rarely worth it. An announcement that you will appear somewhere is news to your existing audience and to almost nobody else, and it does not read as coverage to an organizer checking you out. What travels is the argument you make on stage, written as a piece that stands up on its own without the event attached to it.' },
+      { question: 'Should I send out a release when I get booked?', answer: "No, though the booking is worth telling somebody. Ask the organizer whether the event has media partners or its own press list, because their announcement carries a name journalists recognize and yours does not. Then tell the people with a stake in you directly — clients, past organizers, whoever is building next season's program. A short note to the right people beats a release aimed at everyone." },
       { question: 'I speak for free right now. Is it too early for press?', answer: 'No, provided you have a subject and rooms in which to test it. Free stages are where the material gets sharp, and publishing while you do that work is honest. The mistake is coverage claiming a standing you have not earned yet, because a profile calling you a leading voice reads badly to anybody who checks. Publish the thinking rather than the title.' },
     ],
   },
@@ -2492,7 +2492,7 @@ export const guideBodies: GuideBody[] = [
     ],
     keyPoints: [
       'Decide the one sentence you want attached to your name before you commission a single article.',
-      'Search yourself the way a stranger would, on a phone and signed out, then write down what comes back.',
+      'Audit before you budget: the difference between what a stranger finds and the sentence you chose is the whole brief.',
       'You cannot cite yourself, which is the entire reason a third party writing it down carries weight.',
       'Cadence beats volume: three placements spread across a year outwork six in a fortnight and then silence.',
       'Coverage magnifies whatever is already there, including a position you have not finished deciding on.',
@@ -2513,7 +2513,7 @@ export const guideBodies: GuideBody[] = [
           'Then hold the results against your sentence. The gap between the two is your brief, and it will be more specific than any general strategy. Sometimes the fix is one substantial article. Sometimes it is that your own site still describes work you stopped doing three years ago. Sometimes it is that you share a name with a more prominent stranger.',
         ],
         list: [
-          'Search your full name on a phone, signed out, and screenshot the first screen — that is your homepage now.',
+          'Start with your full name on its own, screenshot what comes back and date the file, because that is the only before-and-after you will get.',
           'Search your name with your city, your company and your profession, because buyers narrow the query.',
           'Ask an answer engine who you are, and note every detail it gets wrong or cannot find at all.',
           'Check the images, since a photograph from a company you left still turns up beside your name.',
@@ -2593,7 +2593,7 @@ export const guideBodies: GuideBody[] = [
       {
         heading: 'Check the app before pitching',
         paragraphs: [
-          'Ten minutes inside the app tells you more than any media list will. It is free, it takes one sitting, and it stops you paying to reach a surface that a particular outlet does not touch. Do it before you commission anything, and do it again for every outlet somebody proposes to you afterwards.',
+          'The check answers two separate questions, and both have to come back yes. First, does this outlet feed the app at all. Second, does it run the kind of piece you are asking for — writing about people, rather than wire copy, listings and product news. A title can carry a busy channel and still never publish anything resembling your story, and a placement like that is reach pointed at the wrong thing.',
           'If a publication has no presence in the app, no amount of pitching will get your article there through it. That is not a judgment on the publication, since plenty of good outlets sit outside this particular network. It does mean you should stop describing that placement as an Apple News strategy and judge it on whatever else it genuinely offers you.',
         ],
         list: [
@@ -2625,13 +2625,12 @@ export const guideBodies: GuideBody[] = [
         paragraphs: [
           "Link the publisher's page. An apple.news link is convenient for somebody already inside the app and awkward for everybody else, while the article on the publication's own site opens on any device, stays where it is, and is the version that turns up when somebody searches your name six months from now.",
           'Screenshots are weaker evidence than people think. An image of your article inside the app is a fine keepsake and fine proof to yourself that syndication happened, but it proves little to a stranger, because anybody can make one. A live link opening a real article at a real publication does more work than any picture of one.',
-          'Then build on it. One appearance is a moment and reads like luck, while several across a year reads like somebody whose work gets covered. That pattern is what a prospect, a partner or a journalist is really assessing when they look you up, and it is not something any single placement anywhere can produce on its own.',
         ],
       },
     ],
     realityCheck: "Nobody can promise you Apple News. There is no desk to persuade, no ad unit that buys curation, and no relationship with Apple that any agency holds. What can honestly be promised is a placement at a publication that already feeds the app, and after that, whether it surfaces for any particular reader is Apple's business rather than ours. Anyone selling a position inside the app is selling something they do not own.",
     faqs: [
-      { question: 'Can an agency get me featured on Apple News?', answer: "An agency can place your story with publications already in the network, which is the mechanism, and it is the only one there is. What nobody can do is pitch Apple directly or buy a place in the app's curation. Ask whoever is selling it to explain the route in. If the answer is a contact rather than a publication, be careful." },
+      { question: 'What should I ask an agency to show me before I pay?', answer: 'The outlet, by name, before money moves. Open its channel in the app yourself and read what has run there recently. Ask whether the piece will be reported, contributed or sponsored, since that decides how you can honestly describe it later, and ask which link you will be handed at the end. If none of that can be answered before you pay, that is your answer.' },
       { question: 'Does appearing in Apple News help my search results?', answer: "Not directly. The app is a reading surface rather than a web page competing in search, so it does not move rankings by itself. What helps is the article on the publication's own site, which is permanent, crawlable and the thing that surfaces when somebody types your name. Treat app distribution as extra readers layered on top of that." },
       { question: 'My piece ran but I cannot find it in the app.', answer: 'There are two likely explanations. Either the publication does not feed Apple News, or it does and the article is not surfacing for you, since feeds are personalized and your own phone is not a fair test of what other people see. Ask whoever placed it which network publications were targeted. Either way, the live article still does its job.' },
     ],
@@ -2829,10 +2828,10 @@ export const guideBodies: GuideBody[] = [
           'Most of it is unglamorous maintenance you have probably been postponing anyway. Do the cheap items first, because inconsistency in your own material is the single largest source of confusion, and it is entirely within your control to remove. The published part takes longer and matters more, but it works badly on top of a record that still contradicts itself in four places.',
         ],
         list: [
-          'Write one factual paragraph — what you do, for whom, where, since when — and use it verbatim everywhere.',
-          'Use a single form of your name and company name across bylines, profiles, your site and every listing.',
+          'Settle on one form of your name and one standing description of the business, then stop rewriting them.',
           'Fix the stale pages you control first: old team pages, dead service pages, outdated addresses and titles.',
           'Correct third-party listings you can edit, and request corrections where a publication has a fact wrong.',
+          'Check what survives with the design stripped out — facts that live only in an image, a slider or a video are not there to be quoted.',
           'Publish more than once on the single subject you want to be summarized as knowing something about.',
         ],
       },
@@ -2854,7 +2853,7 @@ export const guideBodies: GuideBody[] = [
     ],
     realityCheck: 'You cannot edit what an assistant says about you, and neither can anyone you hire. There is no correction desk, answers differ between users, and they change without notice or explanation. Any service promising a specific AI output is selling access it does not have. What you can change is the material these systems have to work with — slowly, by publishing accurate and attributable things and keeping your own facts current — and then waiting longer than you want to.',
     faqs: [
-      { question: 'Can I get ChatGPT to correct something about my business?', answer: 'There is no correction desk for a summary of a company, and nobody outside these companies can edit an answer directly. The workable route is indirect: find what the wrong claim rests on, fix or correct that source, and publish accurate material that states the right version plainly. Then expect it to take time, because these systems refresh on their own schedule rather than on yours.' },
+      { question: 'The wrong fact came from an article the publication will not correct. What then?', answer: 'Ask once, in writing, with the correct fact and something that evidences it — some outlets will add a note even where they will not amend the text. If the answer is no, leave the page alone and outweigh it instead. Newer material that states the correct version plainly, published elsewhere and clearly dated, gives a summary something better to reach for. A takedown fight usually costs more attention than the error was costing you.' },
       { question: 'Different people get different answers about my company. Which one is real?', answer: 'All of them and none of them. These systems produce different responses between sessions, accounts and tools, so any single output is a sample rather than a verdict. Run the same questions several times, across more than one assistant, and pay attention only to the errors that repeat. A recurring mistake points at a source you can locate; a one-off usually does not.' },
       { question: 'Is this just search engine optimization with a new name?', answer: 'It overlaps, and it is not identical. A search engine hands you a list to judge for yourself, while an assistant hands you a paragraph that has already done the judging. Both reward the same underlying thing — accurate, consistent, independently published material about you — but the assistant version is far less forgiving of a record that exists only on your own domain.' },
     ],
@@ -2866,9 +2865,9 @@ export const guideBodies: GuideBody[] = [
       'How the choosing works is not public, it differs between tools, and it changes without announcement. What holds steady is the shape of the material these systems keep reaching for. That shape is worth understanding, because it is the part you can influence and because the rest is guesswork sold as expertise.',
     ],
     keyPoints: [
-      'Answer engines describe you from sources they can attribute, which is why your own website carries less weight than you expect.',
+      'Two mechanisms produce these answers — material trained into the model, and pages fetched while the question is being answered — and only one of them is reachable from outside.',
       'A fact stated the same way across several independent publications is far easier for a machine to repeat safely.',
-      'Nobody outside these companies knows the weighting, and it shifts without notice, so build a record instead of chasing a formula.',
+      'Independence is judged by publisher rather than by link count, so titles under one owner and reprints of one text behave as a single source.',
       'Plain checkable sentences — name, role, company, city, date — survive summarizing in a way adjectives never do.',
       'Contradictory bios across your own profiles are the most common reason an assistant gets you wrong.',
     ],
@@ -2882,11 +2881,11 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: "Why other people's pages outweigh yours",
+        heading: 'What counts as an independent source',
         paragraphs: [
-          "A system producing a claim about a real company is safer repeating something it can hang on a named publication than something it found on that company's own marketing. Your site is a primary source about what you sell. It is not a source about your standing, because you wrote it, and nothing on it was ever going to say that you were middling at your job.",
-          'Corroboration does the rest of the work. When the same description of you appears in several places that are not connected to each other, a summarizer has something stable to repeat and little reason to hedge. When the only description is yours, the answer either quotes you as a claim or gets vague. Neither is what you wanted when someone asked whether you were any good.',
-          'None of this is new behavior. It is what a careful researcher has always done — check whether anyone outside the room has said the same thing. The machine version is faster, less curious, and much less forgiving of a record that consists entirely of your own words.',
+          'Independence is the property being tested, and it is simpler than it sounds. A source is independent when somebody with no stake in the sentence decided to publish it, under their own name, in their own words. Your own site fails that test, not because it is unreliable about what you sell, where it is the best source available, but because it cannot corroborate anything about your standing.',
+          "The useful part is the boundary cases, because plenty of material looks independent and is not. A press page on your own subdomain, a directory profile you filled in yourself, a partner's post written from your copy, a testimonial you host and formatted — all of it is your voice with a different background color. What passes is a page carrying a publication's name, where somebody there decided it ran.",
+          'So audit by publisher rather than by link. Count how many unrelated organizations have described you in their own words, and collapse the ones sharing an owner into a single entry, because common ownership is visible to anybody checking. Where that count comes to one, the next piece belongs somewhere unconnected to the first rather than a second appearance at the same title.',
         ],
       },
       {
@@ -2919,15 +2918,8 @@ export const guideBodies: GuideBody[] = [
           'The prose is not the interesting part. The citations are. Where a tool shows its sources, open every link and note which domains keep appearing, because those pages are functioning as your references whether or not you would have chosen them. If your search results and those citations are dominated by profiles you wrote, you have found the actual problem, and it is a supply problem rather than a wording problem.',
         ],
       },
-      {
-        heading: 'Fixing an answer that is wrong',
-        paragraphs: [
-          'Correct the sources, not the summary. Start with what you control: the same name, role and description across your site, your professional listings and every profile you can still log into. Retire the pages that contradict the current version of you. This is dull work and it removes a surprising share of the errors, because most wrong answers are assembled faithfully from material that genuinely disagrees.',
-          'Then add material that is not yours. Published, attributable articles carrying your name give these systems something independent to work from, and they keep working long after the week they ran. What nobody can offer you is a date. Crawling, indexing and model releases run on their own schedule, so the honest expectation is that the record improves first and the answers follow later.',
-        ],
-      },
     ],
-    realityCheck: 'No one can promise you a place in an AI-generated answer, and any agency selling that is selling a mechanism it does not control. These systems disagree with each other, change without notice, and can describe you wrongly for months while you do everything right. What is actually available is slower: a published, attributable record that says the same true things in several credible places. We write and place that material. We do not control the summary, and we will not pretend to.',
+    realityCheck: 'Some of what an assistant says about you was absorbed while the model was trained. That version of you is fixed until the next release, and nobody outside the lab can reach it — not us, and not anyone charging you to try. What gets fetched live is different: it depends on which pages exist and can be found today, so that half is contestable now, by publishing. We write and place the material that goes into it. The date the answers move is not ours to promise.',
     faqs: [
       { question: 'Does publishing more on my own blog help?', answer: 'It helps with detail and it is worth doing, but it does not solve the independence problem. Your blog can explain what you do and how you think, which gives any system better raw material. It cannot corroborate that you are credible, because you are the one saying it. Use it to be clear, and use third-party coverage to be verified.' },
       { question: 'How long before an answer about me changes?', answer: 'It depends which mechanism produced it. Where a tool retrieves live pages, new material can start showing up once it has been crawled and indexed, which is weeks rather than days. Where the claim came from training data, you are waiting on a future model release that nobody can schedule for you. Treat any specific date you are quoted as invention.' },
@@ -2965,7 +2957,7 @@ export const guideBodies: GuideBody[] = [
         paragraphs: [
           'Contributor and bylined articles are the largest gray zone. The piece is written by or on behalf of the subject, then submitted to a publication that applies its own standards before running it. An editor still says yes or no, so it is not advertising. The story started with you rather than with a reporter, so it is not a staff-reported profile either. It sits honestly in between, and it should be described that way.',
           'Sponsored and branded content is a different animal. It is advertising in editorial clothing and is normally marked with a label somewhere on the page. There is nothing wrong with buying it, provided you know that is what you did. The problem arrives when it is sold to you as coverage, and you find out how it reads only when a customer or an investor opens the link.',
-          'Then there is distribution, which people mistake for publication constantly. MSN, Apple News and Google News are surfaces and indexes rather than newsrooms commissioning profiles, so an article reaches them through a publication already in the network or the index. A press release wire distributes copy you wrote and paid to send. A news agency such as AP is something else entirely — a newsroom with strict sourcing standards, not a distribution service.',
+          'Then there is distribution, which people mistake for publication constantly. MSN, Apple News and Google News are surfaces and indexes rather than newsrooms that commission profiles — an article appears there because the publication that ran it already feeds the network, not because anyone submitted it. So the credit belongs to the original title, and the aggregated copy can vanish when a syndication arrangement changes. A wire send is paid distribution of copy you wrote; a news agency such as AP is a newsroom, not a service you buy into.',
         ],
       },
       {
@@ -3131,11 +3123,11 @@ export const guideBodies: GuideBody[] = [
         ],
       },
       {
-        heading: 'Placing versus pitching',
+        heading: 'Getting the two lists in writing',
         paragraphs: [
-          'One question does more work than all the others: which outlets can you place me in, and which can you only pitch toward? A good answer is two lists with names in them. An agency that treats every publication as equally available is either inexperienced or counting on you not noticing which half of the promise went unfulfilled.',
-          'Editorially selective titles decide for themselves. Forbes, Bloomberg, Business Insider, Inc. and Fast Company are staffed by people no agency employs, so pitching is the honest verb and placing is not. More reachable business titles exist, there is nothing wrong with them, and they are a different product. Ask which of the two your quote is built on, and get the answer in writing.',
-          'MSN, Apple News and Google News belong in neither list. They distribute or index work from publications already inside their networks, so an honest answer to a question about them names the publisher instead of the surface. If a proposal sells you the logo rather than the publication behind it, it is selling the part nobody controls.',
+          'Ask for the split by email rather than on a call. A call produces a sentence you will remember generously; an email produces a document. Name the outlets you actually care about, ask which of them they have placed a client in and which they would be pitching, and see whether the reply sorts your list or talks around it. Hedging every name is itself an answer.',
+          'Then read the proposal against what came back. A logo wall mixes both tiers into one row by design, so ask which of those logos sit on the placed list, and watch whether the reply names publishers or names surfaces. If the same target appears in the scope as an outcome and in conversation as an ambition, the document is the version that gets argued over later.',
+          'Where it matters, get the placed list written into the scope as the outlets the fee covers, with the pitched list named separately as effort. That one edit turns a disappointing quarter into a contract question rather than an argument about what was meant on the first call. An agency that will not draw the line on paper has told you which side of it your money is on.',
         ],
       },
       {
