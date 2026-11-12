@@ -1,0 +1,28 @@
+{
+  "cutout_1x_size": [
+    945,
+    1313
+  ],
+  "note": "coordinates are in 1x cutout pixels; assets/*.png are 2x",
+  "tie_knot": [
+    421.1660649819495,
+    467.0
+  ],
+  "face_centre_x": 426.0,
+  "head_top_y": 12.0,
+  "shoulder_row_y": 537.0,
+  "shoulder_left_x": 88.0,
+  "shoulder_right_x": 852.0,
+  "alpha_bbox": [
+    12,
+    12,
+    933,
+    1313
+  ],
+  "thumb_box": [
+    153,
+    713,
+    298,
+    1043
+  ]
+}
