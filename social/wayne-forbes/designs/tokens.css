@@ -10,7 +10,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:#222}
 #c{position:relative;overflow:hidden;font-family:Syne,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
-#c *{position:absolute}
+#c>*{position:absolute}
 .syne8{font-family:Syne;font-weight:800;text-transform:uppercase;white-space:nowrap;line-height:1;letter-spacing:-.005em}
 .lab{font-family:Syne;font-weight:700;text-transform:uppercase;white-space:nowrap;line-height:1;letter-spacing:.22em;font-size:var(--label)}
 .lab.m{font-weight:500;letter-spacing:.2em}

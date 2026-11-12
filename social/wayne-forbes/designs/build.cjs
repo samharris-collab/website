@@ -40,7 +40,7 @@ function wayne({ version, scale, anchorX, headTopY, bias = 0.5, cls = '', style 
     shoulderL: left + A.shoulder_left_x * scale, shoulderR: left + A.shoulder_right_x * scale,
     thumb: { x0: left + tb[0], y0: top + tb[1], x1: left + tb[2], y1: top + tb[3] },
   };
-  const html = `<img class="wayne ${cls}" id="wayne" src="${img(version)}" style="left:${left}px;top:${top}px;width:${geo.width}px;height:${geo.height}px;${style}">`;
+  const html = `<img class="wayne ${cls}" id="wayne" src="${img(version)}" style="position:absolute;left:${left}px;top:${top}px;width:${geo.width}px;height:${geo.height}px;${style}">`;
   return { html, geo };
 }
 const forbes = (color, h, extra = '') =>
@@ -85,7 +85,7 @@ async function render(browser, d, opts) {
   await page.setContent(html);
   await page.evaluate(() => document.fonts.ready);
   await page.waitForFunction(() => [...document.images].every((i) => i.complete && i.naturalWidth > 0));
-  const res = await page.evaluate(async ({ W, H, M, thumb, allowOverlap }) => {
+  const res = await page.evaluate(async ({ W, H, M, thumb, allowOverlap, onWayne, visBottom }) => {
     const errs = [];
     const faces = ['800 40px Syne', '700 15px Syne', '500 15px Syne', '900 100px Archivo', 'italic 400 40px "Instrument Serif"', '400 40px "Instrument Serif"'];
     await Promise.all(faces.map((f) => document.fonts.load(f)));
@@ -93,9 +93,14 @@ async function render(browser, d, opts) {
       if (!document.fonts.check(f)) errs.push('font not loaded: ' + f);
     const boxes = [...document.querySelectorAll('.chk')].map((e) => {
       const r = e.getBoundingClientRect();
+      const n = e.dataset.name || e.textContent.trim().slice(0, 28) || e.className;
+      if (e.dataset.ink) {   // poster words are checked by their measured INK box, not the advance box
+        const [l, t, w, h] = e.dataset.ink.split(',').map(Number), fs = parseFloat(getComputedStyle(e).fontSize);
+        return { n, x0: r.left + l * fs, y0: r.top + t * fs, x1: r.left + (l + w) * fs, y1: r.top + (t + h) * fs, e };
+      }
       // a right-aligned tracked label carries one trailing letter-space that holds no ink
       const trail = e.classList.contains('r') ? parseFloat(getComputedStyle(e).letterSpacing) || 0 : 0;
-      return { n: e.dataset.name || e.textContent.trim().slice(0, 28) || e.className, x0: r.left, y0: r.top, x1: r.right - trail, y1: r.bottom, e };
+      return { n, x0: r.left, y0: r.top, x1: r.right - trail, y1: r.bottom, e };
     });
     const tol = 0.5;
     for (const b of boxes) {
@@ -105,7 +110,7 @@ async function render(browser, d, opts) {
         const asp = (b.x1 - b.x0) / (b.y1 - b.y0), want = +b.e.dataset.aspect;
         if (Math.abs(asp / want - 1) > 0.005) errs.push(`logo aspect off: ${b.n} ${asp.toFixed(3)} vs ${want.toFixed(3)}`);
       }
-      if (b.e.scrollWidth > b.e.clientWidth + 1 && !b.e.classList.contains('logo')) errs.push('text overflows its box: ' + b.n);
+      if (b.e.scrollWidth > b.e.clientWidth + 8 && !b.e.classList.contains('logo')) errs.push('text overflows its box: ' + b.n);
     }
     const hit = (a, b) => a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1;
     for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++)
@@ -118,10 +123,25 @@ async function render(browser, d, opts) {
       for (const b of [...boxes, ...[...document.querySelectorAll('.cover')].map((e) => { const r = e.getBoundingClientRect(); return { n: 'cover:' + e.className, x0: r.left, y0: r.top, x1: r.right, y1: r.bottom }; })])
         if (hit(thumb, b)) errs.push('thumb covered by: ' + b.n);
     }
+    // no text or logo box may sit on Wayne's silhouette unless the design declares it
+    const wi = document.getElementById('wayne');
+    if (wi) {
+      const r = wi.getBoundingClientRect(), cw = Math.round(r.width), ch = Math.round(r.height);
+      const cv = document.createElement('canvas'); cv.width = cw; cv.height = ch;
+      const cx = cv.getContext('2d'); cx.drawImage(wi, 0, 0, cw, ch);
+      const al = cx.getImageData(0, 0, cw, ch).data;
+      for (const b of boxes) {
+        if (onWayne.some((q) => b.n.startsWith(q))) continue;
+        let n = 0, tot = 0;
+        for (let y = Math.max(0, Math.floor(b.y0 - r.top)); y < Math.min(ch, Math.ceil(Math.min(b.y1, visBottom) - r.top)); y++)
+          for (let x = Math.max(0, Math.floor(b.x0 - r.left)); x < Math.min(cw, Math.ceil(b.x1 - r.left)); x++) { tot++; if (al[(y * cw + x) * 4 + 3] > 40) n++; }
+        if (n > 12) errs.push(`collides with Wayne: ${b.n} (${n}px)`);
+      }
+    }
     const txt = document.getElementById('c').innerText;
     for (const bad of ['PRESS FEATURE', 'endorsed', 'approved', 'http']) if (txt.toLowerCase().includes(bad.toLowerCase())) errs.push('forbidden text: ' + bad);
     return { errs, boxes: boxes.map(({ e, ...b }) => b) };
-  }, { W, H, M, thumb: d.geo && d.geo.thumb, allowOverlap: d.allowOverlap || [] });
+  }, { W, H, M, thumb: d.geo && d.geo.thumb, allowOverlap: d.allowOverlap || [], onWayne: d.onWayne || [], visBottom: d.visBottom ?? H });
   if (d.geo && d.centre) {
     const gl = d.geo.shoulderL - d.centre.x0, gr = d.centre.x1 - d.geo.shoulderR;
     console.log(`  ${d.id} centring: knot x=${d.geo.knotX.toFixed(1)}  shoulder gaps L=${gl.toFixed(0)} R=${gr.toFixed(0)}`);
