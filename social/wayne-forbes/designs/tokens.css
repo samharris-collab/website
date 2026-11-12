@@ -5,7 +5,7 @@
   --navy-1:#122A6B; --navy-2:#050D27; --band-red:#C4122A;
   --gold:#D8B56A; --gold-grad:linear-gradient(100deg,#9C6F1E 0%,#FFF2B8 48%,#A87924 100%);
   --m:64px;                       /* outer margin */
-  --label:15px; --label-lg:17px; --label-xl:19px;
+  --label:17px; --label-lg:17px; --label-xl:19px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:#222}
@@ -19,5 +19,6 @@ html,body{background:#222}
 .ital{font-family:'Instrument Serif';font-style:italic;font-weight:400;white-space:nowrap;line-height:1}
 .serif{font-family:'Instrument Serif';font-style:normal;font-weight:400;line-height:1}
 .grain{inset:0;opacity:.10;mix-blend-mode:overlay;pointer-events:none}
+.grain.d{opacity:.07;mix-blend-mode:screen}   /* dark designs: lighten-only grain also dithers gradient banding */
 .wayne{filter:drop-shadow(0 5px 8px rgba(0,0,0,.25)) drop-shadow(0 26px 60px rgba(0,0,0,.35))}
 .guide{left:50%;top:0;bottom:0;width:1px;background:#0ff;z-index:99}

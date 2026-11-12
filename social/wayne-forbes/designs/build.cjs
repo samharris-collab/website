@@ -27,7 +27,7 @@ const DNA_FULL_ASPECT = 876 / 401;
 
 /* Place Wayne from measured anchors. `anchorX` is where his visual centre lands.
    bias 0 = centre on the tie knot, 1 = centre on the shoulder midpoint.           */
-function wayne({ version, scale, anchorX, headTopY, bias = 0.5, cls = '', style = '' }) {
+function wayne({ version, scale, anchorX, headTopY, bias = 0.35, cls = '', style = '' }) {
   const shoulderMid = (A.shoulder_left_x + A.shoulder_right_x) / 2;
   const ax = A.tie_knot[0] * (1 - bias) + shoulderMid * bias;
   const [w, h] = A.cutout_1x_size;
@@ -77,7 +77,9 @@ async function inkMetrics(browser, text, cls, extraCss = '') {
 
 /* ---------- render + automated checks ---------- */
 async function render(browser, d, opts) {
-  const W = d.w || 1080, H = d.h || 1350, M = d.margin ?? 64;
+  const W = d.w || 1080, H = d.h || 1350;
+  const m0 = d.margin ?? 64;
+  const M = { l: m0, r: m0, t: m0, b: m0, ...(d.safe || {}) };   // Stories keep a taller top and bottom clear
   const body = d.body + (opts.guide ? '<div class="guide"></div>' : '');
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${d.title}</title><style>${FONT_CSS}${tokens}#c{width:${W}px;height:${H}px}${d.css}</style></head><body><div id="c">${body}</div></body></html>`;
   if (!opts.guide) fs.writeFileSync(path.join(__dirname, `${d.id}.html`), html);
@@ -104,7 +106,7 @@ async function render(browser, d, opts) {
     });
     const tol = 0.5;
     for (const b of boxes) {
-      if (b.x0 < M - tol || b.y0 < M - tol || b.x1 > W - M + tol || b.y1 > H - M + tol)
+      if (b.x0 < M.l - tol || b.y0 < M.t - tol || b.x1 > W - M.r + tol || b.y1 > H - M.b + tol)
         errs.push(`outside safe area: ${b.n} [${b.x0.toFixed(0)},${b.y0.toFixed(0)},${b.x1.toFixed(0)},${b.y1.toFixed(0)}]`);
       if (b.e.classList.contains('logo')) {
         const asp = (b.x1 - b.x0) / (b.y1 - b.y0), want = +b.e.dataset.aspect;
@@ -156,11 +158,14 @@ async function main() {
   const args = process.argv.slice(2);
   const guide = args.includes('--guide');
   const want = args.filter((a) => !a.startsWith('--'));
-  const browser = await chromium.launch();
+  // use the machine's pre-installed Chromium when the repo's own Playwright expects a different build
+  const sys = '/opt/pw-browsers/chromium';
+  const launchArgs = ['--disable-background-networking', '--disable-component-update', '--no-first-run'];
+  const browser = await chromium.launch(fs.existsSync(sys) ? { executablePath: sys, args: launchArgs } : {});
   const ink = {
     FEATURED: await inkMetrics(browser, 'FEATURED', 'poster'),
   };
-  const designs = require('./designs.cjs')(ink);
+  const designs = [...require('./designs.cjs')(ink), ...require('./designs_alt.cjs')(ink)];
   let failed = false;
   for (const d of designs) {
     if (want.length && !want.includes(d.id)) continue;

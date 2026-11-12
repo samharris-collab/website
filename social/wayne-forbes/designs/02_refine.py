@@ -15,7 +15,7 @@ a = a * (ndi.binary_dilation(lab == big, iterations=6))
 # pull the edge in ~1.5px and feather ~1px (kills fringe without a helmet edge)
 a = cv2.erode(a, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)))
 a = cv2.GaussianBlur(a, (0, 0), 1.0)
-a = np.clip((a - 0.22) / 0.62, 0, 1)
+a = np.clip((a - 0.28) / 0.52, 0, 1)
 
 # never show the papers / left hand: crop below the left cuff
 CROP_Y = 1760
@@ -57,10 +57,10 @@ tie_w = cv2.GaussianBlur(tie.astype(np.float32), (0, 0), 1.2)[..., None]
 
 # black and white: channel mix that keeps skin luminous and the suit stripe alive
 g = col[..., 0] * 0.26 + col[..., 1] * 0.56 + col[..., 2] * 0.18      # less red weight: skin keeps tone
-g = np.clip((g - 0.02) / 0.96, 0, 1)
-g = np.clip(0.46 + (g - 0.46) * 1.20, 0, 1)                           # contrast around the skin midtone
-g = g + (cv2.GaussianBlur(g, (0, 0), 3) - cv2.GaussianBlur(g, (0, 0), 28)) * 0.30   # local contrast, no halo
-g = np.clip(g + 0.035 * (1 - g) ** 6, 0, 1)                           # keep the suit stripe out of pure black
+# tone curve: deeper shadows, but highlights roll off instead of clipping (the flash-lit forehead and hand)
+g = np.interp(g, [0, 0.10, 0.30, 0.55, 0.72, 0.86, 1.0], [0, 0.055, 0.25, 0.555, 0.735, 0.845, 0.955])
+g = g + (cv2.GaussianBlur(g, (0, 0), 3) - cv2.GaussianBlur(g, (0, 0), 28)) * 0.28   # local contrast, no halo
+g = np.clip(g + 0.035 * (1 - g) ** 6, 0, 0.975)                       # suit stripe stays out of pure black
 bw = np.repeat(g[..., None], 3, 2)
 tie_col = np.clip((col - 0.5) * 1.05 + 0.5, 0, 1)
 bw_tie = bw * (1 - tie_w) + tie_col * tie_w

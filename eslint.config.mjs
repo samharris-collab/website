@@ -8,7 +8,7 @@ const config = [
   ...nextCoreWebVitals,
   ...nextTypescript,
   {
-    ignores: ['.next/**', 'node_modules/**', 'next-env.d.ts', 'public/**'],
+    ignores: ['.next/**', 'node_modules/**', 'next-env.d.ts', 'public/**', 'social/**'],
   },
   {
     rules: {
